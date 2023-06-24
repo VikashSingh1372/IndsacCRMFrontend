@@ -1,0 +1,104 @@
+.home{
+    background-color: rgb(80, 80, 195);
+    border: 2px;
+    border-bottom-right-radius: 580px;
+    height: 700px; 
+}
+.home h1{
+    color: white;
+    font-family:Nunito;
+    font-weight: 700;
+    font-size: 49px;
+    margin-left: 210px;
+    margin-top: -30px;
+    padding-top: 100px;
+    margin-bottom: 25px;
+}
+.home h2{
+    color: rgb(216, 204, 188);
+    font: 1em sans-serif;
+    font-size: 20px;
+    margin-left: 210px;
+}
+.home button{
+    color: rgb(248, 248, 254);
+    font-size: 13px;
+    font-weight: 200px;
+    background-color: rgb(98, 98, 195);
+    border: 2px solid white;
+    border-radius: 9px ;
+    margin-left: 210px;
+    margin-top: 17px;
+    padding-left: 52px;
+    padding-right: 52px ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.home h4{
+    color: rgb(234, 228, 228);
+    font-size: 14px;
+    font-family:'Segoe UI';
+    font-weight: 100px;
+    margin-left: 210px;
+    margin-top: 35px;
+}
+.home strong{
+    color: white;
+    font-size: 17px;
+}
+.home img{
+    height : 550px;
+    width : 650px;
+    margin-left:700px;
+    margin-top: -345px;
+    border-radius: 15px;
+}
+.texts {
+   font-size: 20px;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 80px;
+   margin-bottom: 80px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.texts i{
+    margin:55px;
+}
+.gif{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.gif img{
+    height : 450px;
+    width : 500px;
+    margin-left: 200px;
+}
+.para{
+    display: block;
+    justify-content: space-evenly;
+    margin-right:200px;
+}
+.para h1{
+    color: rgb(18, 12, 12);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    margin-bottom : 350px;
+    margin-top: 0px;
+    margin-left:15px;
+}
+.para p{
+    margin-top:-320px;
+    font-size: 17px;
+    color: rgb(45, 47, 50);
+}
+.business {
+     display: inline;
+}
+.business h1{
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium';
+    margin-bottom: 25px;
+    
+}
