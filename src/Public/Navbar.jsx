@@ -1,26 +1,26 @@
 import {Link} from "react-router-dom";
-import '../styles/navbar.css';
+import '../Styles/Navbar.css';
 const Navbar = () => {
     return (
         <header>
         <div className="nav">
-            <div className="logo">
-             <h1> INDSAC-CRM</h1>
+            <div className="logo col-3">
+             <h1>INDSAC-CRM</h1>
             </div>
-            <div className="nav_links">
+            <div className="nav_links col-6">
                 <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/resources">Resources</Link></li>
-                <li><Link to="/features">Features</Link></li>
-                <li><Link to="/pricing">Pricing</Link></li>
-                <li><Link to="/industry">Industry</Link></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/features">Features</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/industry">Industry</a></li>
                 </ul> 
             </div>
-            <div className="btn">
+            <div className="btn col-3">
                 <button>Login</button>
-                <h3>Contact us</h3>
+                <a>Contact us</a>
             </div>
         </div>
         </header>
