@@ -74,7 +74,6 @@ export default function LandingPage() {
                 <div className="row mb-2">
                   <div className="col-sm-6">
                     <h1 className="m-0">Starter Page</h1>
-                    {/* <h2>hello br</h2> */}
                   </div>
                   {/* <!-- /.col --> */}
                   <div className="col-sm-6">

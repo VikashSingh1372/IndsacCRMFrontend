@@ -15,9 +15,9 @@ function App() {
       {/* <Navbar/> */}
       <Routes>
         {/* <Route path='/'element={<Home/>}/> */}
-        <Route path='/'element={<Login/>}/>
-        <Route path='/register'element={<Register/>}/>
-        <Route path='/user'element={<LandingPage/>}/>
+        {/* <Route path='/log-in'element={<Login/>}/> */}
+        {/* <Route path='/register'element={<Register/>}/> */}
+        <Route path='/'element={<LandingPage/>}/>
       </Routes>
       </BrowserRouter>
       
