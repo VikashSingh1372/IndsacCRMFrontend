@@ -1,0 +1,49 @@
+.btnclass {
+    border: none;
+    font-size: large;
+}
+
+.iclass {
+    color: rgb(197, 197, 197);
+    margin: 0.7em;
+}
+.bgcolor {
+    background-color: rgba(90, 90, 90, 0.39);
+}
+.nav{
+  border:none;
+}
+.sidebar{
+  padding:0;
+}
+
+.tcolor {
+    color: rgba(255, 255, 255, 0.765);
+    font-size: medium;
+    list-style: none;
+    text-decoration: none;
+    /* background-color: rgba(90, 90, 90, 0.39) ; */
+}
+
+.tcolor:hover {
+    color: white;
+
+}
+
+.btnclass1 {
+    font-size: small;
+    padding-bottom: 0.5px;
+    padding-top: 0.5px;
+    margin-left: 0.5em;
+}
+.slidebarclass {
+    position: fixed !important;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38, 38, 38);
+    /* top:0; */
+    width: 20%;
+    height: 100% !important;
+    border: none;
+}
