@@ -12168,7 +12168,6 @@ body:not(.layout-fixed).layout-navbar-fixed.text-sm .wrapper .main-sidebar .side
     position: static;
   }
 }
-
 @media (min-width: 1200px) {
   .layout-xl-footer-fixed .wrapper .control-sidebar {
     bottom: 0;

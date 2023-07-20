@@ -9,387 +9,687 @@ import {
 } from "react-icons/bs";
 import { FaListUl, FaBook, FaUserGraduate } from "react-icons/fa";
 import { MdGrade, MdHeight } from "react-icons/md";
-import { IoMdAnalytics } from "react-icons/io";
-
+import { FaTachometerAlt } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
+import { FaUserPlus } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaRegStickyNote } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+import { FaIndent } from "react-icons/fa";
+import { RiFile3Fill } from "react-icons/ri";
+import { PiGridNineFill } from "react-icons/pi";
+import { FiSettings } from "react-icons/fi";
+import { RiCloseCircleLine } from "react-icons/ri";
+import  '../Styles/LandingPageSlideBar.css';
 export default function MainSidebar(props) {
   const [searchBtn, setSearchBtn] = useState(true);
+
+  const [isComShow, setIsComShow] = useState(false);
+  const handelComShow = () => {
+    setIsComShow(!isComShow);
+  };
+
   const [isShow, setIsShow] = useState(false);
-  const handelShow = () => setIsShow(!isShow);
+  const handelShow = () => {
+    setIsShow(!isShow);
+  };
+
+  const [isShowVen, setIsShowVen] = useState(false);
+  const handelShowVen = () => {
+    setIsShowVen(!isShowVen);
+  };
+
+  const [isShowEmail, setIsShowEmail] = useState(false);
+  const handelShowEmail = () => {
+    setIsShowEmail(!isShowEmail);
+  };
+
+  const [isShowInt, setIsShowInt] = useState(false);
+  const handelShowInt = () => {
+    setIsShowInt(!isShowInt);
+  };
+  const [isShowStock, setIsShowStock] = useState(false);
+  const handelShowStock = () => {
+    setIsShowStock(!isShowStock);
+  };
+  const [isShowSale, setIsShowSale] = useState(false);
+  const handelShowSale = () => {
+    setIsShowSale(!isShowSale);
+  };
+  const [isShowPur, setIsShowPur] = useState(false);
+  const handelShowPur = () => {
+    setIsShowPur(!isShowPur);
+  };
+  const [isShowSet, setIsShowSet] = useState(false);
+  const handelShowSet = () => {
+    setIsShowSet(!isShowSet);
+  };
 
   return (
     <>
-      <aside
-        className="main-sidebar sidebar-dark-primary elevation-4 "
-        style={{ position: "fixed", overflow: "scrollY", height: 1 }}
+      <aside className="main-sidebar sidebar-dark-primary elevation-4" style={{ position: "fixed", overflow: "scrollY", height: 1 }}
       >
         <Link to="index3.html" className="brand-link">
-          <i class="fa fa-th mr-2 text-white" aria-hidden="true"></i>
-          <span className="brand-text font-weight-light text-white">Dahsboard</span>
+          <PiGridNineFill className="nav-icon mx-2  fs-3" />
+          <span className="brand-text font-weight-light">Dashboard</span>
         </Link>
-        <div className="sidebar ">
-          <div className="user-panel mt-2 mb-3 d-flex">
-              <i className="fa fa-cubes pl-1 mr-2 pt-2 pb-2 text-white" aria-hidden="true"></i>
-              <Link to="/" className="d-block fs-5 pb-2 text-white">
-                Markrting
+        <div className="sidebar">
+          <div className="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div className="image">
+              <i
+                className="fa fa-cubes pl-2 fs-5 pt-2 m-0 text-white"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div className="info">
+              <Link to="/" className="d-block">
+                Marketing
               </Link>
-        
+            </div>
           </div>
 
           {/* <!-- Sidebar Menu --> */}
-          <nav className="mt-2 ">
+          <nav className="mt-2">
             <ul
               className="nav nav-pills nav-sidebar flex-column"
               data-widget="treeview"
               role="menu"
               data-accordion="false"
             >
-            <input type="checkbox" id="showItemsCheckbox1" />
-              <label htmlFor="showItemsCheckbox1" id="showItemsBtn1" className="p-0 m-0" >
-                <i className="fa fa-user mr-2" aria-hidden="true"></i>
-                Customer
-                <span className="arrow"  />
-              </label>
-              <div id="itemContainer1">
-                <ul>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Customer Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-user-plus pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      New Customer
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox2" />
-              <label htmlFor="showItemsCheckbox2" id="showItemsBtn2">
-                <i className="fa fa-user mr-2" aria-hidden="true"></i>
-                Lead
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer2">
-                <ul>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Lead Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-user-plus pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      New Lead
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox3" />
-              <label htmlFor="showItemsCheckbox3" id="showItemsBtn3">
-                <i className="fa fa-user mr-2" aria-hidden="true"></i>
-                Vendor
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer3">
-                <ul>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Vendor Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="tcolor">
-                      <i
-                        className="fa fa-user-plus pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      New Vendor
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox4" />
-              <label htmlFor="showItemsCheckbox4" id="showItemsBtn4">
-                <i className="fa fa-user mr-2" aria-hidden="true"></i>
-                Email
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer4">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor rounded">
-                      <i
-                        className="fa fa-envelope-o pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Send Bulk Mail
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-envelope-o pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Send Mail
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <li className="mb-1 mr-1 d-flex">
-                <div className="col-5 align-items-left">
-                  <button
-                    className="btn text-white p-0"
-                    style={{ fontSize: 18, border: "none" }}
-                  >
-                    <i className="fa fa-tasks mr-2" aria-hidden="true"></i>
-                    Task
-                  </button>
-                </div>
-                <div className="col-7 text-right p-0">
-                  <button className="btn btn-primary btnclass1 p-0">
-                    open
-                  </button>
-                  <button className="btn btn-danger btnclass1 ">1</button>
-                </div>
-              </li>
-
-              <input type="checkbox" id="showItemsCheckbox5" />
-              <label htmlFor="showItemsCheckbox5" id="showItemsBtn5">
-                <i className="fa fa-sticky-note-o mr-2" aria-hidden="true"></i>
-                Interaction
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer5">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-sticky-note-o pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Interaction Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-sticky-note-o pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Search Interaction
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <li className="mb-1 mr-1 d-flex">
-                <div className="col-8 m-0 p-0">
-                  <button
-                    className="btn text-white p-0 m-0 "
-                    style={{ fontSize: 18, border: "none" }}
-                  >
-                    <i className="fa fa-file-text mr-1 ml-1"></i>
-                    Service Request
-                  </button>
-                </div>
-                <div className="col-4 p-0 text-right ">
-                  <button className="btn btn-primary btnclass1 p-0">
-                    open
-                  </button>
-                  <button className="btn btn-danger btnclass1 ">1</button>
-                </div>
-              </li>
-
-              <input type="checkbox" id="showItemsCheckbox6" />
-              <label htmlFor="showItemsCheckbox6" id="showItemsBtn6">
-                <i className="fa fa-bars mr-2" aria-hidden="true"></i>
-                Stock
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer6">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-bars pl-3 m-1" aria-hidden="true"></i>
-                      View Stock
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox7" />
-              <label htmlFor="showItemsCheckbox7" id="showItemsBtn7">
-                <i className="fa fa-indent mr-2" aria-hidden="true"></i>
-                Sales
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer7">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      Invoice Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-file pl-3 m-1" aria-hidden="true"></i>
-                      Create New Invoice
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      Purchase Order Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-file pl-3 m-1" aria-hidden="true"></i>
-                      Create New Purchase Order
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      Proforma Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-file pl-3 m-1" aria-hidden="true"></i>
-                      Create New Proforma Invoice
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      Quotation Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-file pl-3 m-1" aria-hidden="true"></i>
-                      Create New Quotation
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox8" />
-              <label htmlFor="showItemsCheckbox8" id="showItemsBtn8">
-                <i className="fa fa-indent mr-2" aria-hidden="true"></i>
-                Purchase
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer8">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      Expence Dashboard
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i className="fa fa-th pl-3 m-1" aria-hidden="true"></i>
-                      New Expence
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <input type="checkbox" id="showItemsCheckbox9" />
-              <label htmlFor="showItemsCheckbox9" id="showItemsBtn9">
-                <i className="fa fa-cog mr-2" aria-hidden="true"></i>
-                Setting
-                <span className="arrow" />
-              </label>
-              <div id="itemContainer9">
-                <ul>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      User Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Manage User
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Invoice Setting
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      HRM
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className=" tcolor">
-                      <i
-                        className="fa fa-tachometer pl-3 m-1"
-                        aria-hidden="true"
-                      ></i>
-                      Add Employee
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <li className="mb-1">
-                <button
-                  className="btn btn-toggle align-items-center text-white btnclass collapsed p-1"
-                >
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaUserAlt className="nav-icon" />
+                  <p>Customer
                   <i
-                    className="fa fa-times-circle-o mr-2"
-                    aria-hidden="true"
-                  ></i>
-                  Sign Out
-                </button>
+                    onClick={handelComShow}
+                    className={`${
+                      isComShow
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
               </li>
+              <li
+                className={`${
+                  isComShow ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link ">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                    Customer Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isComShow ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaUserPlus className="nav-icon" />
+                  <p
+                    className={props.activeButton === "groups" ? "active" : ""}
+                    onClick={() => props.onButtonClick("groups")}
+                  >
+                    New Customer
+                  </p>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaUserAlt className="nav-icon" />
+                  <p>Lead
+                  <i
+                    
+                    onClick={handelShow}
+                    className={`${
+                      isShow
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShow ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                    Lead Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShow ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaUserPlus className="nav-icon" />
+                  <p
+                    className={props.activeButton === "groups" ? "active" : ""}
+                    onClick={() => props.onButtonClick("groups")}
+                  >
+                    New Lead
+                  </p>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaUserAlt className="nav-icon" />
+                  <p>Vendor
+                  <i
+                    onClick={handelShowVen}
+                    className={`${
+                      isShowVen
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowVen ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                    Vendor Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowVen ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaUserPlus className="nav-icon" />
+                  <p
+                    className={props.activeButton === "groups" ? "active" : ""}
+                    onClick={() => props.onButtonClick("groups")}
+                  >
+                    New Vendor
+                  </p>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaUserAlt className="nav-icon" />
+                  <p>Email
+
+                  <i
+                    onClick={handelShowEmail}
+                    className={`${
+                      isShowEmail
+                        ? "fa fa-angle-down right"
+                        : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowEmail ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <HiOutlineMail className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                    Send Bulk Email
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowEmail ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <HiOutlineMail className="nav-icon" />
+
+                  <p
+                    className={props.activeButton === "groups" ? "active" : ""}
+                    onClick={() => props.onButtonClick("groups")}
+                  >
+                    Sent Mail
+                  </p>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                <i className="fa fa-tasks nav-icon" aria-hidden="true"></i>
+                  <p className="w-100">Task
+                  <div className="d-flex right">
+                  <button className="btn btn-primary btn-sm btnclass1 p-0 ">
+                    open
+                  </button>
+                  <button className="btn btn-danger btn-sm btnclass1">1</button>
+                  </div>
+                  </p>
+                </Link>
+              
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaRegStickyNote className="nav-icon" />
+                  <p>Interaction
+                  <i
+                    onClick={handelShowInt}
+                    className={`${
+                      isShowInt
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowInt ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaRegStickyNote className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                   Interaction Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowInt ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaRegStickyNote className="nav-icon" />
+                  <p
+                    className={props.activeButton === "groups" ? "active" : ""}
+                    onClick={() => props.onButtonClick("groups")}
+                  >
+                    Search Interaction
+                  </p>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                <i className="fa fa-file-text nav-icon" aria-hidden="true"></i>
+                  <p className="w-100">Service Request
+                  <div className="d-flex right">
+                  <button className="btn btn-primary btn-sm btnclass1 p-0 ">
+                    open
+                  </button>
+                  <button className="btn btn-danger btn-sm btnclass1">1</button>
+                  </div>
+                  </p>
+                </Link>
+              
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaBars className="nav-icon" />
+                  <p>Stock
+                  <i
+                    onClick={handelShowStock}
+                    className={`${
+                      isShowStock
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowStock ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaBars className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                   View Stock
+                  </p>
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaIndent className="nav-icon" />
+                  <p>Sales
+                  <i
+                    onClick={handelShowSale}
+                    className={`${
+                      isShowSale
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Invoice Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <RiFile3Fill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                   Create New Invoice
+                  </p>
+                </Link>
+              </li>
+              
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Purchase Order Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <RiFile3Fill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                   Create New Purchase Order
+                  </p>
+                </Link>
+              </li>
+              
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Proforma Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <RiFile3Fill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  Create New Proforma Invoice
+                  </p>
+                </Link>
+              </li>
+              
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Quotation Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSale ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <RiFile3Fill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  Create New Quotation
+                  </p>
+                </Link>
+              </li>
+              
+
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FaIndent className="nav-icon" />
+                  <p>Purchase
+                  <i
+                    onClick={handelShowPur}
+                    className={`${
+                      isShowPur
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowPur ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  Expence Dashboard
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowPur ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <PiGridNineFill className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  New Expence
+                  </p>
+                </Link>
+              </li>
+
+
+
+
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <FiSettings className="nav-icon" />
+                  <p>Setting
+                  <i
+                    onClick={handelShowSet}
+                    className={`${
+                      isShowSet
+                      ? "fa fa-angle-down right"
+                      : "fa fa-angle-left right"
+                    }`}
+                    style={{ cursor: "pointer" }}
+                    ></i>
+                    </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSet ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  User Profile
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSet ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                   Manage User
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSet ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Invoice Setting
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSet ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                  HRM
+                  </p>
+                </Link>
+              </li>
+              <li
+                className={`${
+                  isShowSet ? "nav-item menu-open" : "nav-item d-none"
+                }`}
+              >
+                <Link to="" className="nav-link">
+                  <FaTachometerAlt className="nav-icon" />
+                  <p
+                    className={props.activeButton === "chats" ? "active" : ""}
+                    onClick={() => props.onButtonClick("chats")}
+                  >
+                 Add Employee
+                  </p>
+                </Link>
+              </li>
+
+
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                <RiCloseCircleLine className="nav-icon" />
+                
+                  <p className="w-100">Sign Out
+                  </p>
+                </Link>
+              
+              </li>
+
+
+
+
+
             </ul>
           </nav>
         </div>

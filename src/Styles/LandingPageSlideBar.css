@@ -40,19 +40,10 @@
     margin-left: 0.5em;
 }
 
-/* .slidebarclass {
-    position: fixed !important;
-    overflow: scroll;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(38, 38, 38);
-    width: 20%;
-    height: 100% !important;
-    border: none;
+
+/* .nav-sidebar :link{
+    margin: 0px !important;
 } */
-
-
-
 #showItemsBtn1 {
     background-color: #343a40;
     color: white;
