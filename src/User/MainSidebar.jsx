@@ -96,8 +96,8 @@ export default function MainSidebar(props) {
               role="menu"
               data-accordion="false"
             >
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
+              <li className="nav-item ">
+                <Link to="/" className="nav-link ">
                   <FaUserAlt className="nav-icon" />
                   <p>Customer
                   <i

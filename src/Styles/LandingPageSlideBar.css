@@ -39,7 +39,18 @@
     padding-top: 0.5px;
     margin-left: 0.5em;
 }
-
+.nav-item :hover{
+    background-color:transparent !important;
+}
+.nav-item{
+    background-color:transparent !important;
+}
+.nav-link :hover{
+    background-color:transparent !important;
+}
+.nav-link{
+    background-color:transparent !important;
+}
 
 /* .nav-sidebar :link{
     margin: 0px !important;
