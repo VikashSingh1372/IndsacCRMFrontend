@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { SiGooglechat } from "react-icons/si";
 import "../Styles/LandingPageSlideBar.css";
 import {
@@ -127,16 +127,17 @@ export default function MainSidebar(props) {
                   </p>
                 </Link>
               </li>
+
               <li
                 className={`${
                   isComShow ? "nav-item menu-open" : "nav-item d-none"
                 }`}
               >
-                <Link to="" className="nav-link">
+                <Link to="newcustomer" className="nav-link">
                   <FaUserPlus className="nav-icon" />
                   <p
-                    className={props.activeButton === "groups" ? "active" : ""}
-                    onClick={() => props.onButtonClick("groups")}
+                    // className={props.activeButton === "groups" ? "active" : ""}
+                    // onClick={() => props.onButtonClick("groups")}
                   >
                     New Customer
                   </p>
@@ -686,7 +687,7 @@ export default function MainSidebar(props) {
               
               </li>
 
-
+                <Outlet/>
 
 
 

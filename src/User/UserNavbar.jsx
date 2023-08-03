@@ -14,7 +14,7 @@ export default function UserNavbar(props) {
             ></i>
           </li>
           <li className="nav-item d-none d-sm-inline-block">
-            <Link to="/user" className="nav-link">
+            <Link to="/home" className="nav-link">
               Home
             </Link>
           </li>
