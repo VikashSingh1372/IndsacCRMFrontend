@@ -180,7 +180,7 @@ export default function MainSidebar(props) {
                   isShow ? "nav-item menu-open" : "nav-item d-none"
                 }`}
               >
-                <Link to="" className="nav-link">
+                <Link to="newlead" className="nav-link">
                   <FaUserPlus className="nav-icon" />
                   <p
                     className={props.activeButton === "groups" ? "active" : ""}
@@ -226,7 +226,7 @@ export default function MainSidebar(props) {
                   isShowVen ? "nav-item menu-open" : "nav-item d-none"
                 }`}
               >
-                <Link to="" className="nav-link">
+                <Link to="newvendor" className="nav-link">
                   <FaUserPlus className="nav-icon" />
                   <p
                     className={props.activeButton === "groups" ? "active" : ""}

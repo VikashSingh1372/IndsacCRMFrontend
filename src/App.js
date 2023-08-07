@@ -8,6 +8,8 @@ import Register from './Public/Register';
 import LandingPage from './User/LandingPage';
 import NewCustomer from './Public/NewCustomer';
 import Home from './User/Home';
+import NewLead from './Public/NewLead';
+import NewVendor from './Public/NewVendor';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path='/user'element={<LandingPage/>}>
               {/* <Route path='/home' element={<Home/>} /> */}
               <Route exact path='newcustomer' element={<NewCustomer />}></Route>
+              <Route exact path='newlead' element={<NewVendor />}></Route>
+              <Route exact path='newvendor' element={<NewLead />}></Route>
 
         </Route>
 
