@@ -14,6 +14,8 @@ import AuthVerification from "../Components/AuthVerify";
 import SetUser from "../Components/SetUser";
 import { Link, Outlet, useOutlet } from "react-router-dom";
 import Home from "./Home";
+import CreateTask from "../Public/CreateTask";
+import Interaction from "../Public/Interaction";
 
 export default function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,8 +74,13 @@ export default function LandingPage() {
             {/* <Home /> */}
             <Outlet/>
             {/* <NewCustomer/> */}
+            <CreateTask/>
+            <Interaction />
           </div>
         </div>
+
+
+        {/* https://youtube.com/shorts/PM3qb0C7TJ8?feature=share */}
 
         <ControlSidebar />
         <UserFooter />

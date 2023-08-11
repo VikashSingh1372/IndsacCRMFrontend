@@ -21,10 +21,12 @@ function App() {
       <Routes>
 
 
-        <Route path='/log-in'element={<Login/>}/>
-        <Route path='/regester'element={<Register/>}/>
+        {/* <Route path='/log-in'element={<Login/>}/> */}
+        {/* <Route path='/regester'element={<Register/>}/> */}
         {/* <Route path='/home'element={<Home/>}/> */}
-        <Route path='/user'element={<LandingPage/>}>
+        
+        {/* following route will be /user */}
+        <Route path='/'element={<LandingPage/>}>
               {/* <Route path='/home' element={<Home/>} /> */}
               <Route exact path='newcustomer' element={<NewCustomer />}></Route>
               <Route exact path='newlead' element={<NewVendor />}></Route>
