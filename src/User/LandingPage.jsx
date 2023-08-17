@@ -16,6 +16,7 @@ import { Link, Outlet, useOutlet } from "react-router-dom";
 import Home from "./Home";
 import CreateTask from "../Public/CreateTask";
 import Interaction from "../Public/Interaction";
+import ServiceRequest from "../Public/ServiceRequest";
 
 export default function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -75,7 +76,9 @@ export default function LandingPage() {
             <Outlet/>
             {/* <NewCustomer/> */}
             {/* <CreateTask/> */}
-            <Interaction />
+            {/* <Interaction /> */}
+        <ServiceRequest />
+
           </div>
         </div>
 
