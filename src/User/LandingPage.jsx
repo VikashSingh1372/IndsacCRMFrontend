@@ -75,7 +75,7 @@ export default function LandingPage() {
             <Outlet/>
             {/* <NewCustomer/> */}
             {/* <CreateTask/> */}
-            <Interaction />
+            {/* <Interaction /> */}
           </div>
         </div>
 

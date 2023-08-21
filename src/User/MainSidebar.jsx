@@ -687,7 +687,7 @@ export default function MainSidebar(props) {
               
               </li>
 
-                <Outlet/>
+                {/* <Outlet/> */}
 
 
 
