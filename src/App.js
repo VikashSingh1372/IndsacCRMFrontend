@@ -10,6 +10,7 @@ import NewCustomer from './Public/NewCustomer';
 import Home from './User/Home';
 import NewLead from './Public/NewLead';
 import NewVendor from './Public/NewVendor';
+import NewProduct from "./Public/NewProduct";
 
 
 function App() {
@@ -29,11 +30,14 @@ function App() {
         <Route path='/'element={<LandingPage/>}>
               {/* <Route path='/home' element={<Home/>} /> */}
               <Route exact path='newcustomer' element={<NewCustomer />}></Route>
-              <Route exact path='newlead' element={<NewVendor />}></Route>
-              <Route exact path='newvendor' element={<NewLead />}></Route>
+              <Route exact path='newvendor' element={<NewVendor />}></Route>
+              <Route exact path='newlead' element={<NewLead />}></Route>
 
+              
+
+              <Route exact path='newproduct' element={<NewProduct />}></Route>
+              
         </Route>
-
 
 
       </Routes>
