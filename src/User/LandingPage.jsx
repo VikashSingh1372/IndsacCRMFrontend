@@ -16,6 +16,7 @@ import { Link, Outlet, useOutlet } from "react-router-dom";
 import Home from "./Home";
 import CreateTask from "../Public/CreateTask";
 import Interaction from "../Public/Interaction";
+import ServiceRequest from "../Public/ServiceRequest";
 import EditStockDetails from "../Public/EditStockDetails";
 
 export default function LandingPage() {
@@ -76,8 +77,7 @@ export default function LandingPage() {
             <Outlet/>
             {/* <NewCustomer/> */}
             {/* <CreateTask/> */}
-            {/* <Interaction /> */}
-            {/* <EditStockDetails/> */}
+            <Interaction />
           </div>
         </div>
 

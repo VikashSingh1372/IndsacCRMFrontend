@@ -10,6 +10,7 @@ import NewCustomer from './Public/NewCustomer';
 import Home from './User/Home';
 import NewLead from './Public/NewLead';
 import NewVendor from './Public/NewVendor';
+import NewProduct from "./Public/NewProduct";
 import EditStockDetails from './Public/EditStockDetails';
 
 
@@ -33,6 +34,10 @@ function App() {
               <Route exact path='newlead' element={<NewVendor />}></Route>
               <Route exact path='newvendor' element={<NewLead />}></Route>
               <Route exact path='editstockdetails' element={<EditStockDetails />}></Route>
+
+
+
+              <Route exact path='newproduct' element={<NewProduct />}></Route>
 
         </Route>
 
