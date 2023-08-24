@@ -12,6 +12,7 @@ import NewLead from './Public/NewLead';
 import NewVendor from './Public/NewVendor';
 import NewProduct from "./Public/NewProduct";
 import EditStockDetails from './Public/EditStockDetails';
+import CreateExpense from './Public/CreateExpense';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <Route exact path='newlead' element={<NewVendor />}></Route>
               <Route exact path='newvendor' element={<NewLead />}></Route>
               <Route exact path='editstockdetails' element={<EditStockDetails />}></Route>
+              <Route exact path='createexpense' element={<CreateExpense />}></Route>
 
 
 
