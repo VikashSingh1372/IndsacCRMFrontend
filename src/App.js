@@ -12,6 +12,7 @@ import NewLead from './Public/NewLead';
 import NewVendor from './Public/NewVendor';
 import NewProduct from "./Public/NewProduct";
 import EditStockDetails from './Public/EditStockDetails';
+import NewCustomerInformation from './Public/NewCustomerInformation';
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
               <Route exact path='newcustomer' element={<NewCustomer />}></Route>
               <Route exact path='newlead' element={<NewVendor />}></Route>
               <Route exact path='newvendor' element={<NewLead />}></Route>
-              <Route exact path='editstockdetails' element={<EditStockDetails />}></Route>
+              <Route exact path='newcustomerinformation' element={<NewCustomerInformation />}></Route>
 
 
 
