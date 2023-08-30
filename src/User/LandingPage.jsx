@@ -17,6 +17,7 @@ import Home from "./Home";
 import CreateTask from "../Public/CreateTask";
 import Interaction from "../Public/Interaction";
 import ServiceRequest from "../Public/ServiceRequest";
+import CrmDashboard from "../Public/CrmDashboard";
 
 export default function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,7 +78,8 @@ export default function LandingPage() {
             {/* <NewCustomer/> */}
             {/* <CreateTask/> */}
             {/* <Interaction /> */}
-        <ServiceRequest />
+        {/* <ServiceRequest /> */}
+        <CrmDashboard />
 
           </div>
         </div>

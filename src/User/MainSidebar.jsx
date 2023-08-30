@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { SiGooglechat } from "react-icons/si";
 import "../Styles/LandingPageSlideBar.css";
-import {
-  BsFillBagFill,
-  BsFillCalendar2DateFill,
-  BsPeopleFill,
-} from "react-icons/bs";
-import { FaListUl, FaBook, FaUserGraduate } from "react-icons/fa";
-import { MdGrade, MdHeight } from "react-icons/md";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
@@ -22,7 +14,6 @@ import { FiSettings } from "react-icons/fi";
 import { RiCloseCircleLine } from "react-icons/ri";
 import  '../Styles/LandingPageSlideBar.css';
 export default function MainSidebar(props) {
-  const [searchBtn, setSearchBtn] = useState(true);
 
   const [isComShow, setIsComShow] = useState(false);
   const handelComShow = () => {
