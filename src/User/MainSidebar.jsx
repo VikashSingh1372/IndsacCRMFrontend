@@ -351,7 +351,7 @@ export default function MainSidebar(props) {
               
               </li>
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/editstockdetails" className="nav-link">
                   <FaBars className="nav-icon" />
                   <p>Stock
                   <i
@@ -678,7 +678,7 @@ export default function MainSidebar(props) {
               
               </li>
 
-                <Outlet/>
+                {/* <Outlet/> */}
 
 
 

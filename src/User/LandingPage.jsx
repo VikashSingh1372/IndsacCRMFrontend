@@ -17,6 +17,7 @@ import Home from "./Home";
 import CreateTask from "../Public/CreateTask";
 import Interaction from "../Public/Interaction";
 import ServiceRequest from "../Public/ServiceRequest";
+import EditStockDetails from "../Public/EditStockDetails";
 import CrmDashboard from "../Public/CrmDashboard";
 
 export default function LandingPage() {
