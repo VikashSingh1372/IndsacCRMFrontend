@@ -7,8 +7,49 @@ import "react-toastify/dist/ReactToastify.css";
 import "../Styles/CreateTask.css";
 import { useNavigate } from "react-router-dom";
 
+
+{
+  
+  // "readstatus": "N",
+  // "subject": "M",
+  // "duedate": "20",
+  // "priority": "100",
+  // "notes": "NA",
+  // "status": "A",
+  // "asignedto": "10",
+  // "resolutionRemark": "NA",
+  // "resolutionNotes": "NA",
+  // "resolutionUserId":"0c5e4147-9c7e-4645-93ab-3db41c74eb09",
+  // "serviceRequestType": "Complaints"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const customerSchema = Yup.object().shape({
-  date: Yup.string().required("Required"),
+  duedate: Yup.string().required("Required"),
   subject: Yup.string().required("Required"),
 });
 
@@ -35,7 +76,7 @@ function ServiceRequest() {
   return (
     <Formik
       initialValues={{
-        date: "",
+        duedate: "",
         subject: "",
         notes: "",
       }}
@@ -199,16 +240,16 @@ function ServiceRequest() {
                               className="input-field date w-100 border"
                               type="date"
                               placeholder=""
-                              name="date"
-                              value={formik.values.date}
+                              name="duedate"
+                              value={formik.values.duedate}
                               onChange={formik.handleChange}
                             />
                           </div>
                           <div className="p-0 m-0 d-flex justify-content-center">
-                            {formik.touched.date &&
-                              formik.errors.date && (
+                            {formik.touched.duedate &&
+                              formik.errors.duedate && (
                                 <span style={{ color: "red" }}>
-                                  {formik.errors.date}
+                                  {formik.errors.duedate}
                                 </span>
                               )}
                           </div>
@@ -229,8 +270,8 @@ function ServiceRequest() {
                       <div className="col-8">
                         <Field
                           as="select"
-                          name="status"
-                          id="status"
+                          name="priority"
+                          id="priority"
                           className="border w-100 pl-2"
                         >
                           <option value="Active">Normal</option>
@@ -240,6 +281,12 @@ function ServiceRequest() {
                             </option>
                           ))}
                         </Field>
+                        {formik.touched.priority &&
+                          formik.errors.priority && (
+                            <span style={{ color: "red" }}>
+                              {formik.errors.priority}
+                            </span>
+                          )}
                       </div>
                     </div>
                     <div className="col-12 d-flex m-2  mb-3">
@@ -255,8 +302,8 @@ function ServiceRequest() {
                       <div className="col-8">
                         <Field
                           as="select"
-                          name="leadsource"
-                          id="leadsource"
+                          name="status"
+                          id="status"
                           className="border w-100 pl-2"
                         >
                           <option value="Indiamart">Open</option>
@@ -266,6 +313,12 @@ function ServiceRequest() {
                             </option>
                           ))}
                         </Field>
+                        {formik.touched.status &&
+                          formik.errors.status && (
+                            <span style={{ color: "red" }}>
+                              {formik.errors.status}
+                            </span>
+                          )}
                       </div>
                     </div>
                     <div className="border col-12 ml-1 mb-3"></div>
@@ -285,8 +338,8 @@ function ServiceRequest() {
                       <div className="col-8">
                         <Field
                           as="select"
-                          name="bestwaycontact"
-                          id="bestwaycontact"
+                          name="assignedto"
+                          id="assignedto"
                           className="border w-100 pl-2"
                         >
                           <option value="Mobile">Sachin Choudhary</option>
@@ -296,6 +349,12 @@ function ServiceRequest() {
                             </option>
                           ))}
                         </Field>
+                        {formik.touched.assignedto &&
+                          formik.errors.assignedto && (
+                            <span style={{ color: "red" }}>
+                              {formik.errors.assignedto}
+                            </span>
+                          )}
                       </div>
                     </div> 
 
@@ -312,8 +371,8 @@ function ServiceRequest() {
                       <div className="col-8">
                         <Field
                           as="select"
-                          name="bestwaycontact"
-                          id="bestwaycontact"
+                          name="type"
+                          id="type"
                           className="border w-100 pl-2"
                         >
                           <option value="Mobile">Customer Cell</option>
@@ -323,6 +382,12 @@ function ServiceRequest() {
                             </option>
                           ))}
                         </Field>
+                        {formik.touched.type &&
+                          formik.errors.type && (
+                            <span style={{ color: "red" }}>
+                              {formik.errors.type}
+                            </span>
+                          )}
                       </div>
                     </div>
                     <div className=" col-12 ml-1 mb-3 d-flex">
@@ -383,15 +448,15 @@ function ServiceRequest() {
                           type="text"
                           className="w-100 border pl-2"
                           placeholder="Remark"
-                          name="remark"
+                          name="resolutionRemark"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
-                          value={formik.values.remark}
+                          value={formik.values.resolutionRemark}
                         />
-                        {formik.touched.remark &&
-                          formik.errors.remark && (
+                        {formik.touched.resolutionRemark &&
+                          formik.errors.resolutionRemark && (
                             <span style={{ color: "red" }}>
-                              {formik.errors.remark}
+                              {formik.errors.resolutionRemark}
                             </span>
                           )}
                       </div>
@@ -413,13 +478,13 @@ function ServiceRequest() {
                       <div className="col-8">
                         <textarea
                           className="border w-100 pl-2"
-                          id="resolution"
-                          name="resolution"
+                          id="resolutionNotes"
+                          name="resolutionNotes"
                           rows={3}
                           placeholder="Resolution"
                           onChange={formik.handleChange}
                           onBlur={formik.handleBlur}
-                          value={formik.values.resolution}
+                          value={formik.values.resolutionNotes}
                         />
                       </div>
                     </div>
