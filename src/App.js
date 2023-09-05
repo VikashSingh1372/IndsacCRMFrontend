@@ -12,8 +12,10 @@ import NewLead from './Public/NewLead';
 import NewVendor from './Public/NewVendor';
 import NewProduct from "./Public/NewProduct";
 import EditStockDetails from './Public/EditStockDetails';
-
-
+import CustomerDetails from "./Public/CustomerDetails";
+import NewCustomerInformation from './Public/NewCustomerInformation';
+import DataTable from './Public/Sections/DataTable';
+import Task from './Public/Sections/Task';
 function App() {
   return (
     <div className="App">
@@ -34,11 +36,20 @@ function App() {
               <Route exact path='newlead' element={<NewVendor />}></Route>
               <Route exact path='newvendor' element={<NewLead />}></Route>
               <Route exact path='editstockdetails' element={<EditStockDetails />}></Route>
-
-
-
+              <Route exact path='customerdetails' element={<CustomerDetails />}></Route>
               <Route exact path='newproduct' element={<NewProduct />}></Route>
+              <Route exact path='newcustomerinformation' element={<NewCustomerInformation />}></Route>
 
+              <Route exact path='datatable' element={<DataTable />}></Route>
+             
+
+
+             
+             
+              
+
+             
+             
         </Route>
 
 

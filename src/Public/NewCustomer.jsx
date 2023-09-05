@@ -91,7 +91,7 @@ function NewCustomer() {
       });
       if (response.data.statusCodeValue === 200) {
         // navigate("");
-        {alert("form submitted successfully");}
+        alert("form submitted successfully");
       } else {
         toast.error(response.data.body);
       }
