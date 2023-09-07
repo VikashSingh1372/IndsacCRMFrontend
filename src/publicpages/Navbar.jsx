@@ -1,17 +1,18 @@
+import React from 'react';
 import { Link } from 'react-router-dom'
 
 
 
 
 export default function Navbar() {
-
   return (
    <>
    <section className=" w3l-header-4 header-sticky">
     <header className="absolute-top">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light">
-          <h1><a className="navbar-brand" href="index.jsp"><span className="fa fa-line-chart" aria-hidden="true" />
+          <h1><a className="navbar-brand" href="index.jsp">
+            <span className="fa fa-line-chart" aria-hidden="true" />
               INDSAC-CRM
             </a></h1>
           <button className="navbar-toggler bg-gradient" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,8 +24,10 @@ export default function Navbar() {
                 <a className="nav-link" href="index.jsp">Home <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="navigate\about.jsp">About</a>
-              </li>
+                <Link to="/about" className="nav-link">
+                      About
+                </Link>
+             </li>
               <li className="nav-item">
                 <a className="nav-link" href="navigate\services.jsp">Services</a>					
               </li>
