@@ -18,7 +18,7 @@ import CreateTask from "../Public/CreateTask";
 import Interaction from "../Public/Interaction";
 import ServiceRequest from "../Public/ServiceRequest";
 import EditStockDetails from "../Public/EditStockDetails";
-import NewCustomerInformation from "../Public/NewCustomerInformation";
+
 
 export default function LandingPage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,7 +79,7 @@ export default function LandingPage() {
             {/* <NewCustomer/> */}
             {/* <CreateTask/> */}
             {/* <Interaction /> */}
-            {/* <NewCustomerInformation/> */}
+            
           </div>
         </div>
 
