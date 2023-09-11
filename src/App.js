@@ -24,9 +24,11 @@ function App() {
 
 
         {/* <Route path='/log-in'element={<Login/>}/> */}
+        {/* <Route path='/'element={<Login/>}/> */}
         {/* <Route path='/regester'element={<Register/>}/> */}
         {/* <Route path='/home'element={<Home/>}/> */}
         
+
         {/* following route will be /user */}
         <Route path='/'element={<LandingPage/>}>
               {/* <Route path='/home' element={<Home/>} /> */}
@@ -34,9 +36,6 @@ function App() {
               <Route exact path='newlead' element={<NewVendor />}></Route>
               <Route exact path='newvendor' element={<NewLead />}></Route>
               <Route exact path='editstockdetails' element={<EditStockDetails />}></Route>
-
-
-
               <Route exact path='newproduct' element={<NewProduct />}></Route>
 
         </Route>
