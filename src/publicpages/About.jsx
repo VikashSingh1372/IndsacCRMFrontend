@@ -1,13 +1,13 @@
 import React from 'react'
-import '../Style/style-starter.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import team from "../images/team.gif";
-import leadm from "../images/leadm.svg";
-import inventm from "../images/inventm.png";
-import more from "../images/more.gif";
-import processm from "../images/processm.png";
-import billingm from "../images/billingm.png"
+import team from "../Images/team.gif";
+import leadm from "../Images/leadm.svg";
+import inventm from "../Images/inventm.png";
+import more from "../Images/more.gif";
+import processm from "../Images/processm.png";
+import billingm from "../Images/billingm.png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -35,14 +35,8 @@ export default function About() {
             <title>About INDSAC-CRM | About :: indsaccrm.com</title>
 
             {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"About INDSAC-CRM",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/about.jsp"}
-    </script> */}
-
-            {/* Template CSS  */}
-            <link rel="stylesheet" href="assets/css/style-starter.css" />
-            <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet" />
-            <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet" />
-
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/about.jsp"}
+            </script> */}
 
             <Navbar />
             {/* breadcrumbs  */}
@@ -50,7 +44,7 @@ export default function About() {
                 <div class="about-inner inner2">
                     <div class="container seen-w3">
                         <ul class="breadcrumbs-custom-path">
-                            <li><a href="../index.jsp">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                            <li><Link to="/">Home <span class="fa fa-angle-right" aria-hidden="true"></span></Link></li>
                             <li class="active">About</li>
                         </ul>
                     </div>
@@ -244,8 +238,8 @@ export default function About() {
                 </div>
             </section>
 
-       <Footer/>
-           
+            <Footer />
+
         </>
     );
 }

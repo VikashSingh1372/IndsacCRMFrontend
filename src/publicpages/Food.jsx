@@ -1,0 +1,132 @@
+import React from 'react'
+import Navbar from './Navbar';
+import Footer from './Footer';
+import food1 from "../Images/food1.jpg";
+
+export default function Food() {
+  return (
+    <>
+      {/* <!-- Required meta tags --> */}
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="INDSAC-CRM solutions help to create standardized and clearly defined processes" />
+      <meta property="og:title" content="Food Industry" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://indsaccrm.com/navigate/Food.jsp" />
+      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/food1.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/food1.jpg" />
+      <meta property="og:site_name" content="indsaccrm.com" />
+      <meta property="og:description" content="INDSAC-CRM solutions help to create standardized and clearly defined processes" />
+      <meta property="og:locale" content="en_US" />
+      <title>Food Industry | Food Industry :: indsaccrm.com</title>
+
+      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Food Industry",
+    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Food.jsp"}
+    </script> */}
+
+      <Navbar />
+      {/* !-- breadcrumbs --> */}
+      <section class="w3l-inner-banner-main">
+        <div class="about-inner inner2">
+          <div class="container seen-w3">
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="/">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li class="active">Food Industry</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      {/* <!-- breadcrumbs //--> */}
+      <section class="w3l-content-with-photo-4">
+        <div class="content-with-photo4-block">
+          <div class="container">
+            <div class="cwp4-two row">
+              <div class="col-xl-6 cwp4-image ">
+                <img src={food1} alt="product" class="img-responsive " />
+              </div>
+              <div class="cwp4-text col-xl-6">
+                <h4>Food Industry?</h4>
+                <p class="para">The food Industry comprises processing, preservation, conversion, and preservation of eatable items. The raw material for the food industry is obtained from the agriculture industry. Therefore, the food industry is dependent on the agriculture industry.</p>
+                <div class="jst-two-coloums mt-4">
+                  <div class="icon-text">
+                    <h5> <a href="#" ></a>
+                    </h5>
+                    <p class="para">The food industry has grown exponentially in the past decad and  industry deliver high quality standards at the best possible price. </p>
+                  </div>
+                  <div class="icon-text mt-lx-3 pt-lx-1">
+                    <h5 ><a href="#" ></a>
+                    </h5>
+                    <p class="para">Constantly increasing market demands require standardized processes and company processes from purchasing to production and sales all run smoothly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="left-text">
+                <h3>CRM For Food Industry</h3>
+                <p class="para">INDSAC-CRM solutions help to create standardized and clearly defined processes. All information that used to be stored separately is now kept in one place, which makes searching for it that much easier. </p><br />
+                <p class="para">Your sales staff benefits from centrally stored information. Your sales team is always well informed and can access the in-house database directly from their mobile devices. This system saves your company time and money. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w3l-specification-6">
+        <div class="specification-layout">
+          <div class="container">
+            <div class="main-titles-head">
+
+              <h3 class="header-name">We Bring The Best Features For Food Industry</h3>
+
+            </div>
+            <div class="specification-effect row text-center">
+              <div class="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
+
+                <div class="back-color">
+                  <span class="fa fa-tachometer" aria-hidden="true"></span>
+                  <h4><a href="dashboard.jsp" class="title-head">Dashboard</a></h4>
+                  <p class="para">INDSAC CRM provides you with focused promotional activities which is an excellent way to introduce your product to the market. </p>
+                </div>
+              </div>
+              <div class=" grids-effect-2 col-lg-4 col-md-6 col-sm-6">
+                <div class="back-color">
+                  <span class="fa fa-tasks" aria-hidden="true"></span>
+                  <h4><a href="task.jsp" class="title-head">Managing Tasks</a></h4>
+                  <p class="para">With INDSAC CRM get campaigns based on your business goals will create a brand identity and positive brand association. </p>
+                </div>
+              </div>
+              <div class="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
+                <div class="back-color">
+                  <span class="fa fa-file-text-o" aria-hidden="true"></span>
+                  <h4><a href="Docmangement.jsp" class="title-head">Managing Documents</a></h4>
+                  <p class="para">INDSAC 360 degrees customer view strategic approach enabling businesses to offer the best customer experience across all channels.</p>
+                </div>
+              </div>
+              <div class="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
+                <div class="back-color">
+                  <span class="fa fa-mobile" aria-hidden="true"></span>
+                  <h4><a href="digitalmobile.jsp" class="title-head">Mobile Access To Data</a></h4>
+                  <p class="para">Utilize the amazing technology where ever you are to benefits your business. View data and receive valuable alerts on mobile.</p>
+                </div>
+              </div>
+              <div class=" grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
+                <div class="back-color">
+                  <span class="fa fa-database" aria-hidden="true"></span>
+                  <h4><a href="lead.jsp" class="title-head"> Lead Capture Forms</a></h4>
+                  <p class="para">Works best for you that will determine and pursue your business marketing goals. Boost visibility and increase sales while sustaining a profit.</p>
+                </div>
+              </div>
+              <div class="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
+                <div class="back-color">
+                  <span class="fa fa-line-chart" aria-hidden="true"></span>
+                  <h4><a href="salesforcasting.jsp" class="title-head">Visualize Your Sales Process</a></h4>
+                  <p class="para">Get high-level overview of your entire business that will develop a better understanding of the effective business planning process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  )
+}
