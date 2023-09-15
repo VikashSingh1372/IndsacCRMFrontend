@@ -56,7 +56,7 @@ export default function Home() {
       <div className="w3l-hero-headers-9">
         <section className="slide slide-one">
           <div className="container">
-            {/* <div class="row"> */}
+            {/* <div className="row"> */}
             <div className="row">
               <div className="banner-text col-lg-5">
                 <h5>Digital Products <br />for Business</h5>

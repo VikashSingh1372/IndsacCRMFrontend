@@ -29,33 +29,33 @@ export default function Education() {
       <title>Education CRM | Education Industry :: indsaccrm.com</title>
       <Navbar/>
       {/* <!-- breadcrumbs --> */}
-      <section class="w3l-inner-banner-main">
-        <div class="about-inner inner2">
-          <div class="container seen-w3">
-            <ul class="breadcrumbs-custom-path">
-              <li><a href="/">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
-              <li class="active">Education Industry </li>
+      <section className="w3l-inner-banner-main">
+        <div className="about-inner inner2">
+          <div className="container seen-w3">
+            <ul className="breadcrumbs-custom-path">
+              <li><a href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li className="active">Education Industry </li>
             </ul>
           </div>
         </div>
       </section>
       {/* <!-- breadcrumbs //--> */}
-      <section class="w3l-content-with-photo-4">
-        <div class="content-with-photo4-block">
-          <div class="container">
-            <div class="cwp4-two row">
-              <div class="col-xl-6 cwp4-image ">
-                <img src={indsac_education} alt="product" class="img-responsive " />
+      <section className="w3l-content-with-photo-4">
+        <div className="content-with-photo4-block">
+          <div className="container">
+            <div className="cwp4-two row">
+              <div className="col-xl-6 cwp4-image ">
+                <img src={indsac_education} alt="product" className="img-responsive " />
               </div>
-              <div class="cwp4-text col-xl-6">
+              <div className="cwp4-text col-xl-6">
                 <h4> Education CRM</h4>
-                <p class="para">Education CRM systems are software applications means to automate and manage communications with current students, employees, alumni, etc.
+                <p className="para">Education CRM systems are software applications means to automate and manage communications with current students, employees, alumni, etc.
                 </p>
-                <div class="jst-two-coloums mt-4">
-                  <div class="icon-text">
+                <div className="jst-two-coloums mt-4">
+                  <div className="icon-text">
                     <h5> <a href="#" > </a>
                     </h5>
-                    <p class="para">There are many more processes handled by the CRM, the most important ones are the applicant and inquiry management,
+                    <p className="para">There are many more processes handled by the CRM, the most important ones are the applicant and inquiry management,
                       student communication, admission notifications, enrollment management, analytics, and reporting.</p>
                   </div>
 
@@ -66,29 +66,29 @@ export default function Education() {
         </div>
       </section>
 
-      <section class="w3l-recent-work-hobbies">
-        <div class="recent-work ">
-          <div class="container">
-            <div class="left-text">
+      <section className="w3l-recent-work-hobbies">
+        <div className="recent-work ">
+          <div className="container">
+            <div className="left-text">
               <h3>Why educational industry need CRM</h3>
-              <p class="para">It is a software application used to automate and handle communication with current students,
+              <p className="para">It is a software application used to automate and handle communication with current students,
                 employees, and alumni. All this work is done on a single system. Every connection with customers is tracked by
                 the customer relationship management system in one place. With the help of customer relationship management
                 software, you can take feedback from the customers, department, and students. Each interaction with your
                 customers is tracked by the customer relationship management system.</p> <br />
             </div>
 
-            <div class="left-text">
+            <div className="left-text">
               <h3>Why choose INDSAC-CRM for educational purposes?</h3>
-              <p class="para">INDSAC-CRM is best for its services. It is a smart decision to access some businesses. In the
+              <p className="para">INDSAC-CRM is best for its services. It is a smart decision to access some businesses. In the
                 educational field ether, it is a school or college, the load of work is more. It is always a question of how
                 they manage the record of students, staff, and other employees in a perfect way. But the customer relationship
                 management system solves this problem easily.</p> <br />
             </div>
 
-            <div class="left-text">
+            <div className="left-text">
               <h3>Features of CRM For Educational Organization</h3>
-              <p class="para">1. Centralize students' information. This keeps all the data of students, staff, and admission records in one software.<br /><br />
+              <p className="para">1. Centralize students' information. This keeps all the data of students, staff, and admission records in one software.<br /><br />
                 2. Manage student inquiries and courses enquired.<br /><br />
                 3. Manage student's enrolment information<br /><br />
                 4. Maximize student's admission efficiency<br /><br />

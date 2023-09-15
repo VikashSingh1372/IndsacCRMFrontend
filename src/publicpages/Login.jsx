@@ -9,57 +9,59 @@ export default function Login() {
     return (
         <>
             <Navbar />
-            <div class="Login-form">
+            <div className="Login-form">
                 <div>
-                    <img src={login_image} alt="login" class="login-image" />
+                    <img src={login_image} alt="login" className="login-image" />
                 </div>
                 <form>
-                    <div class="contents">
-                        <span class="Login-heading">Welcome to Indsac CRM</span>
-                        <span class="Login-content">Login to explore more.</span>
+                    <div className="contents">
+                        <span className="Login-heading">Welcome to Indsac CRM</span>
+                        <span className="Login-content">Login to explore more.</span>
                     </div>
 
-                    <div class="login-form-content">
-                        <div class="form-group">
+                    <div className="login-form-content">
+                        <div className="form-group">
                             <input
                                 name="username"
                                 type="text"
                                 placeholder="Username"
-                                class="form-control"
+                                className="form-control"
                             />
-                            <div class="invalid-feedback"></div>
+                            <div className="invalid-feedback"></div>
                         </div>
 
-                        <div class="form-group">
+                        <div className="form-group">
                             <input
                                 name="password"
                                 type="password"
                                 placeholder="Password"
-                                class="form-control"
+                                className="form-control"
                             />
-                            <div class="invalid-feedback"></div>
+                            <div className="invalid-feedback"></div>
                         </div>
                     </div>
 
-                    <div class="buttons">
-                        <div class="form-group">
-                            <button type="submit" class="login-buttons">
-                                <div class="btn-content">
-                                    <span>Log</span>
-                                    <span> in</span>
+                    <div className="buttons">
+                        <div className="form-group">
+                        <Link to="/landingpage" >
+                            <button type="submit" className="login-buttons">
+                                <div className="btn-content">
+                                  <span>Log</span>
+                                    <span> in</span> 
                                 </div>
                             </button>
+                            </Link>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <Link to="/register">
-                                <button type="submit" class="user-buttons">
+                                <button type="submit" className="user-buttons">
                                     Create New User
                                 </button>
                             </Link>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="Google-buttons">
-                                <div class="google-icon">
+                        <div className="form-group">
+                            <button type="submit" className="Google-buttons">
+                                <div className="google-icon">
                                     <img src={icons8_google} alt="google-icon" />
                                 </div>
                                 Log in with Google

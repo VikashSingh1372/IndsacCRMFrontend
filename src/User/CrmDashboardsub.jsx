@@ -4,7 +4,6 @@ import { BiBarChart } from "react-icons/bi";
 import { BiSolidUserPlus } from "react-icons/bi";
 import { IoMdPie } from "react-icons/io";
 
-import "../Styles/CrmDashboardsub.css";
 
 export default function CrmDashboardsub(props) {
   let [mouse, setmouse] = useState(false);
@@ -47,11 +46,11 @@ export default function CrmDashboardsub(props) {
           <p>{props.name}</p>
         </div>
         <div className="col-4 d-flex justify-content-center align-items-center pe-2">
-          {props.icon == "BiBarChart" ? (
+          {props.icon === "BiBarChart" ? (
             <BiBarChart style={style} />
-          ) : props.icon == "HiOutlineShoppingBag" ? (
+          ) : props.icon === "HiOutlineShoppingBag" ? (
             <HiOutlineShoppingBag style={style} />
-          ) : props.icon == "BiSolidUserPlus" ? (
+          ) : props.icon === "BiSolidUserPlus" ? (
             <BiSolidUserPlus style={style} />
           ) : (
             <IoMdPie style={style} />

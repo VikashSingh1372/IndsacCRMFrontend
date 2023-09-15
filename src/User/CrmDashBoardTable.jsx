@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowDownShortWide } from "react-icons/fa6";
 import { HiMiniArrowsUpDown } from "react-icons/hi2";
-import "../Styles/CrmDashBoardTable.css";
-import data from "../utils/table1.json";
+import data from "../Utils/table1.json";
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
@@ -15,7 +14,7 @@ import OutsideClickHandler from "react-outside-click-handler";
 function CrmDashBoardTable() {
   let [value, setValue] = useState(null);
   let dataarray =
-    value == null
+    value === null
       ? data
       : data.filter((ele) => {
           return (
@@ -89,7 +88,7 @@ function CrmDashBoardTable() {
     headerRow.style.padding = "10px";
     // headerRow.style.border = '5px solid black';
 
-    const cell1 = headerRow.insertCell(0);
+    // const cell1 = headerRow.insertCell(0);
     const cell2 = headerRow.insertCell(1);
     const cell3 = headerRow.insertCell(2);
     const cell4 = headerRow.insertCell(3);
@@ -134,7 +133,7 @@ function CrmDashBoardTable() {
     for (const key in data) {
       if (data.hasOwnProperty(key)) {
         const row = tableBody.insertRow();
-        const cell1 = row.insertCell(0);
+        // const cell1 = row.insertCell(0);
         const cell2 = row.insertCell(1);
         const cell3 = row.insertCell(2);
         const cell4 = row.insertCell(3);
@@ -297,7 +296,7 @@ function CrmDashBoardTable() {
         className="openmenu "
         style={{
           backgroundColor: "white",
-          display: visibile == true ? "block" : "none",
+          display: visibile === true ? "block" : "none",
           position: "absolute",
           right: "560px",
           top:"810px",

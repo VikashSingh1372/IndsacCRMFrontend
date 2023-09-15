@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Style/style-starter.css';
+import '../Style/publicpages.css';
 
 
 

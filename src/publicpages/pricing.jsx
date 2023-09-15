@@ -19,12 +19,12 @@ export default function pricing() {
 
       <Navbar />
       {/* breadcrumbs  */}
-      <section class="w3l-inner-banner-main">
-        <div class="about-inner inner2">
-          <div class="container seen-w3">
-            <ul class="breadcrumbs-custom-path">
-              <li><a href="/">Home <span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
-              <li class="active">Pricing</li>
+      <section className="w3l-inner-banner-main">
+        <div className="about-inner inner2">
+          <div className="container seen-w3">
+            <ul className="breadcrumbs-custom-path">
+              <li><a href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li className="active">Pricing</li>
             </ul>
           </div>
         </div>
@@ -32,53 +32,53 @@ export default function pricing() {
       {/* breadcrumbs */}
       <section>
 
-        <section class="w3l-contact-info-main">
-          <div class="contact-sec">
-            <div class="container">
-              <div class="main-titles-head text-center">
-                <h3 class="header-name">
+        <section className="w3l-contact-info-main">
+          <div className="contact-sec">
+            <div className="container">
+              <div className="main-titles-head text-center">
+                <h3 className="header-name">
                   Drop us Message for any Query
                 </h3>
               </div>
 
-              <div class="contact row">
+              <div className="contact row">
                 {/*  email  */}
-                <div class="col-lg-3 col-md-6 col-sm-6 contact-grids">
-                  <div class="contact-gtids ">
-                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                <div className="col-lg-3 col-md-6 col-sm-6 contact-grids">
+                  <div className="contact-gtids ">
+                    <span className="fa fa-envelope" aria-hidden="true"></span>
                     <h4>Email Address</h4>
                     <a href="mailto:hello@example.com">
-                      <p class="contact-text-sub">support@indsaccrm.com</p>
+                      <p className="contact-text-sub">support@indsaccrm.com</p>
                     </a>
                     <a href="mailto:info@example.com">
-                      <p class="contact-text-sub">info@indsaccrm.com</p>
+                      <p className="contact-text-sub">info@indsaccrm.com</p>
                     </a>
                   </div>
                 </div>
                 {/*  phone */}
-                <div class=" col-lg-3 col-md-6 col-sm-6 contact-grids">
-                  <div class="contact-gtids ">
-                    <span class="fa fa-phone" aria-hidden="true"></span>
+                <div className=" col-lg-3 col-md-6 col-sm-6 contact-grids">
+                  <div className="contact-gtids ">
+                    <span className="fa fa-phone" aria-hidden="true"></span>
                     <h4>Phone Number</h4>
                     <a href="tel:+7-800-999-800">
-                      <p class="contact-text-sub">+91 7676289081</p>
+                      <p className="contact-text-sub">+91 7676289081</p>
                     </a>
                   </div>
                 </div>
                 {/*  address */}
-                <div class="col-lg-3 col-md-6 col-sm-6 contact-grids">
-                  <div class="contact-gtids ">
-                    <span class="fa fa-building" aria-hidden="true"></span>
+                <div className="col-lg-3 col-md-6 col-sm-6 contact-grids">
+                  <div className="contact-gtids ">
+                    <span className="fa fa-building" aria-hidden="true"></span>
                     <h4>Address Line</h4>
-                    <p class="contact-text-sub">INDSAC SOFTECH  <br /> Manyata Embassy Business Park Ground Floor, E-1, Nagavara, Bengaluru, Karnataka 560045</p>
+                    <p className="contact-text-sub">INDSAC SOFTECH  <br /> Manyata Embassy Business Park Ground Floor, E-1, Nagavara, Bengaluru, Karnataka 560045</p>
                   </div>
                 </div>
                 {/*  24 customer service  */}
-                <div class="col-lg-3 col-md-6 col-sm-6 contact-grids">
-                  <div class="contact-gtids ">
-                    <span class="fa fa-headphones" aria-hidden="true"></span>
+                <div className="col-lg-3 col-md-6 col-sm-6 contact-grids">
+                  <div className="contact-gtids ">
+                    <span className="fa fa-headphones" aria-hidden="true"></span>
                     <h4>Support</h4>
-                    <p class="contact-text-sub">24/7 Ready Our Support Team For You.</p>
+                    <p className="contact-text-sub">24/7 Ready Our Support Team For You.</p>
 
                   </div>
                 </div>
