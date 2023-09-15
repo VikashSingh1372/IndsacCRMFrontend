@@ -1,11 +1,10 @@
 
 import * as Yup from "yup";
-import { Formik, Field,  } from "formik";
+import { Formik  } from "formik";
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import {  toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"
 import Table from 'react-bootstrap/Table';
-
 import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import 'datatables.net-bs4';
@@ -14,15 +13,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'datatables.net-bs4/css/dataTables.bootstrap4.min.css';
 import copy from "clipboard-copy";
 import Papa from "papaparse";
-import { AiFillCaretDown } from "react-icons/ai";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
-import OutsideClickHandler from "react-outside-click-handler";
-
-
-
-
-
 
 const customerSchema = Yup.object().shape({
   product: Yup.string().required("Required"),
@@ -33,7 +25,7 @@ const customerSchema = Yup.object().shape({
 });
 
 
-function CustomerDetails() {
+function DataTable() {
 
   const data = [
     {
@@ -100,6 +92,7 @@ function CustomerDetails() {
   //     });
 
   const [copied, setCopied] = useState(false);
+  const [visible, setVisible] = useState(false); // New state for dropdown visibility
 
   const handleCopyClick = () => {
     const formattedData = JSON.stringify(data, null, 2);
@@ -193,42 +186,60 @@ function CustomerDetails() {
     printWindow.document.close();
     printWindow.print();
   };
-  const [visibile, setVisible] = useState(false);
-  const handleDrop = () => {
-    setVisible(!visibile);
-  };
-
-
-
-
-
 
 
   useEffect(() => {
-    $(document).ready(function () {
-      const table = $('#example1').DataTable({
-        responsive: true,
-        lengthChange: false,
-        autoWidth: false,
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      });
-
-      new $.fn.dataTable.Buttons(table, {
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      }).container().appendTo($('#example1_wrapper .col-md-6:eq(0)'));
+  // Check if DataTable with ID 'example6' exists before initializing
+  if (!$.fn.DataTable.isDataTable('#example6')) {
+    const table1 = $('#example6').DataTable({
+      responsive: true,
+      lengthChange: false,
+      autoWidth: false,
+      buttons: [
+        'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+      ]
     });
-    
-  }, []);
-  return (
 
-    <div>
+    // Create a new instance of DataTable.Buttons with the same buttons configuration
+    const buttons1 = new $.fn.dataTable.Buttons(table1, {
+      buttons: [
+        'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+      ]
+    });
+
+    // Append the buttons container to the DataTable wrapper
+    buttons1.container().appendTo($('#example6_wrapper .col-md-6:eq(0)'));
+  }
+}, []);
+
+  
   
 
+  // useEffect(() => {
+  //   $(document).ready(function () {
+  //     const table = $('#example6').DataTable({
+  //       responsive: true,
+  //       lengthChange: false,
+  //       autoWidth: false,
+  //       buttons: [
+  //         'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+  //       ]
+  //     });
 
+  //     new $.fn.dataTable.Buttons(table, {
+  //       buttons: [
+  //         'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+  //       ]
+  //     }).container().appendTo($('#example6_wrapper .col-md-6:eq(0)'));
+  //   });
+    
+  // }, []);
+
+  const handleDrop = () => {
+    setVisible(!visible); // Toggle dropdown visibility
+  };
+  return (
+    <div>
       <Formik
         initialValues={{
           priority: "Midium",
@@ -281,7 +292,7 @@ function CustomerDetails() {
                           <h3 className="title" style={{ fontSize: 20 }}>DataTable with default features</h3>
                         </div>
                         <div className="card-body">
-                          <div id="example1_wrapper" className="dataTables_wrapper dt-bootstrap4">
+                          <div id="example6_wrapper" className="dataTables_wrapper dt-bootstrap4">
                             <div className="row">
                               <div className="col-sm-12 col-md-6">
                                 <div className="dt-buttons btn-group flex-wrap">
@@ -326,42 +337,51 @@ function CustomerDetails() {
                                     Print
                                   </label>
 
-                                  <OutsideClickHandler
-                                    onOutsideClick={() => {
-                                      setVisible(false);
-                                    }}
-                                  >
-                                    <label
-                                      htmlFor=""
-                                      className="px-2 py-1 m-0 item btn btn-secondary"
-                                      onClick={handleDrop}
-                                    >
-                                      Column Visibility <AiFillCaretDown />
-                                    </label>
-                                  </OutsideClickHandler>
+                                  <div className="dropdown">
+                            <label
+                              htmlFor=""
+                              className="px-2 py-1 m-0 item btn btn-secondary dropdown-toggle"
+                              onClick={handleDrop}
+                              data-toggle="dropdown"
+                            >
+                              Column Visibility 
+                            </label>
 
+                            {/* Custom dropdown for column visibility */}
+                            <div className={`dropdown-menu ${visible ? 'show' : ''} dropdown-menu-right`}>
+                              {/* Add your dropdown content here */}
+                              <label htmlFor="" className="dropdown-item">
+                                Column 1
+                              </label>
+                              <label htmlFor="" className="dropdown-item">
+                                Column 2
+                              </label>
+                              {/* Add more dropdown items as needed */}
+                            </div>
+
+                          </div>
                                 </div>
                               </div>
 
                             </div>
                             <div className="row">
                               <div className="col-sm-12">
-                                <Table id="example1" bordered striped hover responsive>
+                                <Table id="example6" bordered striped hover responsive>
                                   <thead>
                                     <tr role="row">
-                                      <th className="sorting sorting_desc" tabIndex="0" aria-controls="example1" rowSpan="1" colSpan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="descending">
+                                      <th className="sorting sorting_desc" tabIndex="0" aria-controls="example6" rowSpan="1" colSpan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="descending">
                                         Rendering engine
                                         </th>
-                                      <th className="sorting" tabIndex="0" aria-controls="example1" rowSpan="1" colSpan="1" aria-label="Browser: activate to sort column ascending">
+                                      <th className="sorting" tabIndex="0" aria-controls="example6" rowSpan="1" colSpan="1" aria-label="Browser: activate to sort column ascending">
                                         Browser
                                         </th>
-                                      <th className="sorting" tabIndex="0" aria-controls="example1" rowSpan="1" colSpan="1" aria-label="Platform(s): activate to sort column ascending">
+                                      <th className="sorting" tabIndex="0" aria-controls="example6" rowSpan="1" colSpan="1" aria-label="Platform(s): activate to sort column ascending">
                                         Platform(s)
                                         </th>
-                                      <th className="sorting" tabIndex="0" aria-controls="example1" rowSpan="1" colSpan="1" aria-label="Engine version: activate to sort column ascending">
+                                      <th className="sorting" tabIndex="0" aria-controls="example6" rowSpan="1" colSpan="1" aria-label="Engine version: activate to sort column ascending">
                                         Engine version
                                         </th>
-                                      <th className="sorting" tabIndex="0" aria-controls="example1" rowSpan="1" colSpan="1" aria-label="CSS grade: activate to sort column ascending">
+                                      <th className="sorting" tabIndex="0" aria-controls="example6" rowSpan="1" colSpan="1" aria-label="CSS grade: activate to sort column ascending">
                                         CSS grade
                                         </th>
                                     </tr>
@@ -423,20 +443,6 @@ function CustomerDetails() {
                   </div>
                 </div>
               </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </fieldset>
           </form>
         )}
@@ -445,4 +451,4 @@ function CustomerDetails() {
   )
 }
 
-export default CustomerDetails
+export default DataTable

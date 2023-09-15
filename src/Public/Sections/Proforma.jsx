@@ -13,7 +13,7 @@ import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 
 
-function Invoice() {
+function Proforma() {
     const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
@@ -118,8 +118,8 @@ function Invoice() {
   useEffect(() => {
     $(document).ready(function () {
       // Initialize DataTable on the table with the ID 'example2' if it hasn't already been initialized
-      if (!$.fn.DataTable.isDataTable('#example7')) {
-        const table2 = $('#example7').DataTable({
+      if (!$.fn.DataTable.isDataTable('#example10')) {
+        const table2 = $('#example10').DataTable({
           responsive: true,
           lengthChange: false,
           autoWidth: false,
@@ -136,7 +136,7 @@ function Invoice() {
         });
   
         // Append the buttons container to the DataTable wrapper
-        buttons2.container().appendTo($('#example7_wrapper .col-md-6:eq(0)'));
+        buttons2.container().appendTo($('#example10_wrapper .col-md-6:eq(0)'));
       }
   
       // Repeat the above process for 'example3' and 'example4' if needed
@@ -153,7 +153,7 @@ function Invoice() {
       <div className="row">
         <div className="col-12">
         
-              <div id="example7_wrapper" className="dataTables_wrapper dt-bootstrap4" style={{
+              <div id="example10_wrapper" className="dataTables_wrapper dt-bootstrap4" style={{
                 paddingBottom:15
               }}>
                 <div className="row">
@@ -230,23 +230,23 @@ function Invoice() {
                 </div>
                 <div className="row">
                   <div className="col-sm-12">
-                    <Table id="example7" bordered striped hover responsive>
+                    <Table id="example10" bordered striped hover responsive>
                       <thead>
                         <tr role="row">
-                          <th className="sorting sorting_desc" tabIndex="0" aria-controls="example7" rowSpan="1" colSpan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="descending">
+                          <th className="sorting sorting_desc" tabIndex="0" aria-controls="example10" rowSpan="1" colSpan="1" aria-label="Rendering engine: activate to sort column ascending" aria-sort="descending">
                            Proforma No
                             </th>
-                          <th className="sorting" tabIndex="0" aria-controls="example7" rowSpan="1" colSpan="1" aria-label="Browser: activate to sort column ascending">
+                          <th className="sorting" tabIndex="0" aria-controls="example10" rowSpan="1" colSpan="1" aria-label="Browser: activate to sort column ascending">
                             Date 
                             </th>
-                          <th className="sorting" tabIndex="0" aria-controls="example7" rowSpan="1" colSpan="1" aria-label="Platform(s): activate to sort column ascending">
+                          <th className="sorting" tabIndex="0" aria-controls="example10" rowSpan="1" colSpan="1" aria-label="Platform(s): activate to sort column ascending">
                             Name 
                             </th>
-                          <th className="sorting" tabIndex="0" aria-controls="example7" rowSpan="1" colSpan="1" aria-label="Engine version: activate to sort column ascending">
+                          <th className="sorting" tabIndex="0" aria-controls="example10" rowSpan="1" colSpan="1" aria-label="Engine version: activate to sort column ascending">
                             Net Amount
                             </th>
                          
-                          <th className="sorting" tabIndex="0" aria-controls="example7" rowSpan="1" colSpan="1" aria-label="CSS grade: activate to sort column ascending">
+                          <th className="sorting" tabIndex="0" aria-controls="example10" rowSpan="1" colSpan="1" aria-label="CSS grade: activate to sort column ascending">
                             Owner
                             </th>
                         </tr>
@@ -307,4 +307,4 @@ function Invoice() {
   )
 }
 
-export default Invoice
+export default Proforma

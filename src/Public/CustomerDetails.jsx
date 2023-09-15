@@ -16,12 +16,6 @@ import 'datatables.net-bs4';
 import 'datatables.net-buttons-bs4';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'datatables.net-bs4/css/dataTables.bootstrap4.min.css';
-import copy from "clipboard-copy";
-import Papa from "papaparse";
-import { AiFillCaretDown } from "react-icons/ai";
-import * as XLSX from "xlsx";
-import jsPDF from "jspdf";
-import OutsideClickHandler from "react-outside-click-handler";
 import Task from "./Sections/Task";
 import InteractionRecord from "./Sections/InteractionRecord";
 import Service from "./Sections/Service";
@@ -30,6 +24,7 @@ import Quotation from "./Sections/Quotation";
 import Invoice from "./Sections/Invoice";
 import Status from "./Sections/Status";
 import NewCustomerInformation from './NewCustomerInformation';
+import Proforma from "./Sections/Proforma";
 
 
 
@@ -64,7 +59,7 @@ function CustomerDetails() {
   //       );
   //     });
 
-  
+
 
 
 
@@ -93,25 +88,7 @@ function CustomerDetails() {
   ];
 
 
-  useEffect(() => {
-    $(document).ready(function () {
-      const table = $('#example1').DataTable({
-        responsive: true,
-        lengthChange: false,
-        autoWidth: false,
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      });
 
-      new $.fn.dataTable.Buttons(table, {
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      }).container().appendTo($('#example1_wrapper .col-md-6:eq(0)'));
-    });
-
-  }, []);
   return (
 
     <div>
@@ -190,148 +167,148 @@ function CustomerDetails() {
                     <div className="bg-white rounded shadow-sm elevation-2 p-3">
                       <h4 className="text-center">Interaction Record</h4>
                       <hr className="border" />
-           
-                        <div className="row">
-                          <div className="col-lg-2 col-md-4 col-sm-12">
-                            <label htmlFor="direction" className="form-label">
-                              <strong>Direction</strong>
-                            </label>
-                          </div>
-                          <div className="col-lg-10 col-md-8 col-sm-12">
-                            <select
-                              className="form-select"
-                              name="direction"
-                              id="direction"
-                              aria-label="Direction"
-                              onChange={formik.handleChange}
-                              onBlur={formik.handleBlur}
-                              value={formik.values.direction}
-                            >
-                              <option value="Outbound">Outbound</option>
-                              {options3.map((option) => (
-                                <option key={option.value} value={option.value}>
-                                  {option.label}
-                                </option>
-                              ))}
-                            </select>
-                            {formik.touched.direction && formik.errors.direction && (
-                              <span className="text-danger">{formik.errors.direction}</span>
-                            )}
-                          </div>
+
+                      <div className="row">
+                        <div className="col-lg-2 col-md-4 col-sm-12">
+                          <label htmlFor="direction" className="form-label">
+                            <strong>Direction</strong>
+                          </label>
                         </div>
-                        <div className="row mt-3">
-                          <div className="col-lg-2 col-md-4 col-sm-12">
-                            <label htmlFor="status" className="form-label">
-                              <strong>Status</strong>
-                            </label>
-                          </div>
-                          <div className="col-lg-3 col-md-8 col-sm-12">
-                            <select
-                              className="form-select"
-                              name="status"
-                              id="status"
-                              aria-label="Status"
-                              onChange={formik.handleChange}
-                              onBlur={formik.handleBlur}
-                              value={formik.values.status}
-                            >
-                              <option value="Close">Close</option>
-                              {options2.map((option) => (
-                                <option key={option.value} value={option.value}>
-                                  {option.label}
-                                </option>
-                              ))}
-                            </select>
-                            {formik.touched.status && formik.errors.status && (
-                              <span className="text-danger">{formik.errors.status}</span>
-                            )}
-                          </div>
-                          <div className="col-lg-4 col-md-12 col-sm-12">
-                            <label htmlFor="priority" className="form-label">
-                              <strong>Priority</strong>
-                            </label>
-                          </div>
-                          <div className="col-lg-3 col-md-12 col-sm-12">
-                            <select
-                              className="form-select"
-                              name="priority"
-                              id="priority"
-                              aria-label="Priority"
-                              onChange={formik.handleChange}
-                              onBlur={formik.handleBlur}
-                              value={formik.values.priority}
-                            >
-                              <option value="Medium">Medium</option>
-                              {options1.map((option) => (
-                                <option key={option.value} value={option.value}>
-                                  {option.label}
-                                </option>
-                              ))}
-                            </select>
-                            {formik.touched.priority && formik.errors.priority && (
-                              <span className="text-danger">{formik.errors.priority}</span>
-                            )}
-                          </div>
+                        <div className="col-lg-10 col-md-8 col-sm-12">
+                          <select
+                            className="form-select"
+                            name="direction"
+                            id="direction"
+                            aria-label="Direction"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.direction}
+                          >
+                            <option value="Outbound">Outbound</option>
+                            {options3.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                          {formik.touched.direction && formik.errors.direction && (
+                            <span className="text-danger">{formik.errors.direction}</span>
+                          )}
                         </div>
-                        <div className="row mt-3">
-                          <div className="col-lg-2 col-md-4 col-sm-12">
-                            <label htmlFor="product" className="form-label">
-                              <strong>Product</strong>
-                            </label>
-                          </div>
-                          <div className="col-lg-10 col-md-8 col-sm-12">
-                            <select
-                              className="form-select"
-                              name="product"
-                              id="product"
-                              aria-label="Product"
-                              onChange={formik.handleChange}
-                              onBlur={formik.handleBlur}
-                              value={formik.values.product}
-                            >
-                              <option value="CRM">CRM</option>
-                              {options.map((option) => (
-                                <option key={option.value} value={option.value}>
-                                  {option.label}
-                                </option>
-                              ))}
-                            </select>
-                            {formik.touched.product && formik.errors.product && (
-                              <span className="text-danger">{formik.errors.product}</span>
-                            )}
-                          </div>
+                      </div>
+                      <div className="row mt-3">
+                        <div className="col-lg-2 col-md-4 col-sm-12">
+                          <label htmlFor="status" className="form-label">
+                            <strong>Status</strong>
+                          </label>
                         </div>
-                        <div className="row mt-3">
-                          <div className="col-lg-2 col-md-4 col-sm-12">
-                            <label htmlFor="notes" className="form-label">
-                              <strong>Notes</strong>
-                            </label>
-                          </div>
-                          <div className="col-lg-10 col-md-8 col-sm-12">
-                            <textarea
-                              className="form-control"
-                              id="notes"
-                              name="notes"
-                              rows={3}
-                              placeholder="Notes"
-                              onChange={formik.handleChange}
-                              onBlur={formik.handleBlur}
-                              value={formik.values.notes}
-                            />
-                          </div>
+                        <div className="col-lg-3 col-md-8 col-sm-12">
+                          <select
+                            className="form-select"
+                            name="status"
+                            id="status"
+                            aria-label="Status"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.status}
+                          >
+                            <option value="Close">Close</option>
+                            {options2.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                          {formik.touched.status && formik.errors.status && (
+                            <span className="text-danger">{formik.errors.status}</span>
+                          )}
                         </div>
-                        <div className="row mt-3">
-                          <div className="col-lg-12 text-end">
-                            <button
-                              type="submit"
-                              className="btn btn-info btn-sm"
-                              style={{ backgroundColor: '' }}
-                            >
-                              Submit
-                            </button>
-                          </div>
+                        <div className="col-lg-4 col-md-12 col-sm-12">
+                          <label htmlFor="priority" className="form-label">
+                            <strong>Priority</strong>
+                          </label>
                         </div>
-                 
+                        <div className="col-lg-3 col-md-12 col-sm-12">
+                          <select
+                            className="form-select"
+                            name="priority"
+                            id="priority"
+                            aria-label="Priority"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.priority}
+                          >
+                            <option value="Medium">Medium</option>
+                            {options1.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                          {formik.touched.priority && formik.errors.priority && (
+                            <span className="text-danger">{formik.errors.priority}</span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="row mt-3">
+                        <div className="col-lg-2 col-md-4 col-sm-12">
+                          <label htmlFor="product" className="form-label">
+                            <strong>Product</strong>
+                          </label>
+                        </div>
+                        <div className="col-lg-10 col-md-8 col-sm-12">
+                          <select
+                            className="form-select"
+                            name="product"
+                            id="product"
+                            aria-label="Product"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.product}
+                          >
+                            <option value="CRM">CRM</option>
+                            {options.map((option) => (
+                              <option key={option.value} value={option.value}>
+                                {option.label}
+                              </option>
+                            ))}
+                          </select>
+                          {formik.touched.product && formik.errors.product && (
+                            <span className="text-danger">{formik.errors.product}</span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="row mt-3">
+                        <div className="col-lg-2 col-md-4 col-sm-12">
+                          <label htmlFor="notes" className="form-label">
+                            <strong>Notes</strong>
+                          </label>
+                        </div>
+                        <div className="col-lg-10 col-md-8 col-sm-12">
+                          <textarea
+                            className="form-control"
+                            id="notes"
+                            name="notes"
+                            rows={3}
+                            placeholder="Notes"
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            value={formik.values.notes}
+                          />
+                        </div>
+                      </div>
+                      <div className="row mt-3">
+                        <div className="col-lg-12 text-end">
+                          <button
+                            type="submit"
+                            className="btn btn-info btn-sm"
+                            style={{ backgroundColor: '' }}
+                          >
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                   {/* Notes component */}
@@ -558,11 +535,7 @@ function CustomerDetails() {
                           </div>
                         </div>
                       </div>
-
-
                       <Service />
-
-
                     </div>
                   </div>
                 </div>
@@ -755,7 +728,7 @@ function CustomerDetails() {
                           </div>
                         </div>
                       </div>
-                      <Invoice />
+                      <Proforma />
                     </div>
                   </div>
                 </div>
@@ -902,7 +875,7 @@ function CustomerDetails() {
                   </div>
                 </div>
               </div>
-            
+
             </fieldset>
           </form>
         )}

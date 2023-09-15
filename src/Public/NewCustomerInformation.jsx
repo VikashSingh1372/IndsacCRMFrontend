@@ -2,7 +2,7 @@ import React from "react";
 import DataTable from "./Sections/DataTable";
 const NewCustomerInformation = () => {
   return (
-    <div className="container">
+    <div className="col-12 justify-content-center">
       <div className="row justify-content-center" style={{ marginTop: "3.3rem" }}>
         <div className="col-12 bg-white mt-3">
           <div className="row">

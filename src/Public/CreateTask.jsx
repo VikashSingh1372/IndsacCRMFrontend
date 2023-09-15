@@ -53,9 +53,9 @@ export default function CreateTask() {
           );
           if (response.data.statusCodeValue === 200) {
             // navigate("");
-            {
+            
               alert("form submitted successfully");
-            }
+            
           } else {
             toast.error(response.data.body);
           }

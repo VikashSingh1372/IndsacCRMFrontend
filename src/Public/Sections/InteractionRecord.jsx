@@ -9,14 +9,13 @@ import data from "../../utils/table2.json";
 import Table from 'react-bootstrap/Table';
 import { Formik, Field,  } from "formik";
 import Papa from "papaparse";
-import { AiFillCaretDown } from "react-icons/ai";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
-import OutsideClickHandler from "react-outside-click-handler";
 
 
 function InteractionRecord() {
     const [copied, setCopied] = useState(false);
+    const [visible, setVisible] = useState(false); // New state for dropdown visibility
 
   const handleCopyClick = () => {
     const formattedData = JSON.stringify(data, null, 2);
@@ -110,32 +109,40 @@ function InteractionRecord() {
     printWindow.document.close();
     printWindow.print();
   };
-  const [visibile, setVisible] = useState(false);
-  const handleDrop = () => {
-    setVisible(!visibile);
-  };
-
-
-
+ 
   useEffect(() => {
     $(document).ready(function () {
-      const table = $('#example3').DataTable({
-        responsive: true,
-        lengthChange: false,
-        autoWidth: false,
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      });
-
-      new $.fn.dataTable.Buttons(table, {
-        buttons: [
-          'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
-        ]
-      }).container().appendTo($('#example3_wrapper .col-md-6:eq(0)'));
+      // Initialize DataTable on the table with the ID 'example2' if it hasn't already been initialized
+      if (!$.fn.DataTable.isDataTable('#example3')) {
+        const table2 = $('#example3').DataTable({
+          responsive: true,
+          lengthChange: false,
+          autoWidth: false,
+          buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+          ]
+        });
+  
+        // Create a new instance of DataTable.Buttons with the same buttons configuration
+        const buttons2 = new $.fn.dataTable.Buttons(table2, {
+          buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+          ]
+        });
+  
+        // Append the buttons container to the DataTable wrapper
+        buttons2.container().appendTo($('#example3_wrapper .col-md-6:eq(0)'));
+      }
+  
+      // Repeat the above process for 'example3' and 'example4' if needed
+      // ...
     });
-    
   }, []);
+  
+
+  const handleDrop = () => {
+    setVisible(!visible); // Toggle dropdown visibility
+  };
   return (
     <div>
       <Formik>
@@ -193,19 +200,29 @@ function InteractionRecord() {
                         Print
                       </label>
 
-                      <OutsideClickHandler
-                        onOutsideClick={() => {
-                          setVisible(false);
-                        }}
-                      >
-                        <label
-                          htmlFor=""
-                          className="px-2 py-1 m-0 item btn btn-secondary"
-                          onClick={handleDrop}
-                        >
-                          Column Visibility <AiFillCaretDown />
-                        </label>
-                      </OutsideClickHandler>
+                      <div className="dropdown">
+                            <label
+                              htmlFor=""
+                              className="px-2 py-1 m-0 item btn btn-secondary dropdown-toggle"
+                              onClick={handleDrop}
+                              data-toggle="dropdown"
+                            >
+                              Column Visibility 
+                            </label>
+
+                            {/* Custom dropdown for column visibility */}
+                            <div className={`dropdown-menu ${visible ? 'show' : ''} dropdown-menu-right`}>
+                              {/* Add your dropdown content here */}
+                              <label htmlFor="" className="dropdown-item">
+                                Column 1
+                              </label>
+                              <label htmlFor="" className="dropdown-item">
+                                Column 2
+                              </label>
+                              {/* Add more dropdown items as needed */}
+                            </div>
+
+                          </div>
 
                     </div>
                   </div>
