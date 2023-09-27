@@ -1,5 +1,6 @@
 .main-sidebar{
     width:15.5rem;
+    height: 100%;
     background-color: rgba(52,58,64,255);
     position: fixed;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
@@ -8,7 +9,7 @@
 }
 .sidebar{
     overflow-y: scroll;
-    height: 460px;
+    /* height: 460px; */
 }
 .sidebar::-webkit-scrollbar {
     display:none;
@@ -54,10 +55,10 @@ Link{
     color:white
 }
 p{
-    color:white !important;
+    color:white ;
 }
 .sidebar i{
-    color: white !important;
+    color: white ;
 }
 .btnclass1{
     border: none;
