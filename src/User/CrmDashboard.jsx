@@ -93,7 +93,7 @@ function CrmDashboard() {
         </div>
       </div>
       <div className="col-12 d-flex justify-content-center">
-        <div className="col-11 mt-2 d-flex">
+        <div className="col-11 mt-2 d-flex ">
           <div className="w-100 col-7 mt-1 mb-1 elevation-2 rounded p-0">
             {/* <div className=" bg-success rounded d-flex justify-content-end">
               <button className="btn btn-sm btn-success">

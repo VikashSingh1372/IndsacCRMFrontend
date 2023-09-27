@@ -10,7 +10,7 @@ export default function UserNavbar(props) {
         <ul className="navbar-nav">
           <li className="nav-item">
             <i
-              onClick={props.toggle}
+              onClick={()=>{props.sethamburger((prev)=>!prev)}}
               className="fa fa-bars"
               style={{ cursor: "pointer" }}
             ></i>
