@@ -1,6 +1,117 @@
-.subcon2{
-  position:absolute;
+.subcon2 {
+  position: absolute;
   left: 15.4rem;
-  width:80.5%;
+  width: -webkit-fill-available;
   transition: all 500ms ease-in-out;
+  background-color: #f4f6f9;
+}
+.navbar-search-block .input-group {
+  width: 100%;
+}
+.navbar-white {
+  background-color: #fff;
+  color: #1f2d3d;
+}
+/* .navbar-light {
+  background-color: #f8f9fa;
+} */
+.main-header {
+  border-bottom: 1px solid #dee2e6;
+}
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+}
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+.navbar-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
+}
+.main-header .navbar-nav .nav-item {
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+.navbar-nav .nav-item > i {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.navbar-search-block {
+  position: absolute;
+  padding: 0 1rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: initial;
+}
+.navbar-search-block.navbar-search-open {
+  display: flex;
+}
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.navbar-search-block .input-group {
+  width: 100%;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+.form-control-navbar {
+  background-color: whitesmoke;
+  border-color: #e8e8e8;
+  color: rgba(52, 58, 64, 0.8);
+}
+.form-control {
+  color: #495057;
+}
+.form-control-navbar + .input-group-append {
+  margin-left: 0;
+}
+.form-control-navbar + .input-group-append > .btn-navbar {
+  background-color: whitesmoke;
+  border-color: #e8e8e8;
+  color: rgba(52, 58, 64, 0.8);
+}
+input-group-append {
+  display: flex;
+}
+.input-group-append .btn {
+  position: relative;
+  z-index: 2;
+}
+.greet {
+  margin: 15px 15px;
+}
+.main-footer {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  color: #869099;
+  padding: 1rem;
+}
+footer strong>a{
+  color: #007bff;
 }
