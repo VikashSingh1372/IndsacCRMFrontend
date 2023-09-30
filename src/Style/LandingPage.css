@@ -115,3 +115,9 @@ input-group-append {
 footer strong>a{
   color: #007bff;
 }
+.Action>label {
+  cursor: pointer;
+}
+.t-data {
+  cursor: pointer;
+}
