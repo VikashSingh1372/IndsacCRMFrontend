@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
@@ -12,10 +12,8 @@ import { PiGridNineFill } from "react-icons/pi";
 import { FiSettings } from "react-icons/fi";
 import { RiCloseCircleLine } from "react-icons/ri";
 import "../Style/MainSideBar.css";
-import OutsideClickHandler from "react-outside-click-handler"
 
 export default function MainSidebar({ hamburger, sethamburger }) {
-
   const [isComShow, setIsComShow] = useState(false);
   const handelComShow = () => {
     setIsComShow(!isComShow);
@@ -68,14 +66,10 @@ export default function MainSidebar({ hamburger, sethamburger }) {
 
   // const [menuopened,setmenuopened]=useState(false);
 
-
   return (
     <>
-      <div
-        className="main-sidebar"
-        style={handleclickonbutton1(hamburger)}
-      >
-        <div className=" py-2">
+      <div className="main-sidebar" style={handleclickonbutton1(hamburger)}>
+        <div className=" py-2" style={{ borderBottom: "1px solid #4b545c" }}>
           <Link to="index3.html" className="d-flex brand-link">
             <PiGridNineFill className="nav-icon fs-3" />
             <div
@@ -86,9 +80,12 @@ export default function MainSidebar({ hamburger, sethamburger }) {
             </div>
           </Link>
         </div>
-        <div style={{ border: "1px solid gray" }}></div>
+        {/* <div style={{ border: "1px solid gray" }}></div> */}
 
-        <div className="mt-3 mb-2 d-flex pb-2">
+        <div
+          className="mt-3 mb-2 d-flex pb-2"
+          style={{ borderBottom: "1px solid #4b545c" }}
+        >
           <div className="nav-icon">
             <i className="fa fa-cubes fs-5" aria-hidden="true"></i>
           </div>
@@ -102,7 +99,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
             </Link>
           </div>
         </div>
-        <div style={{ border: "1px solid gray" }}></div>
+        {/* <div style={{ border: "0.5px solid gray" }}></div> */}
 
         <nav className="mt-2 sidebar">
           <ul
@@ -149,7 +146,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newcustomer" className="nav-link-sub  ">
+              <Link to="/new-customer" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Customer</p>
               </Link>
@@ -188,7 +185,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               className={`${isShow ? "nav-item menu-open" : "nav-item d-none"}`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newlead" className="nav-link-sub  ">
+              <Link to="/new-lead" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Lead</p>
               </Link>
@@ -230,7 +227,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newvendor" className="nav-link-sub  ">
+              <Link to="/new-vendor" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Vendor</p>
               </Link>
@@ -279,7 +276,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link  ">
+              <Link to="/create-task" className="nav-link  ">
                 <i
                   className="fa fa-tasks nav-icon"
                   aria-hidden="true"
@@ -388,7 +385,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="/editstockdetails" className="nav-link-sub  ">
+              <Link to="" className="nav-link-sub  ">
                 <FaBars className="nav-icon" />
                 <p>View Stock</p>
               </Link>
@@ -638,7 +635,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               </Link>
             </li>
 
-            {/* <Outlet/> */}
+            <Outlet />
           </ul>
         </nav>
       </div>

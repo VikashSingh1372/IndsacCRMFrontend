@@ -230,7 +230,7 @@ function CrmDashBoardTable() {
 
   return (
     <>
-      <div className="d-flex justify-content-between my-3">
+      <div className="d-flex justify-content-between my-3z">
         <div className="bg-secondary mx-2 rounded Action d-flex">
           <label
             htmlFor=""
@@ -493,9 +493,7 @@ function CrmDashBoardTable() {
           {dataarray.map((ele, i) => {
             return (
               <tr className="" key={i}>
-                <td scope="row" style={{ display: Id ? "" : "none" }}>
-                  {ele.id}
-                </td>
+                <td style={{ display: Id ? "" : "none" }}>{ele.id}</td>
                 <td
                   className="border"
                   style={{ display: Subject ? "" : "none" }}

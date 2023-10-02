@@ -79,3 +79,6 @@ p{
     border: none;
 
 }
+.sidebar .nav-link p{
+    transition: margin-left 0.3s linear, opacity 0.3s ease, visibility 0.3s ease;
+}

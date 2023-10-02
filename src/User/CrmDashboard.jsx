@@ -146,24 +146,28 @@ function CrmDashboard() {
       <div className="col-12 d-flex justify-content-center">
         <div className="col-11 mt-2 d-flex">
           <CrmDashboardsub
+            index={0}
             name="New Order"
             value="150"
             icon="HiOutlineShoppingBag"
             class="bg-info"
           />
           <CrmDashboardsub
+            index={1}
             name="Bounce rate"
             value="53%"
             icon="BiBarChart"
             class="bg-success"
           />
           <CrmDashboardsub
+            index={2}
             name="User Registrations"
             value="44"
             icon="BiSolidUserPlus"
             class="bg-warning"
           />
           <CrmDashboardsub
+            index={3}
             name="Unique Visitors"
             value="65"
             icon="IoMdPie"
