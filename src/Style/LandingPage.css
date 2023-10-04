@@ -4,7 +4,7 @@
   width: -webkit-fill-available;
   transition: all 500ms ease-in-out;
   background-color: #f4f6f9;
-  height: -webkit-fill-available;
+  /* height: 100%; */
 }
 .navbar-search-block .input-group {
   width: 100%;
@@ -113,8 +113,8 @@ input-group-append {
   color: #869099;
   padding: 1rem;
   position: fixed;
-    width: inherit;
-    bottom: 0;
+  width: inherit;
+  bottom: 0;
 }
 
 footer strong>a{

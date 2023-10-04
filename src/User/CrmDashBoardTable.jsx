@@ -420,7 +420,7 @@ function CrmDashBoardTable() {
         </div>
       </div>
 
-      <table className="table table-hover table-striped">
+      <table className="table table-hover table-striped" style={{marginBottom:'5rem'}}>
         <thead>
           <tr>
             <th

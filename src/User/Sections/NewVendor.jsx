@@ -152,7 +152,7 @@ function NewVendor() {
             >
               {(formik) => (
                 <form action="" onSubmit={formik.handleSubmit}>
-                  <fieldset>
+                  <fieldset style={{marginBottom:'5rem'}}>
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11">
                         <div className="d-flex justify-content-center">

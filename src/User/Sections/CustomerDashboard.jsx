@@ -6,7 +6,10 @@ import MainSidebar from "../Mainsidebar";
 import "../../Style/LandingPage.css";
 import { Avatar } from "@mui/material";
 import DataTable from "./DataTable";
-import { CustomerDetails } from "./CustomerDetails";
+import CustomerDetails from "./CustomerDetails";
+import c2 from '../../Images/c2.jpg'
+import bb3 from '../../Images/bb3.jpg'
+
 
 export default function CustomerDashboard() {
   const [showComponent, setShowComponent] = useState(false);
@@ -64,16 +67,17 @@ export default function CustomerDashboard() {
               style={{ paddingTop: 5, position: "relative" }}
             >
               <img
-                src={null}
+                src={bb3}
                 alt=""
                 style={{
                   width: "100%",
                   height: "5rem",
                   objectFit: "cover",
+                  backgroundPosition:'center'
                 }}
               />
               <Avatar
-                src={null}
+                src={c2}
                 className="my-5"
                 style={{
                   position: "absolute",
