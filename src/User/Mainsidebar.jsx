@@ -70,10 +70,10 @@ export default function MainSidebar({ hamburger, sethamburger }) {
     <>
       <div className="main-sidebar" style={handleclickonbutton1(hamburger)}>
         <div className=" py-2" style={{ borderBottom: "1px solid #4b545c" }}>
-          <Link to="index3.html" className="d-flex brand-link">
+          <Link to="" className="d-flex brand-link">
             <PiGridNineFill className="nav-icon fs-3" />
             <div
-              className="navhead font-weight-light fs-5"
+              className="navhead font-weight-light fs-5 ff"
               style={handleclickonbutton(hamburger)}
             >
               Dashboard
@@ -95,7 +95,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               className="brand-link  fs-6"
               style={handleclickonbutton(hamburger)}
             >
-              <div className="navhead">Marketing</div>
+              <div className="navhead ff">Marketing</div>
             </Link>
           </div>
         </div>
@@ -134,9 +134,9 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="" className="nav-link-sub">
+              <Link to="/customer-dashboard" className="nav-link-sub">
                 <FaTachometerAlt className="nav-icon" />
-                <p onClick={{}}>Customer Dashboard</p>
+                <p>Customer Dashboard</p>
               </Link>
             </li>
 
@@ -240,15 +240,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Email</p>
-                  <i
-                    onClick={handelShowEmail}
-                    className={`${
-                      isShowEmail
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowEmail}
+                      className={`${
+                        isShowEmail
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -271,7 +274,6 @@ export default function MainSidebar({ hamburger, sethamburger }) {
             >
               <Link to="" className="nav-link-sub  ">
                 <HiOutlineMail className="nav-icon" />
-
                 <p>Sent Mail</p>
               </Link>
             </li>
@@ -285,13 +287,13 @@ export default function MainSidebar({ hamburger, sethamburger }) {
 
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p className="w-100">Task</p>
-                  <div className="d-flex">
-                    <button className="btn btn-primary btn-sm btnclass1 p-0 ">
-                      open
-                    </button>
-                    <button className="btn btn-danger btn-sm btnclass2">
-                      1
-                    </button>
+                  <div className="d-flex align-items-center">
+                    <span
+                      class="badge badge-info right"
+                      style={{ marginRight: "10px" }}
+                    >
+                      6
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -304,15 +306,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Interaction</p>
-                  <i
-                    onClick={handelShowInt}
-                    className={`${
-                      isShowInt
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowInt}
+                      className={`${
+                        isShowInt
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -348,13 +353,13 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 ></i>
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p className="w-100">Service Request</p>
-                  <div className="d-flex">
-                    <button className="btn btn-primary btn-sm btnclass1 p-0 ">
-                      open
-                    </button>
-                    <button className="btn btn-danger btn-sm btnclass2">
-                      1
-                    </button>
+                  <div className="d-flex align-items-center">
+                    <span
+                      class="badge badge-info right"
+                      style={{ marginRight: "10px" }}
+                    >
+                      6
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -367,15 +372,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Stock</p>
-                  <i
-                    onClick={handelShowStock}
-                    className={`${
-                      isShowStock
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowStock}
+                      className={`${
+                        isShowStock
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -399,15 +407,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Sales</p>
-                  <i
-                    onClick={handelShowSale}
-                    className={`${
-                      isShowSale
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowSale}
+                      className={`${
+                        isShowSale
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -511,15 +522,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Purchase</p>
-                  <i
-                    onClick={handelShowPur}
-                    className={`${
-                      isShowPur
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowPur}
+                      className={`${
+                        isShowPur
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>

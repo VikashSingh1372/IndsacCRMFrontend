@@ -26,6 +26,8 @@ import CreateTask from "./User/Sections/CreateTask";
 import NewCustomer from "./User/Sections/NewCustomer";
 import NewVendor from "./User/Sections/NewVendor";
 import NewLead from "./User/Sections/NewLead";
+import CustomerDashboard from "./User/Sections/CustomerDashboard";
+
 
 function App() {
   return (
@@ -58,6 +60,7 @@ function App() {
           <Route path="new-customer" element={<NewCustomer />} />
           <Route path="new-vendor" element={<NewVendor />} />
           <Route path="new-lead" element={<NewLead />} />
+          <Route path="customer-dashboard" element={<CustomerDashboard/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -5,7 +5,6 @@ import data from "../Utils/table1.json";
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
-// import XLSX from 'xlsx';
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 
