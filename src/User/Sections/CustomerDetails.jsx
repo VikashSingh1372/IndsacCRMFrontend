@@ -1,15 +1,9 @@
-
 import * as Yup from "yup";
 import { Formik } from "formik";
 import axios from "axios";
-import {toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"
-import { FaTextWidth } from 'react-icons/fa'
-
-
-
-
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaTextWidth } from "react-icons/fa";
 
 const customerSchema = Yup.object().shape({
   product: Yup.string().required("Required"),
@@ -19,10 +13,7 @@ const customerSchema = Yup.object().shape({
   direction: Yup.string().required("Required"),
 });
 
-
 function CustomerDetails() {
-
-
   // let [value, setValue] = useState(null);
   // let dataarray =
   //   value == null
@@ -39,11 +30,6 @@ function CustomerDetails() {
   //         ele.subject.includes(value)
   //       );
   //     });
-
-
-
-
-
 
   const options = [
     { value: "option1", label: "Option 1" },
@@ -68,13 +54,8 @@ function CustomerDetails() {
     { value: "option3", label: "Option 3" },
   ];
 
-
-
   return (
-
     <div>
-      
-
       <Formik
         initialValues={{
           priority: "Midium",
@@ -101,7 +82,6 @@ function CustomerDetails() {
               // navigate("");
 
               alert("form submitted successfully");
-
             } else {
               toast.error(response.data.body);
             }
@@ -114,8 +94,9 @@ function CustomerDetails() {
       >
         {(formik) => (
           <form action="" onSubmit={formik.handleSubmit}>
-            <fieldset style={{paddingLeft:'5px',width:'98%',marginBottom:'5rem'}}>
-
+            <fieldset
+              style={{ paddingLeft: "5px", width: "98%", marginBottom: "5rem" }}
+            >
               <div className=" mt-3">
                 <div className="row">
                   <div className="col-lg-6">
@@ -146,9 +127,12 @@ function CustomerDetails() {
                               </option>
                             ))}
                           </select>
-                          {formik.touched.direction && formik.errors.direction && (
-                            <span className="text-danger">{formik.errors.direction}</span>
-                          )}
+                          {formik.touched.direction &&
+                            formik.errors.direction && (
+                              <span className="text-danger">
+                                {formik.errors.direction}
+                              </span>
+                            )}
                         </div>
                       </div>
                       <div className="row mt-3">
@@ -175,7 +159,9 @@ function CustomerDetails() {
                             ))}
                           </select>
                           {formik.touched.status && formik.errors.status && (
-                            <span className="text-danger">{formik.errors.status}</span>
+                            <span className="text-danger">
+                              {formik.errors.status}
+                            </span>
                           )}
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12">
@@ -200,9 +186,12 @@ function CustomerDetails() {
                               </option>
                             ))}
                           </select>
-                          {formik.touched.priority && formik.errors.priority && (
-                            <span className="text-danger">{formik.errors.priority}</span>
-                          )}
+                          {formik.touched.priority &&
+                            formik.errors.priority && (
+                              <span className="text-danger">
+                                {formik.errors.priority}
+                              </span>
+                            )}
                         </div>
                       </div>
                       <div className="row mt-3">
@@ -229,7 +218,9 @@ function CustomerDetails() {
                             ))}
                           </select>
                           {formik.touched.product && formik.errors.product && (
-                            <span className="text-danger">{formik.errors.product}</span>
+                            <span className="text-danger">
+                              {formik.errors.product}
+                            </span>
                           )}
                         </div>
                       </div>
@@ -257,13 +248,12 @@ function CustomerDetails() {
                           <button
                             type="submit"
                             className="btn btn-info btn-sm"
-                            style={{ backgroundColor: '' }}
+                            style={{ backgroundColor: "" }}
                           >
                             Submit
                           </button>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   {/* Notes component */}
@@ -295,7 +285,10 @@ function CustomerDetails() {
                       </div>
                       <div className="row mt-3">
                         <div className="col-lg-12 text-end">
-                          <button className="btn btn-info btn-sm" style={{ backgroundColor: '' }}>
+                          <button
+                            className="btn btn-info btn-sm"
+                            style={{ backgroundColor: "" }}
+                          >
                             Edit
                           </button>
                         </div>
@@ -309,7 +302,7 @@ function CustomerDetails() {
         )}
       </Formik>
     </div>
-  )
+  );
 }
 
-export default CustomerDetails
+export default CustomerDetails;
