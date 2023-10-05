@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import { UserContext } from "../App";
 
 
 
 export default function Navbar() {
+
+  const { state, dispatch } = useContext(UserContext);
+
+  const RenderMenu = () => {
+    if (state) {
+      return (
+        <>
+          <li className="nav-item" title="Search">
+            <Link to="/logout" className="btn search-search">Logout</Link>
+          </li>
+          <li className="nav-item">
+              <Link className="nav-link" to="/contact_us">Contact Us</Link>
+          </li>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <li className="nav-item" title="Search">
+            <Link to="/login" className="btn search-search">Login</Link>
+          </li>
+          <li className="nav-item">
+              <Link className="nav-link" to="/contact_us">Contact Us</Link>
+          </li>
+        </>
+      )
+    }
+  }
+  
   return (
    <>
      <link rel="stylesheet" href="assets/css/style-starter.css" />
@@ -61,12 +90,7 @@ export default function Navbar() {
               </div>
             </ul>
             <ul className="navbar-nav search-righ">
-              <li className="nav-item" title="Search">
-                <Link to="/login" className="btn search-search">Login</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact_us">Contact Us</Link>
-              </li>
+            <RenderMenu />
             </ul>
           </div>
         </nav></div>

@@ -23,12 +23,33 @@ import Education from "./PublicPages/Education";
 import Electronics from "./PublicPages/Electronics";
 import Contact from "./PublicPages/Contact-Us";
 import LandingPage from "./User/Landingpage";
+import { createContext, useEffect, useReducer } from "react";
+import { initialState, reducer } from "./PublicPages/UseReducer";
+import Logout from './PublicPages/Logout';
 
+export const UserContext = createContext();
 
 
 function App() {
+
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  useEffect(() => {
+    // Check if there is a token in localStorage
+    const storedToken = localStorage.getItem("accessToken");
+
+    if (storedToken) {
+      // Set the user as authenticated
+      dispatch({ type: "USER", payload: true });
+    } else {
+      // Set the user as unauthenticated
+      dispatch({ type: "USER", payload: false });
+    }
+  }, [dispatch]);
+
   return (
   <>
+  <UserContext.Provider value={{state, dispatch}}>
   <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -54,10 +75,12 @@ function App() {
           <Route path="electronics" element={<Electronics/>} />
 
           <Route path="landingpage" element={<LandingPage/>} />
+          <Route path="logout" element={<Logout/>} />
 
 
         </Routes>
       </BrowserRouter>
+      </UserContext.Provider>
   </>
    
   );
