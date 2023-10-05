@@ -8,6 +8,7 @@ import ph3 from "../Images/ph3.jpg";
 import ph4 from "../Images/ph4.png";
 import ph5 from "../Images/ph5.png";
 import ph6 from "../Images/ph6.png";
+import { Link } from 'react-router-dom';
 
 
 export default function Pharmaceutical() {
@@ -101,39 +102,39 @@ export default function Pharmaceutical() {
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
 
                 <div className="back-color">
-                  <a href="CampManagement.jsp"><img className="img-responsive" src={ph1} alt=" " /></a>
-                  <h4><a href="CampManagement.jsp" className="title-head">Automated Campaign Management</a></h4>
+                  <Link to="/campaignmanagement"><img className="img-responsive" src={ph1} alt=" " /></Link>
+                  <h4><Link to="/campaignmanagement" className="title-head">Automated Campaign Management</Link></h4>
                   <p className="para">Campaigns are an efficient way to promote your business. The facilities from CRM enable the sales team to execute well-planned marketing activities to drive more sales. </p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
-                  <a href="strongconnection.jsp"><img className="img-responsive" src={ph2} alt=" " /></a><br /><br />
-                  <h4><a href="strongconnection.jsp" className="title-head">Establish A Strong Connection With Customers</a></h4>
+                  <Link to="/strongconnection"><img className="img-responsive" src={ph2} alt=" " /></Link><br /><br />
+                  <h4><Link to="/strongconnection" className="title-head">Establish A Strong Connection With Customers</Link></h4>
                   <p className="para">CRM helps you to maintain & intensify connection with your potential customers. With the reminder facility, it is simple to get a reminder when the service expires.</p><br />
                 </div>
               </div>
 
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
-                  <a href="inventory.jsp"><img className="img-responsive" src={ph5} alt=" " /></a><br />
-                  <h4><a href="inventory.jsp" className="title-head">Well-Optimized Products And Services</a></h4>
+                  <Link to="/inventorymanagement"><img className="img-responsive" src={ph5} alt=" " /></Link><br />
+                  <h4><Link to="/inventorymanagement" className="title-head">Well-Optimized Products And Services</Link></h4>
                   <p className="para">The data of various drugs can be stored securely via CRM. And, it is easy to fetch the details when needed. Also, you can identify the products and services customized for clients.</p>
                 </div>
               </div>
 
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
-                  <a href="DBIntigration.jsp"><img className="img-responsive" src={ph4} alt=" " /></a>
-                  <h4><a href="DBIntigration.jsp" className="title-head">Integrated Customer Database</a></h4>
+                  <Link to="/dbintigration"><img className="img-responsive" src={ph4} alt=" " /></Link>
+                  <h4><Link to="/dbintigration" className="title-head">Integrated Customer Database</Link></h4>
                   <p className="para">INDSAC-CRM helps your sales team to save time while communicating with the cabinets.  The system will perform the actions for you so you can effectively use the details. </p>
                 </div>
               </div>
 
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
-                  <a href="services.jsp"><img className="img-responsive" src={ph3} alt=" " /></a><br /><br />
-                  <h4><a href="services.jsp" className="title-head">Offer improved Customer Services</a></h4>
+                  <Link to="/services"><img className="img-responsive" src={ph3} alt=" " /></Link><br /><br />
+                  <h4><Link to="/services" className="title-head">Offer improved Customer Services</Link></h4>
                   <p className="para">An INDSAC-CRM allows to efficiently manage customer databases and offer them customized services. In the case of a past query, the system can fetch all data within seconds.</p>
                 </div>
               </div>
@@ -141,8 +142,8 @@ export default function Pharmaceutical() {
 
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
-                  <a href="OPManagement.jsp"><img className="img-responsive" src={ph6} alt=" " /></a><br />
-                  <h4><a href="OPManagement.jsp" className="title-head">Operational Management </a></h4>
+                  <Link to="/operationalmanagement"><img className="img-responsive" src={ph6} alt=" " /></Link><br />
+                  <h4><Link to="/operationalmanagement" className="title-head">Operational Management </Link></h4>
                   <p className="para">INDSAC-CRM offers distinct features to manage operational tasks including sales forecast, supply chain management, quality control, and many more so, that you can deliver better customer services.   </p>
                 </div>
               </div>

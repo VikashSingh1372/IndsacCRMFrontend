@@ -9,6 +9,7 @@ import account from "../Images/account.jpg";
 import happyclient from "../Images/happyclient.gif";
 import digital1 from "../Images/digital1.gif";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 
 
@@ -61,7 +62,7 @@ export default function Home() {
               <div className="banner-text col-lg-5">
                 <h5>Digital Products <br />for Business</h5>
                 <p>Increase your Sales, Grow and Retain your customer.</p>
-                <form action="login.jsp" name="register" method="post">  <a onclick="document.register.submit()" className="btn logo-button top-margin">Register</a>
+                <form action="login.jsp" name="register" method="post">  <Link to="register" onclick="document.register.submit()" className="btn logo-button top-margin">Register</Link>
                   <input type="hidden" name="type" defaultValue="register" />
                 </form>
                 <h6 className="para">Try a <strong> Free Demo </strong>with all the features.</h6>
@@ -110,9 +111,9 @@ export default function Home() {
               </div>
               <div className="column2 col-lg-6">
                 <h3 className="team-head">A better business means better client experience</h3>
-                <p className="para text">The journey involves understanding the customer requirements. INDSAC CRM offers you a well executed <a href="https://www.indsaccrm.com/navigate/comservice.jsp">customer service</a>
+                <p className="para text">The journey involves understanding the customer requirements. INDSAC CRM offers you a well executed <Link to="customer-services">customer service</Link>
                   strategy which will maximize customer lifetime value. Customer experience impacted customers enthusiasm for being brand advocates.
-                  We provide the smooth <a href="https://www.indsaccrm.com/navigate/impcomm.jsp">communication</a> process between your business and customers. Everything you do impacts your
+                  We provide the smooth <Link to="communication">communication</Link> process between your business and customers. Everything you do impacts your
                   customer's perception and their decision to keep coming back.</p>
                 <p className="para mt-2 dis-none">
                   We provide you with every touchpoint a customer ever has with your business. By having a measurable indicator
@@ -134,45 +135,45 @@ export default function Home() {
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
                   <span className="fa fa-thumbs-up" aria-hidden="true" />
-                  <h4><a href="navigate/Promotions.jsp" className="title-head">Promotions</a></h4>
-                  <p className="para">INDSAC CRM provides you with focused <a href="https://www.indsaccrm.com/navigate/Promotions.jsp">promotional</a>  activities which is an excellent way to introduce your product in the market. </p>
+                  <h4><Link to="promotions" className="title-head">Promotions</Link></h4>
+                  <p className="para">INDSAC CRM provides you with focused <Link to="promotions">promotional</Link>  activities which is an excellent way to introduce your product in the market. </p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
                   <span className="fa fa-picture-o" aria-hidden="true" />
-                  <h4><a href="navigate/crmmarketing.jsp" className="title-head">Social Media</a></h4>
+                  <h4><Link to="crmmarketing" className="title-head">Social Media</Link></h4>
                   <p className="para">With INDSAC CRM get campaigns based on your business goals will create a brand identity and positive brand association </p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
                   <span className="fa fa-pie-chart" aria-hidden="true" />
-                  <h4><a href="navigate/360view.jsp" className="title-head">360 Degree View</a></h4>
-                  <p className="para">INDSAC <a href="https://www.indsaccrm.com/navigate/360view.jsp">360 degree</a>  customer view strategic approach enabling businesses to offer the best customer experience across all channels</p>
+                  <h4><Link to="360degreeview" className="title-head">360 Degree View</Link></h4>
+                  <p className="para">INDSAC <Link to="360degreeview">360 degree</Link>  customer view strategic approach enabling businesses to offer the best customer experience across all channels</p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
                   <span className="fa fa-mobile" aria-hidden="true" />
-                  <h4><a href="navigate/digitalmobile.jsp" className="title-head">Digital &amp; Mobile</a></h4>
-                  <p className="para">Utilize the amazing <a href="https://www.indsaccrm.com/navigate/digitalmobile.jsp">technology</a>  where ever you are to benefits your business. View data and receive
+                  <h4><Link to="digitalmobile" className="title-head">Digital &amp; Mobile</Link></h4>
+                  <p className="para">Utilize the amazing <Link to="digitalmobile">technology</Link>  where ever you are to benefits your business. View data and receive
                     valuable alerts in mobile.</p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
                   <span className="fa fa-bolt" aria-hidden="true" />
-                  <h4><a href="navigate/crmmarketing.jsp" className="title-head"> Marketing</a></h4>
-                  <p className="para">Works best for you that will determine and pursue your <a href="https://www.indsaccrm.com/navigate/crmmarketing.jsp">business marketing</a> goals. Boost visibility and increase sales while sustaining a profit</p>
+                  <h4><Link to="crmmarketing" className="title-head"> Marketing</Link></h4>
+                  <p className="para">Works best for you that will determine and pursue your <Link to="crmmarketing">business marketing</Link> goals. Boost visibility and increase sales while sustaining a profit</p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
                   <span className="fa fa-cubes" aria-hidden="true" />
-                  <h4><a href="navigate/Planning.jsp" className="title-head">Planing</a></h4>
+                  <h4><Link to="planning" className="title-head">Planing</Link></h4>
                   <p className="para">Get high level overview of your entire business that will develop a better understanding
-                    of effective business <a href="https://www.indsaccrm.com/navigate/Planning.jsp">planning</a> process.</p>
+                    of effective business <Link to="planning">planning</Link> process.</p>
                 </div>
               </div>
             </div>
@@ -190,19 +191,19 @@ export default function Home() {
                   digitally.</p>
                 <div className="call-grids-w3">
                   <div className="grids-1 grids-effect-2">
-                    <h4><a href="navigate/crmanalysis.jsp" className="title-head">Data Analysis</a></h4>
+                    <h4><Link to="crm_analysis" className="title-head">Data Analysis</Link></h4>
                     <p className="para">Deeper understanding  which, in turn, builds better business relationships.</p>
                   </div>
                   <div className="grids-1 grids-effect-2">
-                    <h4><a href="navigate/Analytics.jsp" className="title-head">CRM Analytics</a></h4>
+                    <h4><Link to="analytics" className="title-head">CRM Analytics</Link></h4>
                     <p className="para"> Enable decision-makers to make better and more timely business decisions</p>
                   </div>
                   <div className="grids-1 grids-effect-2">
-                    <h4><a href="navigate/digitalmarketing.jsp" className="title-head">Digital Marketing</a></h4>
-                    <p className="para">Allows you to find new <a href="https://www.indsaccrm.com/navigate/digitalmarketing.jsp">markets</a>  and trade globally for only a small investment. </p>
+                    <h4><a href="digitalmarketing" className="title-head">Digital Marketing</a></h4>
+                    <p className="para">Allows you to find new <Link to="digitalmarketing">markets</Link>  and trade globally for only a small investment. </p>
                   </div>
                   <div className="grids-1 grids-effect-2">
-                    <h4><a href="navigate/crmmarketing.jsp" className="title-head">Social Marketing</a></h4>
+                    <h4><Link to="crmmarketing" className="title-head">Social Marketing</Link></h4>
                     <p className="para">Increase your business's recognition, traffic, and sales with little to no cost. </p>
                   </div>
                 </div>

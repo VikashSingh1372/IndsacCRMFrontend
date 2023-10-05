@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
-export default function Contact() {
+export default function Contact_Us() {
   return (
     <>
       {/* <!-- Required meta tags --> */}
@@ -30,7 +31,7 @@ export default function Contact() {
         <div className="about-inner inner2">
           <div className="container seen-w3">
             <ul className="breadcrumbs-custom-path">
-              <li><a href="../index.jsp">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li><Link href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></Link></li>
               <li className="active">Contact Us</li>
             </ul>
           </div>

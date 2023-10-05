@@ -8,6 +8,7 @@ import rc1 from "../Images/rc1.png";
 import ind from "../Images/ind.jpeg";
 import cst from "../Images/cst.jpg";
 import i5 from "../Images/i5.jpeg";
+import { Link } from 'react-router-dom';
 
 export default function Computer() {
   return (
@@ -36,7 +37,7 @@ export default function Computer() {
         <div className="about-inner inner2">
           <div className="container seen-w3">
             <ul className="breadcrumbs-custom-path">
-              <li><a href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li><Link to="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></Link></li>
               <li className="active">Computer Industry</li>
             </ul>
           </div>
@@ -79,7 +80,7 @@ export default function Computer() {
               <p className="para">CRM software keeps getting attention because it enables businesses to stay updated with the needs of customers, which are constantly evolving. Rapid progress in the IT sector has especially enhanced the need for IT companies to adopt CRM software. </p><br />
 
               <p className="para">CRM enables businesses to build relations with customers and increase acquisition, retention, loyalty, and
-                profitability. But INDSAC-CRM tools do much more. They allow IT companies to improve operational efficiency and substantially reduce the time spent in generating reports for internal purposes and clients. CRM system stores and analyzes massive amounts of customer data and provides insights into customer behavior and how a company can influence it. </p>
+                profitability. But INDSAC-CRM tools do much more. They allow IT companies to improve operational efficiency and substantially reduce the time spent in generating reports for internal purposes and clients. CRM system stores and analyzes massive amounts of customer data and provides insights into customer behavior and how a company can influence it.</p>
             </div>
             <br /> <br />
             <div className="left-text">
@@ -90,7 +91,7 @@ export default function Computer() {
                 <div className="about-grids">
 
                   <h4>Stable Growth </h4>
-                  <a href="StableGrowth.jsp"><img className="img-responsive" src={sg} alt=" " /></a>
+                  <Link to="/stablegrowth"><img className="img-responsive" src={sg} alt=" " /></Link>
                   <p className="para">INDSAC-CRM tool helps in growing the company scientifically and sustainably in the national and international landscape.</p>
                   <div className="mt-3 about-list">
 
@@ -100,7 +101,7 @@ export default function Computer() {
               <div className="col-lg-4 col-md-6 about-line-top">
                 <div className="about-grids">
                   <h4>Improved Communication </h4>
-                  <a href="impcomm.jsp"><img className="img-responsive" src={ic} alt=" " /></a><br />
+                  <Link to="/improvedcommunication"><img className="img-responsive" src={ic} alt=" " /></Link><br />
                   <p className="para"> Customers, partners, employees, and other stakeholders communicate in clearer and faster ways with each other.</p>
                   <div className="mt-3 about-list">
 
@@ -110,7 +111,7 @@ export default function Computer() {
               <div className="col-lg-4 col-md-6 about-line-top">
                 <div className="about-grids">
                   <h4>Resource management </h4>
-                  <a href="resources.jsp"><img className="img-responsive" src={rc1} alt=" " /></a>
+                  <Link to="/resources"><img className="img-responsive" src={rc1} alt=" " /></Link>
                   <p className="para">  Depending on the current and future market trends and the company's goals, CRM software can allocate resources and plan budgets accordingly.</p>
                   <div className="mt-3 about-list">
 
@@ -131,7 +132,7 @@ export default function Computer() {
                 <div className="about-grids">
 
                   <h4>Feedback and Referrals</h4>
-                  <a href="Survey.jsp"><img className="img-responsive" src={ind} alt=" " /></a>
+                  <Link to="/survey"><img className="img-responsive" src={ind} alt=" " /></Link>
                   <p className="para"> Collect customer feedback to improve the overall experience, and generate referrals to convert into customers and increase sales for your dealership. </p>
                   <div className="mt-3 about-list">
 
@@ -141,7 +142,7 @@ export default function Computer() {
               <div className="col-lg-4 col-md-6 about-line-top">
                 <div className="about-grids">
                   <h4>Customer Support Tool </h4>
-                  <a href="contact.jsp"><img className="img-responsive" src={cst} alt=" " /></a>
+                  <Link to="/contact_us"><img className="img-responsive" src={cst} alt=" " /></Link>
                   <p className="para">Get a helpdesk tool to provide top-notch support and service to your customers. Make it easier for them to know the status of their queries.</p>
                   <div className="mt-3 about-list">
 
@@ -151,7 +152,7 @@ export default function Computer() {
               <div className="col-lg-4 col-md-6 about-line-top">
                 <div className="about-grids">
                   <h4>Intelligent Dashboard</h4>
-                  <a href="dashboard.jsp"><img className="img-responsive" src={i5} alt=" " /></a>
+                  <Link to="/dashboardandreporting"><img className="img-responsive" src={i5} alt=" " /></Link>
                   <p className="para">Establish and track sales and operations goals, and monitor individual performance and contributions to business goals.</p><br /><br />
                   <div className="mt-3 about-list">
 
@@ -174,7 +175,7 @@ export default function Computer() {
                 vintage software because CRM can help to improve operational efficiency, save countless hours on working on
                 reports for the clients, and much more. INDSAC-CRM software has a superior power to hike up retention, loyalty,
                 acquisitions, etc. </p>
-              <a href="comservice.jsp" className="btn action-button mt-lg-5 mt-4 ">Read more</a>
+              <Link to="/customer-services" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
 
 
             </div>
