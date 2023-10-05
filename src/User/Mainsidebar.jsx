@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import { FaUserPlus } from "react-icons/fa";
@@ -12,10 +12,8 @@ import { PiGridNineFill } from "react-icons/pi";
 import { FiSettings } from "react-icons/fi";
 import { RiCloseCircleLine } from "react-icons/ri";
 import "../Style/MainSideBar.css";
-import OutsideClickHandler from "react-outside-click-handler"
 
 export default function MainSidebar({ hamburger, sethamburger }) {
-
   const [isComShow, setIsComShow] = useState(false);
   const handelComShow = () => {
     setIsComShow(!isComShow);
@@ -68,27 +66,26 @@ export default function MainSidebar({ hamburger, sethamburger }) {
 
   // const [menuopened,setmenuopened]=useState(false);
 
-
   return (
     <>
-      <div
-        className="main-sidebar"
-        style={handleclickonbutton1(hamburger)}
-      >
-        <div className=" py-2">
-          <Link to="index3.html" className="d-flex brand-link">
+      <div className="main-sidebar" style={handleclickonbutton1(hamburger)}>
+        <div className=" py-2" style={{ borderBottom: "1px solid #4b545c" }}>
+          <Link to="" className="d-flex brand-link">
             <PiGridNineFill className="nav-icon fs-3" />
             <div
-              className="navhead font-weight-light fs-5"
+              className="navhead font-weight-light fs-5 ff"
               style={handleclickonbutton(hamburger)}
             >
               Dashboard
             </div>
           </Link>
         </div>
-        <div style={{ border: "1px solid gray" }}></div>
+        {/* <div style={{ border: "1px solid gray" }}></div> */}
 
-        <div className="mt-3 mb-2 d-flex pb-2">
+        <div
+          className="mt-3 mb-2 d-flex pb-2"
+          style={{ borderBottom: "1px solid #4b545c" }}
+        >
           <div className="nav-icon">
             <i className="fa fa-cubes fs-5" aria-hidden="true"></i>
           </div>
@@ -98,11 +95,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               className="brand-link  fs-6"
               style={handleclickonbutton(hamburger)}
             >
-              <div className="navhead">Marketing</div>
+              <div className="navhead ff">Marketing</div>
             </Link>
           </div>
         </div>
-        <div style={{ border: "1px solid gray" }}></div>
+        {/* <div style={{ border: "0.5px solid gray" }}></div> */}
 
         <nav className="mt-2 sidebar">
           <ul
@@ -137,9 +134,9 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="" className="nav-link-sub">
+              <Link to="/customer-dashboard" className="nav-link-sub">
                 <FaTachometerAlt className="nav-icon" />
-                <p onClick={{}}>Customer Dashboard</p>
+                <p>Customer Dashboard</p>
               </Link>
             </li>
 
@@ -149,7 +146,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newcustomer" className="nav-link-sub  ">
+              <Link to="/new-customer" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Customer</p>
               </Link>
@@ -188,7 +185,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               className={`${isShow ? "nav-item menu-open" : "nav-item d-none"}`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newlead" className="nav-link-sub  ">
+              <Link to="/new-lead" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Lead</p>
               </Link>
@@ -230,7 +227,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="newvendor" className="nav-link-sub  ">
+              <Link to="/new-vendor" className="nav-link-sub  ">
                 <FaUserPlus className="nav-icon" />
                 <p>New Vendor</p>
               </Link>
@@ -243,15 +240,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Email</p>
-                  <i
-                    onClick={handelShowEmail}
-                    className={`${
-                      isShowEmail
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowEmail}
+                      className={`${
+                        isShowEmail
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -274,12 +274,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
             >
               <Link to="" className="nav-link-sub  ">
                 <HiOutlineMail className="nav-icon" />
-
                 <p>Sent Mail</p>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link  ">
+              <Link to="/create-task" className="nav-link  ">
                 <i
                   className="fa fa-tasks nav-icon"
                   aria-hidden="true"
@@ -288,13 +287,13 @@ export default function MainSidebar({ hamburger, sethamburger }) {
 
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p className="w-100">Task</p>
-                  <div className="d-flex">
-                    <button className="btn btn-primary btn-sm btnclass1 p-0 ">
-                      open
-                    </button>
-                    <button className="btn btn-danger btn-sm btnclass2">
-                      1
-                    </button>
+                  <div className="d-flex align-items-center">
+                    <span
+                      class="badge badge-info right"
+                      style={{ marginRight: "10px" }}
+                    >
+                      6
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -307,15 +306,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Interaction</p>
-                  <i
-                    onClick={handelShowInt}
-                    className={`${
-                      isShowInt
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowInt}
+                      className={`${
+                        isShowInt
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -351,13 +353,13 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 ></i>
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p className="w-100">Service Request</p>
-                  <div className="d-flex">
-                    <button className="btn btn-primary btn-sm btnclass1 p-0 ">
-                      open
-                    </button>
-                    <button className="btn btn-danger btn-sm btnclass2">
-                      1
-                    </button>
+                  <div className="d-flex align-items-center">
+                    <span
+                      class="badge badge-info right"
+                      style={{ marginRight: "10px" }}
+                    >
+                      6
+                    </span>
                   </div>
                 </div>
               </Link>
@@ -370,15 +372,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Stock</p>
-                  <i
-                    onClick={handelShowStock}
-                    className={`${
-                      isShowStock
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowStock}
+                      className={`${
+                        isShowStock
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -388,7 +393,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="/editstockdetails" className="nav-link-sub  ">
+              <Link to="" className="nav-link-sub  ">
                 <FaBars className="nav-icon" />
                 <p>View Stock</p>
               </Link>
@@ -402,15 +407,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Sales</p>
-                  <i
-                    onClick={handelShowSale}
-                    className={`${
-                      isShowSale
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowSale}
+                      className={`${
+                        isShowSale
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -514,15 +522,18 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 />
                 <div className="navhead" style={handleclickonbutton(hamburger)}>
                   <p>Purchase</p>
-                  <i
-                    onClick={handelShowPur}
-                    className={`${
-                      isShowPur
-                        ? "fa fa-angle-down right"
-                        : "fa fa-angle-left right"
-                    }`}
-                    style={{ cursor: "pointer" }}
-                  ></i>
+                  <div>
+                    <span class="badge badge-info right mr-1">6</span>
+                    <i
+                      onClick={handelShowPur}
+                      className={`${
+                        isShowPur
+                          ? "fa fa-angle-down right"
+                          : "fa fa-angle-left right"
+                      }`}
+                      style={{ cursor: "pointer" }}
+                    ></i>
+                  </div>
                 </div>
               </Link>
             </li>
@@ -638,7 +649,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               </Link>
             </li>
 
-            {/* <Outlet/> */}
+            <Outlet />
           </ul>
         </nav>
       </div>

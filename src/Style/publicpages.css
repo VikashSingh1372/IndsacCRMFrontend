@@ -7525,7 +7525,8 @@ input[type="button"].btn-block {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none; 
+}
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -9171,7 +9172,8 @@ button.bg-primary:focus {
   background-color: #5322ff !important; }
 
 .bg-secondary {
-  background-color: #49c0b6 !important; }
+  background-color: #6c757d !important;
+color: white; }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
