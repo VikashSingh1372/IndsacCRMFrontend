@@ -179,10 +179,10 @@ export default function About() {
                             <div className="team-colomn col-lg-3 col-md-6 col-sm-6">
                                 <div className="team-main-6">
                                     <div className="right-team-9">
-                                        <a href="lead.jsp"><img className="img-responsive" src={leadm} alt=" " />
-                                        </a>
+                                        <Link to="/leadmanagement"><img className="img-responsive" src={leadm} alt=" " />
+                                        </Link>
                                         <br />
-                                        <h6><a href="lead.jsp" className="title-team-32">Lead Management</a></h6>
+                                        <h6><Link to="/leadmanagement" className="title-team-32">Lead Management</Link></h6>
 
                                     </div>
                                 </div>
@@ -190,10 +190,10 @@ export default function About() {
                             <div className="team-colomn col-lg-3 col-md-6 col-sm-6">
                                 <div className="team-main-6">
                                     <div className="right-team-9">
-                                        <a href="inventory.jsp"><img className="img-responsive" src={inventm} alt=" " />
-                                        </a>
+                                        <Link to="/inventorymanagement"><img className="img-responsive" src={inventm} alt=" " />
+                                        </Link>
                                         <br />
-                                        <h6><a href="inventory.jsp" className="title-team-32">Inventory Management</a></h6>
+                                        <h6><Link to="/inventorymanagement" className="title-team-32">Inventory Management</Link></h6>
 
                                     </div>
                                 </div>
@@ -201,10 +201,10 @@ export default function About() {
                             <div className="team-colomn col-lg-3 col-md-6 col-sm-6">
                                 <div className="team-main-6">
                                     <div className="right-team-9">
-                                        <a href="process.jsp"><img className="img-responsive" src={processm} alt=" " />
-                                        </a>
+                                        <Link to="/processmanagement"><img className="img-responsive" src={processm} alt=" " />
+                                        </Link>
                                         <br />
-                                        <h6><a href="process.jsp" className="title-team-32">Process Management System</a></h6>
+                                        <h6><Link to="/processmanagement" className="title-team-32">Process Management System</Link></h6>
 
                                     </div>
                                 </div>
@@ -212,10 +212,10 @@ export default function About() {
                             <div className="team-colomn col-lg-3 col-md-6 col-sm-6">
                                 <div className="team-main-6">
                                     <div className="right-team-9">
-                                        <a href="invoicemanagement.jsp  "><img className="img-responsive" src={billingm} alt=" " />
-                                        </a>
+                                        <Link to="/invoicemanagement "><img className="img-responsive" src={billingm} alt=" " />
+                                        </Link>
                                         <br />
-                                        <h6><a href="invoicemanagement.jsp " className="title-team-32">Invoice Management System</a></h6>
+                                        <h6><Link to="/invoicemanagement" className="title-team-32">Invoice Management System</Link></h6>
 
                                     </div>
                                 </div>
@@ -226,9 +226,9 @@ export default function About() {
                             <div className="team-colomn col-lg-4 col-md-6 scol-sm-6" >
                                 <div className="team-main-6">
                                     <div className="right-team-9">
-                                        <a href="feature.jsp"><img className="img-responsive" src={more} alt=" " />
-                                        </a>
-                                        <h6><a href="feature.jsp" className="title-team-32">Explore More Features</a></h6>
+                                        <Link to="/features"><img className="img-responsive" src={more} alt=" " />
+                                        </Link>
+                                        <h6><Link to="/features" className="title-team-32">Explore More Features</Link></h6>
 
                                     </div>
                                 </div>

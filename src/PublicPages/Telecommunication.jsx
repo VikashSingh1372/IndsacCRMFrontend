@@ -11,6 +11,7 @@ import tel7 from "../Images/tel7.png";
 import tel8 from "../Images/tel8.png";
 import tel9 from "../Images/tel9.png";
 import tel10 from "../Images/tel10.png";
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,7 +42,7 @@ export default function Telecommunication() {
         <div className="about-inner inner2">
           <div className="container seen-w3">
             <ul className="breadcrumbs-custom-path">
-              <li><a href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li><Link to="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></Link></li>
               <li className="active">Telecommunication Industry</li>
             </ul>
           </div>
@@ -104,67 +105,67 @@ export default function Telecommunication() {
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
 
                 <div className="back-color">
-                  <a href="contactmanagement.jsp"><img className="img-responsive" src={tel1} alt=" "/></a>
-                  <h4><a href="contactmanagement.jsp" className="title-head">Handle customer interactions comprehensively</a></h4>
+                  <Link to="/contactmanagement"><img className="img-responsive" src={tel1} alt=" "/></Link>
+                  <h4><Link to="/contactmanagement" className="title-head">Handle customer interactions comprehensively</Link></h4>
                   <p className="para">Use one single tool to manage business processes such as task management, lead management, contact management, etc.</p><br/>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
-                  <a href="CompAnalysis.jsp"><img className="img-responsive" src={tel2} alt=" "/></a>
-                  <h4><a href="CompAnalysis.jsp" className="title-head">Analyze Your Competitors</a></h4>
+                  <Link to="/competitoranalysis"><img className="img-responsive" src={tel2} alt=" "/></Link>
+                  <h4><Link to="/competitoranalysis" className="title-head">Analyze Your Competitors</Link></h4>
                   <p className="para"> The telecom industry is extremely competitive. The competitive analysis provides you with complete information like brand equity, distribution channels, post-purchase service, etc. </p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
-                  <a href="salesforcasting.jsp"><img className="img-responsive" src={tel3} alt=" "/></a>
-                  <h4><a href="salesforcasting.jsp" className="title-head">Sales forecasting</a></h4>
+                  <Link to="/salesforecasting"><img className="img-responsive" src={tel3} alt=" "/></Link>
+                  <h4><Link to="/salesforecasting" className="title-head">Sales forecasting</Link></h4>
                   <p className="para">A CRM provides a telecom company a future overview by analyzing the historical data and performance of the company in previous years so,
                     the telecom company to prepare for future tasks.</p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
-                  <a href="Risk.jsp"><img className="img-responsive" src={tel4} alt=" "/></a>
-                  <h4><a href="Risk.jsp" className="title-head">Minimizing the Risk</a></h4>
+                  <Link to="/risk"><img className="img-responsive" src={tel4} alt=" "/></Link>
+                  <h4><Link to="/risk" className="title-head">Minimizing the Risk</Link></h4>
                   <p className="para">The managers can benefit from this feature and they can have a look at all the interactions between a customer and their employee to rectify any problem the moment it occurs.</p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
-                  <a href="Survey.jsp"><img className="img-responsive" src={tel5} alt=" "/></a>
-                  <h4><a href="Survey.jsp" className="title-head"> Instant Feedback</a></h4>
+                  <Link to="/survey"><img className="img-responsive" src={tel5} alt=" "/></Link>
+                  <h4><Link to="/survey" className="title-head"> Instant Feedback</Link></h4>
                   <p className="para">A CRM provides the sales manager a chance to track and analyze the individual performance of every sales individual. An instant feedback function improves their performance.</p><br/>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
-                  <a href="Docmangement.jsp"><img className="img-responsive" src={tel7} alt=" "/></a>
-                  <h4><a href="Docmangement.jsp" className="title-head">Streamline document handling </a></h4>
+                  <Link to="/docmangement"><img className="img-responsive" src={tel7} alt=" "/></Link>
+                  <h4><Link to="/docmangement" className="title-head">Streamline document handling </Link></h4>
                   <p className="para">By using CRM ready product produces a complete and fully consolidated set of functions to handle all types of documents. This includes controlling customer contracts, bills, collecting letters. </p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
-                  <a href="workflowmanagement.jsp"><img className="img-responsive" src={tel8} alt=" "/></a>
-                  <h4><a href="workflowmanagement.jsp" className="title-head">Workflow management</a></h4>
+                  <Link to="/workflowmanagement"><img className="img-responsive" src={tel8} alt=" "/></Link>
+                  <h4><Link to="/workflowmanagement" className="title-head">Workflow management</Link></h4>
                   <p className="para">CRM incorporates a workflow management engine to assure that promises to customers are kept, avoiding errors and customer complaints down the line.
                     It handles critical business methods including order management, sales management.</p><br/>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
-                  <a href="invoicemanagement.jsp"><img className="img-responsive" src={tel9} alt=" "/></a>
-                  <h4><a href="invoicemanagement.jsp" className="title-head"/> Billing System </h4>
+                  <Link to="/invoicemanagement"><img className="img-responsive" src={tel9} alt=" "/></Link>
+                  <h4><Link to="/invoicemanagement" className="title-head"/> Billing System </h4>
                   <p className="para">Make billing information easy to access and transform. It allows to observe customer histories, check out invoices and
                     accepts payments, makes credit advice. </p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
-                  <a href="ExpandBusi.jsp"><img className="img-responsive" src={tel10} alt=" "/></a>
-                  <h4><a href="ExpandBusi.jsp" className="title-head"> Expand Business</a></h4>
+                  <Link to="/expandbusiness"><img className="img-responsive" src={tel10} alt=" "/></Link>
+                  <h4><Link to="/expandbusiness" className="title-head"> Expand Business</Link></h4>
                   <p className="para"> It helps employees cultivate leads from seminars, conferences, trade shows, and webinars.
                     It helps generate leads from email lists and website visitors. It allows managers to forward those leads to salespeople so that follow-up can be done immediately.</p><br/><br/>
                     </div>

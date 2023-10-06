@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import analytics from "../Images/analytics.gif";
+import { Link } from 'react-router-dom';
 
 
 export default function Features() {
@@ -27,7 +28,7 @@ export default function Features() {
         <div className="about-inner inner2">
           <div className="container seen-w3">
             <ul className="breadcrumbs-custom-path">
-              <li><a href="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></a></li>
+              <li><Link to="/">Home <span className="fa fa-angle-right" aria-hidden="true"></span></Link></li>
               <li className="active">Features</li>
             </ul>
           </div>
@@ -46,7 +47,7 @@ export default function Features() {
                 <p className="para">With the right features, CRM software can also help you boost sales by keeping an eye on customers, from nurturing leads to closing the sale and maintaining customer loyalty.</p>
                 <div className="jst-two-coloums mt-4">
                   <div className="icon-text">
-                    <p className="para"> It can also save you tons of time and money through sales force automation.</p>
+                    <p className="para">It can also save you tons of time and money through sales force automation.</p>
                   </div>
                   <div className="icon-text mt-lx-3 pt-lx-1">
 
@@ -72,7 +73,7 @@ export default function Features() {
                   <h4>Core CRM Features</h4>
                   <p className="para">Core features make or break a system's inclusion in the CRM category; these features should be standard across all CRM software.</p>
                   <div className="mt-3 about-list">
-                    <a href="core features.jsp" className="btn action-button mt-lg-5 mt-4 ">Read more</a>
+                    <Link to="/corecrmfeatures" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -82,7 +83,7 @@ export default function Features() {
 
                   <p className="para">Common features show up in the majority of systems on the CRM market, but not all of them. These features often indicate more robust systems, rather than a basic plan or offer.</p>
                   <div className="mt-3 about-list">
-                    <a href="common features.jsp" className="btn action-button mt-lg-5 mt-4 ">Read more</a>
+                    <Link to="/commoncrmfeatures" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
                   </div>
                 </div>
               </div>
@@ -91,7 +92,7 @@ export default function Features() {
                   <h4> Optional CRM features</h4>
                   <p className="para"> Optional features aren't common across CRM systems and can set certain software offerings apart from others within the category.</p>
                   <div className="mt-3 about-list">
-                    <a href="optional features.jsp" className="btn action-button mt-lg-5 mt-4 ">Read more</a>
+                    <Link to="/optionalcrmfeatures" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
                   </div>
                 </div>
               </div>

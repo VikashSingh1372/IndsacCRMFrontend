@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import indsac_crm from "../Images/indsac-crm.gif";
+import { Link } from 'react-router-dom';
 
 export default function resources() {
 
@@ -118,10 +119,10 @@ export default function resources() {
 
 
                 <h3>How to choose the best CRM</h3>
-                <p className="para">Choosing the right CRM for your business isn't easy.<br/>
+                <p className="para">Choosing the right CRM for your business isn't easy.<br/>
                   The difficulty lies not only in the fact that there are many solutions and technologies to choose from. But you also have to consider deployment options, ability to customize, cost, scalability, and business value, before you decide.<br/>
-                    With so many things to consider when choosing a CRM for your business, there is another important thing that your own needs.</p>
-                  <a href="choosingrightcrm.jsp" className="btn action-button mt-lg-5 mt-4 ">Read more</a>
+                    With so many things to consider when choosing a CRM for your business, there is another important thing that your own needs.</p>
+                  <Link to="/choosingrightcrm" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
                 </div>
                 </div>
             </div>
