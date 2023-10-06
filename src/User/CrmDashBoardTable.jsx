@@ -5,7 +5,6 @@ import data from "../Utils/table1.json";
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
-// import XLSX from 'xlsx';
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 
@@ -230,7 +229,7 @@ function CrmDashBoardTable() {
 
   return (
     <>
-      <div className="d-flex justify-content-between my-3">
+      <div className="d-flex justify-content-between my-3z">
         <div className="bg-secondary mx-2 rounded Action d-flex">
           <label
             htmlFor=""
@@ -274,7 +273,7 @@ function CrmDashBoardTable() {
           >
             <label
               htmlFor=""
-              className="px-2 py-1 m-0 item"
+              className=" t-data px-2 py-1 m-0 item"
               onClick={handleDrop}
             >
               Column Visibility <AiFillCaretDown />
@@ -293,135 +292,135 @@ function CrmDashBoardTable() {
           />
         </div>
         <div
-        className="openmenu "
-        style={{
-          backgroundColor: "white",
-          display: visibile === true ? "block" : "none",
-          position: "absolute",
-          right: "560px",
-          top:"810px",
-          margin: 0,
-          paddingTop: '7px',
-          paddingBottom:'7px',
-          borderRadius: "5px",
-        }}
-      >
-        <div
-          className="menuItem"
-          onClick={handleID}
+          className="openmenu "
           style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Id ? "#007bff" : "",
-            color: Id ? "white" : "",
+            backgroundColor: "white",
+            display: visibile === true ? "block" : "none",
+            position: "absolute",
+            right: "560px",
+            top: "810px",
+            margin: 0,
+            paddingTop: "7px",
+            paddingBottom: "7px",
+            borderRadius: "5px",
           }}
         >
-          ID
-        </div>
-        <div
-          className="menuItem"
-          onClick={handleSubject}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Subject ? "#007bff" : "",
-            color: Subject ? "white" : "",
-          }}
-        >
-          Subject
-        </div>
-        <div
-          className="menuItem"
-          onClick={handleStatus}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Status ? "#007bff" : "",
-            color: Status ? "white" : "",
-          }}
-        >
-          Status
-        </div>
-        <div
-          className="menuItem"
-          onClick={handleDuedate}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Duedate ? "#007bff" : "",
-            color: Duedate ? "white" : "",
-          }}
-        >
-          Due Date
-        </div>
-        <div
-          className="menuItem"
-          onClick={handlePriority}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Priority ? "#007bff" : "",
-            color: Priority ? "white" : "",
-          }}
-        >
-          Priority
-        </div>
-        <div
-          className="menuItem"
-          onClick={handleAssigned}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Assigned ? "#007bff" : "",
-            color: Assigned ? "white" : "",
-          }}
-        >
-          Assigned
-        </div>
-        <div
-          className="menuItem"
-          onClick={handleCreated}
-          style={{
-            width: "200px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
-            marginLeft: "5px",
-            marginRight: "5px",
-            borderRadius: "1px",
-            backgroundColor: Created ? "#007bff" : "",
-            color: Created ? "white" : "",
-          }}
-        >
-          Created
+          <div
+            className="menuItem"
+            onClick={handleID}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Id ? "#007bff" : "",
+              color: Id ? "white" : "",
+            }}
+          >
+            ID
+          </div>
+          <div
+            className="menuItem"
+            onClick={handleSubject}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Subject ? "#007bff" : "",
+              color: Subject ? "white" : "",
+            }}
+          >
+            Subject
+          </div>
+          <div
+            className="menuItem"
+            onClick={handleStatus}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Status ? "#007bff" : "",
+              color: Status ? "white" : "",
+            }}
+          >
+            Status
+          </div>
+          <div
+            className="menuItem"
+            onClick={handleDuedate}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Duedate ? "#007bff" : "",
+              color: Duedate ? "white" : "",
+            }}
+          >
+            Due Date
+          </div>
+          <div
+            className="menuItem"
+            onClick={handlePriority}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Priority ? "#007bff" : "",
+              color: Priority ? "white" : "",
+            }}
+          >
+            Priority
+          </div>
+          <div
+            className="menuItem"
+            onClick={handleAssigned}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Assigned ? "#007bff" : "",
+              color: Assigned ? "white" : "",
+            }}
+          >
+            Assigned
+          </div>
+          <div
+            className="menuItem"
+            onClick={handleCreated}
+            style={{
+              width: "200px",
+              paddingLeft: "10px",
+              paddingRight: "10px",
+              marginLeft: "5px",
+              marginRight: "5px",
+              borderRadius: "1px",
+              backgroundColor: Created ? "#007bff" : "",
+              color: Created ? "white" : "",
+            }}
+          >
+            Created
+          </div>
         </div>
       </div>
-      </div>
-      
-      <table className="table table-hover table-striped">
+
+      <table className="table table-hover table-striped" style={{marginBottom:'5rem'}}>
         <thead>
           <tr>
             <th
@@ -493,9 +492,7 @@ function CrmDashBoardTable() {
           {dataarray.map((ele, i) => {
             return (
               <tr className="" key={i}>
-                <td scope="row" style={{ display: Id ? "" : "none" }}>
-                  {ele.id}
-                </td>
+                <td style={{ display: Id ? "" : "none" }}>{ele.id}</td>
                 <td
                   className="border"
                   style={{ display: Subject ? "" : "none" }}

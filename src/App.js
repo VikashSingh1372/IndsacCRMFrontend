@@ -1,11 +1,10 @@
-import './App.css';
 import "./Style/publicpages.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from './PublicPages/Home';
-import About from './PublicPages/About';
+import Home from "./PublicPages/Home";
+import About from "./PublicPages/About";
 import CrmDashboard from "./User/CrmDashboard";
 import Login from "./PublicPages/Login";
-import Register from './PublicPages/Register';
+import Register from "./PublicPages/Register";
 import Services from "./PublicPages/Services";
 import Resources from "./PublicPages/Resources";
 import Features from "./PublicPages/Features";
@@ -69,12 +68,17 @@ import CatalogSync from './PublicPages/CatalogSync';
 import SalesGoals from './PublicPages/SalesGoals';
 import PredictiveAnalystics from './PublicPages/PredictiveAnalystics';
     
+import CreateTask from "./User/Sections/CreateTask";
+import NewCustomer from "./User/Sections/NewCustomer";
+import NewVendor from "./User/Sections/NewVendor";
+import NewLead from "./User/Sections/NewLead";
+import CustomerDashboard from "./User/Sections/CustomerDashboard";
 
 
 function App() {
   return (
-  <>
-  <BrowserRouter>
+    <>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="crmdashboard" element={<CrmDashboard/>} />
@@ -149,8 +153,7 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-  </>
-   
+    </>
   );
 }
 

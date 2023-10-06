@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import icon from "../Images/icon.png";
 import ss4 from "../Images/ss4.PNG";
 import { Bar, Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js/auto";
@@ -52,43 +51,57 @@ function CrmDashboard() {
     }),
     datasets: [
       {
-        label:"User Gained",
+        label: "User Gained",
         data: userData.map((ele) => {
           return ele.UserGain;
         }),
-        backgroundColor: ["rgba(22, 144, 0, 0.50)", "rgba(7, 181, 249, 0.50)", "rgba(253, 2, 2, 0.50)", "rgba(104, 104, 104, 0.50)", "rgba(255, 0, 132, 0.50)", "rgba(255, 234, 0, 0.5)"],
-        borderColor: ["rgba(22, 144, 0, 0.80)", "rgba(7, 181, 249, 0.80)", "rgba(253, 2, 2, 0.80)", "rgba(104, 104, 104, 0.80)", "rgba(255, 0, 132, 0.80)", "rgba(255, 234, 0, 0.8)"],
+        backgroundColor: [
+          "rgba(22, 144, 0, 0.50)",
+          "rgba(7, 181, 249, 0.50)",
+          "rgba(253, 2, 2, 0.50)",
+          "rgba(104, 104, 104, 0.50)",
+          "rgba(255, 0, 132, 0.50)",
+          "rgba(255, 234, 0, 0.5)",
+        ],
+        borderColor: [
+          "rgba(22, 144, 0, 0.80)",
+          "rgba(7, 181, 249, 0.80)",
+          "rgba(253, 2, 2, 0.80)",
+          "rgba(104, 104, 104, 0.80)",
+          "rgba(255, 0, 132, 0.80)",
+          "rgba(255, 234, 0, 0.8)",
+        ],
         borderWidth: 2,
-        borderRadius:5,
+        borderRadius: 5,
         hoverBackgroundColor: "rgba(75,192,192,0.7)",
         hoverBorderColor: "rgba(75,192,192,1)",
       },
     ],
   });
-
+  const greetings = ["Good Morning 🌄", "Good Afternoon 🌇", "Good Evening 🌃"];
+  const currentHour = new Date().getHours();
+  let index =
+    currentHour >= 12 && currentHour < 17 ? 1 : currentHour >= 17 ? 2 : 0;
   return (
     <>
       <div className="col-12">
-        Sales
+        {/* Sales
         <br />
-        <strong>DashBoard</strong>
+        <strong>DashBoard</strong> */}
       </div>
-      <div className="col-12 d-flex justify-content-center">
-        <div className="col-11 bg-white rounded mt-2  d-flex">
-          <div className="col-4 mt-2 mb-2">
-            <strong>
-              <img
-                className="me-3"
-                src={icon}
-                alt="not load"
-                style={{ width: 22 }}
-              />
-              Good Morning
-            </strong>
-            <div className="pl-4 ml-3">Welcome to your Sales Dashboard</div>
+      <div className="greet">
+        <div className=" bg-white rounded mt-2 d-flex align-items-center">
+          <div className="col-4 mt-2 ml-2 mb-2">
+            <strong>{greetings[index]} User Name !</strong>
+            <div className=" mt-2">Welcome to the CRM Dashboard.</div>
           </div>
-          <div className="col-8 d-flex justify-content-end">
-            <img src={ss4} alt="not load" style={{width:200}}/>
+          <div className="col-8 d-flex justify-content-end pr-4">
+            <img
+              loading="lazy"
+              src={ss4}
+              alt="not load"
+              style={{ width: 200 }}
+            />
           </div>
         </div>
       </div>
@@ -133,34 +146,36 @@ function CrmDashboard() {
       <div className="col-12 d-flex justify-content-center">
         <div className="col-11 mt-2 d-flex">
           <CrmDashboardsub
+            index={0}
             name="New Order"
             value="150"
             icon="HiOutlineShoppingBag"
             class="bg-info"
           />
           <CrmDashboardsub
+            index={1}
             name="Bounce rate"
             value="53%"
             icon="BiBarChart"
             class="bg-success"
           />
           <CrmDashboardsub
+            index={2}
             name="User Registrations"
             value="44"
             icon="BiSolidUserPlus"
             class="bg-warning"
           />
           <CrmDashboardsub
+            index={3}
             name="Unique Visitors"
             value="65"
             icon="IoMdPie"
             class="bg-danger"
           />
-
-
         </div>
       </div>
-          <CrmDashBoardTable />
+      <CrmDashBoardTable />
     </>
   );
 }

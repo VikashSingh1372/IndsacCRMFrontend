@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 export default function UserNavbar(props) {
   return (
     <>
@@ -10,13 +8,15 @@ export default function UserNavbar(props) {
         <ul className="navbar-nav">
           <li className="nav-item">
             <i
-              onClick={()=>{props.sethamburger((prev)=>!prev)}}
+              onClick={() => {
+                props.sethamburger((prev) => !prev);
+              }}
               className="fa fa-bars"
               style={{ cursor: "pointer" }}
             ></i>
           </li>
           <li className="nav-item d-none d-sm-inline-block">
-            <Link to="/home" className="nav-link">
+            <Link to="/landingpage" className="nav-link">
               Home
             </Link>
           </li>
@@ -29,13 +29,13 @@ export default function UserNavbar(props) {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <i
-              onClick={props.handelShow3}
+              onClick={props.handelShow}
               style={{ cursor: "pointer" }}
               className="fa fa-search"
             ></i>
             <div
               className={`${
-                props.isShow3
+                props.isSearchShow
                   ? "navbar-search-block navbar-search-open"
                   : "navbar-search-block"
               }`}
@@ -57,10 +57,7 @@ export default function UserNavbar(props) {
                       type="button"
                       data-widget="navbar-search"
                     >
-                      <i
-                        onClick={props.handelShow3}
-                        className="fa fa-times"
-                      ></i>
+                      <i onClick={props.handelShow} className="fa fa-times"></i>
                     </button>
                   </div>
                 </div>
@@ -183,7 +180,7 @@ export default function UserNavbar(props) {
           </li>
           {props.fullScreen ? (
             <li
-              onClick={props.handleScreen}
+              onClick={props.handleScreenEnter}
               className="nav-item"
               style={{ cursor: "pointer" }}
             >
@@ -191,7 +188,7 @@ export default function UserNavbar(props) {
             </li>
           ) : (
             <li
-              onClick={props.handleScreen2}
+              onClick={props.handleScreenExit}
               className="nav-item"
               style={{ cursor: "pointer" }}
             >
@@ -201,7 +198,7 @@ export default function UserNavbar(props) {
 
           <li className="nav-item">
             <i
-              onClick={props.handelShow2}
+              onClick={props.handelRightMenuShow}
               style={{ cursor: "pointer" }}
               className="fa fa-th-large"
             ></i>

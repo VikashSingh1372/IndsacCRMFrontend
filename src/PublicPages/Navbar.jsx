@@ -44,7 +44,7 @@ export default function Navbar() {
                 <Link className="nav-link" to="/pricing">Pricing</Link>
               </li>
               <div className="dropdown">
-                <a className="dropbtn  nav-link">Industry<span className="fa fa-chevron-down" aria-hidden="true" /></a>
+                <a className="dropbtn  nav-link align-items-center">Industry<span className="fa fa-chevron-down pl-1" aria-hidden="true" /></a>
                 <div className="dropdown-content">
                   <Link to="/Aerospace">Aerospace </Link>
                   <Link to="/Transport"> Transport</Link>
