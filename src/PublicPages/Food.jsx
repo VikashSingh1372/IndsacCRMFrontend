@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import food1 from "../Images/food1.jpg";
+import { Link } from 'react-router-dom';
 
 export default function Food() {
   return (
@@ -83,42 +84,42 @@ export default function Food() {
 
                 <div className="back-color">
                   <span className="fa fa-tachometer" aria-hidden="true"></span>
-                  <h4><a href="dashboard.jsp" className="title-head">Dashboard</a></h4>
+                  <h4><Link to="/dashboardandreporting" className="title-head">Dashboard</Link></h4>
                   <p className="para">INDSAC CRM provides you with focused promotional activities which is an excellent way to introduce your product to the market. </p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
                   <span className="fa fa-tasks" aria-hidden="true"></span>
-                  <h4><a href="task.jsp" className="title-head">Managing Tasks</a></h4>
+                  <h4><Link to="/taskmanagement" className="title-head">Managing Tasks</Link></h4>
                   <p className="para">With INDSAC CRM get campaigns based on your business goals will create a brand identity and positive brand association. </p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6">
                 <div className="back-color">
                   <span className="fa fa-file-text-o" aria-hidden="true"></span>
-                  <h4><a href="Docmangement.jsp" className="title-head">Managing Documents</a></h4>
+                  <h4><Link to="/docmangement" className="title-head">Managing Documents</Link></h4>
                   <p className="para">INDSAC 360 degrees customer view strategic approach enabling businesses to offer the best customer experience across all channels.</p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
                   <span className="fa fa-mobile" aria-hidden="true"></span>
-                  <h4><a href="digitalmobile.jsp" className="title-head">Mobile Access To Data</a></h4>
+                  <h4><Link to="/digitalmobile" className="title-head">Mobile Access To Data</Link></h4>
                   <p className="para">Utilize the amazing technology where ever you are to benefits your business. View data and receive valuable alerts on mobile.</p>
                 </div>
               </div>
               <div className=" grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1">
                 <div className="back-color">
                   <span className="fa fa-database" aria-hidden="true"></span>
-                  <h4><a href="lead.jsp" className="title-head"> Lead Capture Forms</a></h4>
+                  <h4><Link to="/leadmanagement" className="title-head"> Lead Capture Forms</Link></h4>
                   <p className="para">Works best for you that will determine and pursue your business marketing goals. Boost visibility and increase sales while sustaining a profit.</p>
                 </div>
               </div>
               <div className="grids-effect-2 col-lg-4 col-md-6 col-sm-6 mt-4 pt-1 ">
                 <div className="back-color">
                   <span className="fa fa-line-chart" aria-hidden="true"></span>
-                  <h4><a href="salesforcasting.jsp" className="title-head">Visualize Your Sales Process</a></h4>
+                  <h4><Link to="/salesforecasting" className="title-head">Visualize Your Sales Process</Link></h4>
                   <p className="para">Get high-level overview of your entire business that will develop a better understanding of the effective business planning process.</p>
                 </div>
               </div>

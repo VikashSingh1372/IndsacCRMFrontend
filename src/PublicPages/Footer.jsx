@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Style/publicpages.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -9,8 +10,8 @@ export default function Footer() {
   <section className="w3l-footers-20">
     <div className="footers20">
       <div className="container">
-        <h2><a className="footer-logo" href="index.jsp">
-            <span className="fa fa-line-chart mr-2" aria-hidden="true" />INDSAC-CRM</a></h2>
+        <h2><Link className="footer-logo" to="/">
+            <span className="fa fa-line-chart mr-2" aria-hidden="true" />INDSAC-CRM</Link></h2>
         <div className=" row">
           <div className="grid-col col-lg-7 col-md-7">
             <h3>Get latest updates and offers.</h3>
@@ -25,8 +26,8 @@ export default function Footer() {
           </div>
           <div className="col-lg-5 col-md-5 footer-bottom-two">
             <ul>
-              <li> <a href="navigate\contact.jsp" className="btn action-sub-button">Contact</a></li>
-              <li> <a href="navigate\services.jsp" className="btn logo-button top-margin mt-md-3">Our Service</a>
+              <li> <Link to="/contact_us" className="btn action-sub-button">Contact</Link></li>
+              <li> <Link to="/services" className="btn logo-button top-margin mt-md-3">Our Service</Link>
               </li>
             </ul>
           </div>
@@ -35,27 +36,28 @@ export default function Footer() {
         <div className=" row">
           <div className="grids-content col-lg-2 col-md-2 col-sm-6">
             <div className="footer-nav">
-              <a href="index.jsp" className="contact-para3">Home</a>
-              <a href="navigate\about.jsp" className="contact-para3">About</a>
+              <Link to="/" className="contact-para3">Home</Link>
+              <Link to="about" className="contact-para3">About</Link>
             </div>
           </div>
           <div className="grids-content col-lg-3 col-md-3 col-sm-6">
             <div className="footer-nav">
-              <a href="navigate\termsofuse.jsp" className="contact-para3">Term of Use</a>
-              <a href="navigate\privacypolicy.jsp" className="contact-para3">Privacy Policy</a>
-              <a href="navigate\ourstory.jsp" className="contact-para3">Our Story</a>			
+              <Link to="/termsofuse" className="contact-para3">Term of Use</Link>
+              <Link to="/privacypolicy" className="contact-para3">Privacy Policy</Link>
+              <Link to="/ourstory" className="contact-para3">Our Story</Link>			
             </div>					
           </div>					
           <div className="grids-content col-lg-4 col-md-4 col-sm-6">			
             <div className="footer-nav">
-              <a href="navigate\resources.jsp" className="contact-para3">What is CRM? </a>
-              <a href="navigate\contact.jsp" className="contact-para3">Help Desk </a>						<a href="navigate\whychooseus.jsp" className="contact-para3">Why Choose INDSAC CRM</a>
+              <Link to="/resources" className="contact-para3">What is CRM? </Link>
+              <Link to="/contact_us" className="contact-para3">Help Desk </Link>						
+              <Link to="/whychooseus" className="contact-para3">Why Choose INDSAC CRM</Link>
             </div>					
           </div>					
-          <div className="grids-content col-lg- col-md- col-sm-">			
+          <div className="grids-content col-lg col-md col-sm-6">			
             <div className="footer-nav">
-              <a href="index.jsp" className="contact-para3">Free Demo</a>
-              <a href="navigate\pricing.jsp" className="contact-para3">Pricing </a>				
+              <Link to="/" className="contact-para3">Free Demo</Link>
+              <Link to="/pricing" className="contact-para3">Pricing </Link>				
             </div>					
           </div>
           <div className="col-lg- col-md- col-12 copyright-grid ">
