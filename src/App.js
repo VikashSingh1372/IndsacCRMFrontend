@@ -67,6 +67,9 @@ import OperationalManagement from './PublicPages/OperationalManagement';
 import CatalogSync from './PublicPages/CatalogSync';
 import SalesGoals from './PublicPages/SalesGoals';
 import PredictiveAnalystics from './PublicPages/PredictiveAnalystics';
+import { createContext, useEffect, useReducer } from "react";
+import { initialState, reducer } from "./PublicPages/UseReducer";
+import Logout from './PublicPages/Logout';
     
 import CreateTask from "./User/Sections/CreateTask";
 import NewCustomer from "./User/Sections/NewCustomer";
@@ -74,10 +77,28 @@ import NewVendor from "./User/Sections/NewVendor";
 import NewLead from "./User/Sections/NewLead";
 import CustomerDashboard from "./User/Sections/CustomerDashboard";
 
+export const UserContext = createContext();
 
 function App() {
+
+  const [state, dispatch] = useReducer(reducer, initialState)
+
+  useEffect(() => {
+    // Check if there is a token in localStorage
+    const storedToken = localStorage.getItem("accessToken");
+
+    if (storedToken) {
+      // Set the user as authenticated
+      dispatch({ type: "USER", payload: true });
+    } else {
+      // Set the user as unauthenticated
+      dispatch({ type: "USER", payload: false });
+    }
+  }, [dispatch]);
+
   return (
     <>
+    <UserContext.Provider value={{state, dispatch}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -149,10 +170,12 @@ function App() {
 
 
           <Route path="landingpage" element={<LandingPage/>} />
+          <Route path="logout" element={<Logout/>} />
 
 
         </Routes>
       </BrowserRouter>
+    </UserContext.Provider>
     </>
   );
 }

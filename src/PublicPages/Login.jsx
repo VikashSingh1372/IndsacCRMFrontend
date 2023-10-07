@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState,useEffect, useContext} from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
 import login_image from "../Images/Login-image.png";
 import icons8_google from "../Images/icons8-google.svg";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import {UserContext} from "../App"
 
 export default function Login() {
+
+    const {state, dispatch} = useContext(UserContext);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (state.isLogin) {
+          dispatch({type:"USER", payload: true})
+          const redirectTimer = setTimeout(() => {
+            navigate('/landingpage', { replace: true }); // Replace '/landing page' with the actual path to the user page
+          }, 3000);
+
+          return () => {
+            clearTimeout(redirectTimer);
+          };
+        }
+      }, [state.isLogin, navigate]);
+
     return (
         <>
             <Navbar />
