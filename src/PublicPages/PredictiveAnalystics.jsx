@@ -14,16 +14,16 @@ export default function PredictiveAnalystics() {
             <meta name="description" content="Predictive analytics is a technology that allows firms to analyze structured and unstructured data for identifying key trends and correlations to uncover certain customer behaviors" />
             <meta property="og:title" content="Predictive Analytics" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/PredictiveAnalystics.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/panalysis.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/panalysis.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/predictiveanalystics" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/panalysis.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/panalysis.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Predictive analytics is a technology that allows firms to analyze structured and unstructured data for identifying key trends and correlations to uncover certain customer behaviors" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Predictive Analytics",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/PredictiveAnalystics.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Predictive Analytics",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/predictiveanalystics"`}`
+        </script>
 
             <title>Predictive Analytics | Predictive Analytics :: indsaccrm.com</title>
             <Navbar />

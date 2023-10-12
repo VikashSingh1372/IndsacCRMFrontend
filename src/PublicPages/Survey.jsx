@@ -16,16 +16,16 @@ export default function Survey() {
             <meta name="description" content="Customer satisfaction surveys give you the insights you need to make better decisions" />
             <meta property="og:title" content=" Instant Customer Surveys" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Survey.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/survey3.png" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/survey3.png" />
+            <meta property="og:url" content="https://indsaccrm.com/survey" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/survey3.png" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/survey3.png" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Customer satisfaction surveys give you the insights you need to make better decisions" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":" Instant Customer Surveys",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Survey.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":" Instant Customer Surveys",
+    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/survey"`}`
+    </script>
 
             <title> Instant Customer Surveys | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
 

@@ -14,16 +14,16 @@ export default function Risk() {
             <meta name="description" content="All businesses start with risk on the part of the enterprise, including Indsac. Running a business means investing your money into something without being 100% convinced about the outcome" />
             <meta property="og:title" content="Risk Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Risk.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/mr1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/mr1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/risk" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/mr1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/mr1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="All businesses start with risk on the part of the enterprise, including Indsac. Running a business means investing your money into something without being 100% convinced about the outcome" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Risk Management",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Risk.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Risk Management",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/risk"`}`
+            </script>
 
             <title>Risk Management |  Minimizing The Risk:: indsaccrm.com</title>
 

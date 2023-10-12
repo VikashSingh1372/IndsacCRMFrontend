@@ -15,17 +15,17 @@ export default function Transport() {
       <meta name="description" content="The main modes of transportation are air, land (Road and Rail), and water. The transportation industry makes up the largest part of any country's economy" />
       <meta property="og:title" content="Transport Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Transport.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-transport.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-transport.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/transport" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-transport.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-transport.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="The main modes of transportation are air, land (Road and Rail), and water. The transportation industry makes up the largest part of any country's economy" />
       <meta property="og:locale" content="en_US" />
       <title>Transport Industry | Resources :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":" Transport Industry",
-      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Transport.jsp"}
-      </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":" Transport Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/transport"`}`
+      </script>
 
       <Navbar />
       {/* <!-- breadcrumbs --> */}

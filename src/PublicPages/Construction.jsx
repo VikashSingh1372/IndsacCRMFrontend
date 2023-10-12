@@ -18,16 +18,17 @@ export default function Construction() {
       <meta name="description" content="The construction sector is one of the most sophisticated sectors. The competition within this industry is remarkable" />
       <meta property="og:title" content="Construction Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Construction.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/consgif.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/consgif.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/construction" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/consgif.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/consgif.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="The construction sector is one of the most sophisticated sectors. The competition within this industry is remarkable" />
       <meta property="og:locale" content="en_US" />
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Construction Industry",
-      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Construction.jsp"}
-      </script> */}
+      <script type="application/ld+json">
+        `{`"@context":"https://schema.org","@type":"WebPage","name":"Construction Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/construction"`}`
+      </script>
 
 
       <title>Construction Industry | Industry :: indsaccrm.com</title>

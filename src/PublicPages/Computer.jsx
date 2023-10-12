@@ -19,17 +19,17 @@ export default function Computer() {
       <meta name="description" content="Computer Industry has taken over almost every other industry. Computer industry or also known as Information Technology (IT) Industry.It includes businesses of computer hardware, developing and maintaining computer software, and computer networking" />
       <meta property="og:title" content="Computer Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Computer.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/comgif.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/comgif.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/computer" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/comgif.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/comgif.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Computer Industry has taken over almost every other industry. Computer industry or also known as Information Technology (IT) Industry.It includes businesses of computer hardware, developing and maintaining computer software, and computer networking" />
       <meta property="og:locale" content="en_US" />
       <title>Computer Industry | Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Computer Industry",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Computer.jsp"}
-    </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Computer Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/computer"`}`
+      </script>
 
       <Navbar />
       {/* <!-- breadcrumbs --> */}
@@ -175,7 +175,7 @@ export default function Computer() {
                 vintage software because CRM can help to improve operational efficiency, save countless hours on working on
                 reports for the clients, and much more. INDSAC-CRM software has a superior power to hike up retention, loyalty,
                 acquisitions, etc. </p>
-              <Link to="/customer-services" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
+              <Link to="/customer_services" className="btn action-button mt-lg-5 mt-4 ">Read more</Link>
 
 
             </div>

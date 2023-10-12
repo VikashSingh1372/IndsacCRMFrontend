@@ -15,16 +15,17 @@ export default function OurStory() {
             <meta name="description" content="About Indsac CRM" />
             <meta property="og:title" content="Our Story" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/ourstory.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-crm1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-crm1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/ourstory" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-crm1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-crm1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="About Indsac CRM" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Our Story",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/ourstory.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Our Story",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/ourstory"`
+            }`
+            </script>
 
             <title>Our Story | Invoice Management System :: indsaccrm.com</title>
 

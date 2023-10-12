@@ -18,16 +18,16 @@ export default function ProductivityAnalysis() {
             <meta name="description" content="Save time in gathering information, save time in making smart decisions, save time from bad strategic decisions, save time for the more enjoyable parts of business life" />
             <meta property="og:title" content="Productivity Analysis" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/panalysis.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/pa1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/pa1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/productivityanalysis" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/pa1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/pa1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Save time in gathering information, save time in making smart decisions, save time from bad strategic decisions, save time for the more enjoyable parts of business life" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Productivity Analysis",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/panalysis.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Productivity Analysis",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/productivityanalysis"`}`
+            </script>
 
             <title>Productivity Analysis| Best CRM Software | Indsac Crm :: indsaccrm.com</title>
             <Navbar />

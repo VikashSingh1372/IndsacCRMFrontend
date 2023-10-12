@@ -35,12 +35,22 @@ export default function Home() {
       <meta property="og:title" content="Increase Sales,Customer Relationship" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="https://www.indsaccrm.com/" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/bb22.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/bb22.jpg" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/bb22.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/bb22.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="INDSAC CRM offers you a well executed customer service strategy which will maximize customer lifetime value." />
       <meta property="og:locale" content="en_US" />
       <title>Increase Sales,Customer Relationship | indsaccrm.com</title>
+
+      <script type="application/ld+json">
+        `{`
+        "@context":"https://schema.org",
+        "@type":"WebPage",
+        "name":"Increase Sales,Customer Relationship",
+        "logo":{"@type":"ImageObject",
+        "url":"https://www.indsaccrm.com/static/media/u.png"},"url":"https://www.indsaccrm.com"
+        `}`
+      </script>
 
 
       <link rel="stylesheet" href="navigate/assets/css/style-starter.css" />
@@ -111,7 +121,7 @@ export default function Home() {
               </div>
               <div className="column2 col-lg-6">
                 <h3 className="team-head">A better business means better client experience</h3>
-                <p className="para text">The journey involves understanding the customer requirements. INDSAC CRM offers you a well executed <Link to="customer-services">customer service</Link>
+                <p className="para text">The journey involves understanding the customer requirements. INDSAC CRM offers you a well executed <Link to="customer_services">customer service</Link>
                   strategy which will maximize customer lifetime value. Customer experience impacted customers enthusiasm for being brand advocates.
                   We provide the smooth <Link to="communication">communication</Link> process between your business and customers. Everything you do impacts your
                   customer's perception and their decision to keep coming back.</p>

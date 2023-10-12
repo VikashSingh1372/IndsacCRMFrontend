@@ -12,16 +12,18 @@ export default function DBIntigration() {
             <meta name="description" content="A CRM database is a customer relationship management tool that collects every interaction that a business has with its customers in one place and then makes all of that information available to the company in one customizable dashboard" />
             <meta property="og:title" content="Integrated Customer Database" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/DBIntigration.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/dbi.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/dbi.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/dbintigration" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/dbi.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/dbi.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="A CRM database is a customer relationship management tool that collects every interaction that a business has with its customers in one place and then makes all of that information available to the company in one customizable dashboard" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Integrated Customer Database",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/DBIntigration.jsp"}
-            </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Integrated Customer Database",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/dbintigration"`}`
+            </script>
+
             <title>Integrated Customer Database |  Integrated Customer Database :: indsaccrm.com</title>
 
             <Navbar />

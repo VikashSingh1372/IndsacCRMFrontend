@@ -14,17 +14,17 @@ export default function Promotions() {
             <meta name="description" content="promotions provide a breather to salespeople as it removes some weight off their shoulder and induces prospects to purchase the product" />
             <meta property="og:title" content="Sales Promotions" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Promotions.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/promotions.jpeg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/promotions.jpeg" />
+            <meta property="og:url" content="https://indsaccrm.com/promotions" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/promotions.jpeg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/promotions.jpeg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="promotions provide a breather to salespeople as it removes some weight off their shoulder and induces prospects to purchase the product" />
             <meta property="og:locale" content="en_US" />
             <title>Sales Promotions | Promotions :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Sales Promotions",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Promotions.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Sales Promotions",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/promotions"`}`
+            </script>
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}
@@ -48,7 +48,7 @@ export default function Promotions() {
                             </div>
                             <div className="cwp4-text col-xl-6">
                                 <h4>CRM Promotions</h4>
-                                <p className="para">Promotion is any form of <a href="https://www.indsaccrm.com/navigate/impcomm.jsp">communication</a> a business or organization uses to inform,
+                                <p className="para">Promotion is any form of <a href="https://www.indsaccrm.com/impcomm.jsp">communication</a> a business or organization uses to inform,
                                     persuade, or remind people about its products and improve its public image. Product Promotion :
                                     <br /><br /> 1) explains the major features and benefits of its products (especially in relation to
                                     competitors), <br />2) tells where the products are sold, <br />3) advertises sales on those products,
@@ -66,8 +66,8 @@ export default function Promotions() {
                             <h3>What are Sales Promotions?</h3>
                             <p className="para">    </p>
                         </div>
-                        <p className="para"> <a href="https://www.indsaccrm.com/navigate/sales.jsp">Sales</a> promotions provide a breather to salespeople as it removes some weight off their shoulder and induce prospects to purchase the product.
-                            In many ways, sales promotions help your salespeople get more  <a href="https://www.indsaccrm.com/navigate/lead.jsp">leads</a> and ultimately more customers.
+                        <p className="para"> <a href="https://www.indsaccrm.com/sales.jsp">Sales</a> promotions provide a breather to salespeople as it removes some weight off their shoulder and induce prospects to purchase the product.
+                            In many ways, sales promotions help your salespeople get more  <a href="https://www.indsaccrm.com/lead.jsp">leads</a> and ultimately more customers.
                             If you have a product that is new in the market or which is not receiving a lot of attention, then you can promote this product to customers via sales promotions.
                             Sales promotion is the process of persuading a potential customer to buy the product,
                             It is designed to be used as a short-term tactic to boost sales-affecting long-term customer loyalty.

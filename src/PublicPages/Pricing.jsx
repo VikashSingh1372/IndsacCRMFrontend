@@ -11,7 +11,7 @@ export default function pricing() {
       <meta name="description" content="It's free you can use it" />
       <meta property="og:title" content="Productivity Analysis" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/pricing.jsp" />
+      <meta property="og:url" content="https://indsaccrm.com/pricing" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="It's free you can use it" />
       <meta property="og:locale" content="en_US" />

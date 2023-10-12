@@ -15,17 +15,18 @@ export default function CoreCRMFeatures() {
             <meta name="description" content="INDSAC-CRM provide a best Core CRM Features" />
             <meta property="og:title" content="Core CRM Features" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://www.indsaccrm.com/navigate/core features.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/CRM1.png" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/CRM1.png" />
+            <meta property="og:url" content="https://www.indsaccrm.com/corecrmfeatures" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/CRM1.png" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/CRM1.png" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="INDSAC-CRM provide a best Core CRM Features" />
             <meta property="og:locale" content="en_US" />
             <title>Core CRM Features | Features :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Core CRM Features",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/core features.jsp"}
-            </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Core CRM Features",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/corecrmfeatures"`}
+            </script>
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}

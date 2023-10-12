@@ -26,17 +26,17 @@ export default function About() {
             <meta name="description" content="INDSAC-CRM has a very well-equipped solution with some unique features. Providing business solutions across all industry segments to give access to all" />
             <meta property="og:title" content="About INDSAC-CRM" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/about.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/team.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/team.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/about" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/team.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/team.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="INDSAC-CRM has a very well-equipped solution with some unique features. Providing business solutions across all industry segments to give access to all" />
             <meta property="og:locale" content="en_US" />
             <title>About INDSAC-CRM | About :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"About INDSAC-CRM",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/about.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"About INDSAC-CRM",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/about"    `}`
+            </script>
 
             <Navbar />
             {/* breadcrumbs  */}
