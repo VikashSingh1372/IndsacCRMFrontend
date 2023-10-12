@@ -151,7 +151,7 @@ export default function CreateTask() {
                             <div className="col-8">
                               <input
                                 type="text"
-                                className="w-100 border pl-2"
+                                className="w-100 border rounded border-gray pl-2"
                                 placeholder="Subject"
                                 name="subject"
                                 onChange={formik.handleChange}
@@ -199,7 +199,7 @@ export default function CreateTask() {
                               >
                                 <div className="p-0 m-0 w-100 ">
                                   <input
-                                    className="input-field date w-100 border"
+                                    className="input-field date w-100 border rounded border-gray"
                                     type="date"
                                     placeholder=""
                                     name="date"
@@ -234,7 +234,7 @@ export default function CreateTask() {
                                 as="select"
                                 name="status"
                                 id="status"
-                                className="border w-100 pl-2"
+                                className="border rounded border-gray w-100 pl-2"
                               >
                                 <option value="Active">Normal</option>
                                 {options2.map((option) => (
@@ -263,7 +263,7 @@ export default function CreateTask() {
                                 as="select"
                                 name="leadsource"
                                 id="leadsource"
-                                className="border w-100 pl-2"
+                                className="border rounded border-gray w-100 pl-2"
                               >
                                 <option value="Indiamart">Open</option>
                                 {options1.map((option) => (
@@ -296,7 +296,7 @@ export default function CreateTask() {
                                 as="select"
                                 name="bestwaycontact"
                                 id="bestwaycontact"
-                                className="border w-100 pl-2"
+                                className="border rounded border-gray w-100 pl-2"
                               >
                                 <option value="Mobile">Sachin Choudhary</option>
                                 {options.map((option) => (
@@ -323,7 +323,7 @@ export default function CreateTask() {
 
                             <div className="col-8">
                               <textarea
-                                className="border w-100 pl-2"
+                                className="border rounded border-gray w-100 pl-2"
                                 id="notes"
                                 name="notes"
                                 rows={3}
@@ -337,13 +337,13 @@ export default function CreateTask() {
 
                           <div className="col-12 d-flex m-2 mb-3">
                             <div className="col-4 d-flex justify-content-end">
-                              <button className="btn btn-sm btn-light border">
+                              <button className="btn btn-sm btn-light border rounded border-gray">
                                 Cancel
                               </button>
                             </div>
                             <div className="col-8 d-flex justify-content-end">
                               <button
-                                className="btn btn-sm border btn-info "
+                                className="btn btn-sm border rounded border-gray btn-info "
                                 style={{ backgroundColor: "" }}
                               >
                                 Save
