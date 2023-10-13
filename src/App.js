@@ -23,14 +23,14 @@ import Electronics from "./PublicPages/Electronics";
 import Contact from "./PublicPages/Contact_Us";
 import LandingPage from "./User/Landingpage";
 import Communication from './PublicPages/Communication';
-import Customer_Services from './PublicPages/Customer_services';
+import CustomerServices from './PublicPages/CustomerServices';
 import Promotions from './PublicPages/Promotions';
-import CRM_Marketing from './PublicPages/CRM_Marketing';
+import CrmMarketing from './PublicPages/CrmMarketing';
 import DegreeView from './PublicPages/360-Degree-View';
 import DigitalMobile from './PublicPages/DigitalMobile';
 import Planning from './PublicPages/Planning';
 import Analytics from './PublicPages/Analytics';
-import CRM_Analysis from './PublicPages/CRM_Analysis';
+import CrmAnalysis from './PublicPages/CrmAnalysis';
 import DigitalMarketing from './PublicPages/DigitalMarketing';
 import PrivacyPolicy from './PublicPages/PrivacyPolicy';
 import OurStory from './PublicPages/OurStory';
@@ -66,8 +66,7 @@ import DBIntigration from './PublicPages/DBIntigration';
 import OperationalManagement from './PublicPages/OperationalManagement';
 import CatalogSync from './PublicPages/CatalogSync';
 import SalesGoals from './PublicPages/SalesGoals';
-import PredictiveAnalystics from './PublicPages/PredictiveAnalystics';
-    
+import PredictiveAnalystics from './PublicPages/PredictiveAnalystics';    
 import CreateTask from "./User/Sections/CreateTask";
 import NewCustomer from "./User/Sections/NewCustomer";
 import NewVendor from "./User/Sections/NewVendor";
@@ -102,13 +101,13 @@ function App() {
           <Route path="education" element={<Education/>} />
           <Route path="electronics" element={<Electronics/>} />
           <Route path="communication" element={<Communication/>} />
-          <Route path="customer-services" element={<Customer_Services/>} />
+          <Route path="customer-services" element={<CustomerServices/>} />
           <Route path="promotions" element={<Promotions/>} />
-          <Route path="crmmarketing" element={<CRM_Marketing/>} />
+          <Route path="crmmarketing" element={<CrmMarketing/>} />
           <Route path="360degreeview" element={<DegreeView/>} />
           <Route path="digitalmobile" element={<DigitalMobile/>} />
           <Route path="planning" element={<Planning/>} />
-          <Route path="crm_analysis" element={<CRM_Analysis/>} />
+          <Route path="crm_analysis" element={<CrmAnalysis/>} />
           <Route path="analytics" element={<Analytics/>} />
           <Route path="digitalmarketing" element={<DigitalMarketing/>} />
           <Route path="privacypolicy" element={<PrivacyPolicy/>} />
@@ -149,6 +148,11 @@ function App() {
 
 
           <Route path="landingpage" element={<LandingPage/>} />
+          <Route path="customer-dashboard" element={<CustomerDashboard/>}/>
+          <Route path="create-task" element={<CreateTask/>}/>
+          <Route path="new-customer" element={<NewCustomer/>}/>
+          <Route path="new-vendor" element={<NewVendor/>}/>
+          <Route path="new-lead" element={<NewLead/>}/>
 
 
         </Routes>

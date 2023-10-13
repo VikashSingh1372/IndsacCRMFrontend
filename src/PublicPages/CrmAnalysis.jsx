@@ -4,7 +4,7 @@ import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import Analysis from "../Images/Analysis.png";
 
-export default function CRM_Analysis() {
+export default function CrmAnalysis() {
   return (
     <>
       {/* <!-- Required meta tags --> */}

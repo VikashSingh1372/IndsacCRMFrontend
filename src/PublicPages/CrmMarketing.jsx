@@ -4,7 +4,7 @@ import Footer from './Footer'
 import { Link } from 'react-router-dom'
 import crmmarketing from "../Images/crmmarketing.jpg";
 
-export default function CRM_Marketing() {
+export default function CrmMarketing() {
     return (
         <>
             {/* <!-- Required meta tags --> */}

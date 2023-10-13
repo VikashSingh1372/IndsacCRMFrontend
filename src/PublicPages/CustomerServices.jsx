@@ -6,7 +6,7 @@ import itp3 from "../Images/itp3.png";
 import itp1 from "../Images/itp1.png";
 import itp from "../Images/itp.png";
 
-export default function Customer_Services() {
+export default function CustomerServices() {
     return (
         <>
             <meta charset="utf-8" />
