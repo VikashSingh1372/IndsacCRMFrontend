@@ -156,11 +156,7 @@ export default function CustomerDashboard() {
                         <button className="btn btn-md btn-warning">
                           Report Contact
                         </button>
-                        <button
-                        className="btn btn-success m-2"
-                        onClick={handleToggle}>
-                          {showComponent ? "Close Details" : "Open Details"}
-                        </button>
+                        
                       </div>
                     </div>
 
@@ -210,7 +206,7 @@ export default function CustomerDashboard() {
               </div>
             </div>
           </div>
-          {showComponent ? <CustomerDetails /> : null}
+           <CustomerDetails /> 
           <UserFooter />
         </div>
       </div>

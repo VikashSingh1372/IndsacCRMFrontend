@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowDownShortWide } from "react-icons/fa6";
 import { HiMiniArrowsUpDown } from "react-icons/hi2";
-import data from "../Utils/table1.json";
+
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
@@ -10,7 +10,55 @@ import jsPDF from "jspdf";
 
 import OutsideClickHandler from "react-outside-click-handler";
 
-function CrmDashBoardTable() {
+function Task() {
+
+    const data = [
+        {
+            "id":"1",
+            "subject":"sub1",
+            "status":"true",
+            "duedate":"date",
+            "priority":"priority1",
+            "assigned":"assignehed1",
+            
+        },
+        {
+            "id":"2",
+            "subject":"sub1",
+            "status":"true",
+            "duedate":"date",
+            "priority":"priority1",
+            "assigned":"assihegned1",
+           
+        },
+        {
+            "id":"1",
+            "subject":"sub1",
+            "status":"true",
+            "duedate":"date",
+            "priority":"priority1",
+            "assigned":"assigned3",
+           
+        },
+        {
+            "id":"1",
+            "subject":"sub1",
+            "status":"true",
+            "duedate":"date",
+            "priority":"priority1",
+            "assigned":"assigned1",
+           
+        },
+        {
+            "id":"1",
+            "subject":"sub1",
+            "status":"true",
+            "duedate":"date",
+            "priority":"priority1",
+            "assigned":"assigned1",
+            
+        }
+    ]
   let [value, setValue] = useState(null);
   let dataarray =
     value === null
@@ -200,10 +248,9 @@ function CrmDashBoardTable() {
 
   return (
     <>
-      <div className="d-flex justify-content-between my-3z"
-      style={{
-        "padding-bottom": "1rem",
-      }}>
+      <div className="d-flex justify-content-between my-3z" style={{
+    "padding-bottom": "1rem"
+}}>
         <div className="bg-secondary mx-2 rounded Action d-flex">
           <label
             htmlFor=""
@@ -240,21 +287,34 @@ function CrmDashBoardTable() {
           >
             Print
           </label>
-          <OutsideClickHandler
-            onOutsideClick={() => {
-              setVisible(false);
-            }}
-          >
-            <label
-              htmlFor=""
-              className=" t-data px-2 py-1 m-0 item"
-              onClick={handleDrop}
-            >
-              Column Visibility <AiFillCaretDown />
-            </label>
-          </OutsideClickHandler>
+          <div className="dropdown">
+                            <label
+                              htmlFor=""
+                              className="px-2 py-1 m-0 item btn  dropdown-toggle"
+                              onClick={handleDrop}
+                              data-toggle="dropdown"
+                              style={{
+                                "color" : "#fff"
+                              }}
+                            >
+                              Column Visibility 
+                            </label>
+
+                            {/* Custom dropdown for column visibility */}
+                            <div className={`dropdown-menu ${visibile ? 'show' : ''} dropdown-menu-right`}>
+                              {/* Add your dropdown content here */}
+                              <label htmlFor="" className="dropdown-item">
+                                Column 1
+                              </label>
+                              <label htmlFor="" className="dropdown-item">
+                                Column 2
+                              </label>
+                              {/* Add more dropdown items as needed */}
+                            </div>
+
+                          </div>
         </div>
-        <div>
+        <div className="flex ">
           <label htmlFor="" className="p-0 mx-1 my-0">
             Search :
           </label>
@@ -264,7 +324,9 @@ function CrmDashBoardTable() {
               setValue(e.currentTarget.value);
             }}
             style={{"border-radius":"unset",
-            "border": "1px solid "}}
+            "border": "1px solid #ced4da"
+          }}
+          
           />
         </div>
         <div
@@ -295,7 +357,7 @@ function CrmDashBoardTable() {
               color: Id ? "white" : "",
             }}
           >
-            ID
+           Task ID
           </div>
           <div
             className="menuItem"
@@ -377,26 +439,11 @@ function CrmDashBoardTable() {
           >
             Assigned
           </div>
-          <div
-            className="menuItem"
-            onClick={handleCreated}
-            style={{
-              width: "200px",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-              marginLeft: "5px",
-              marginRight: "5px",
-              borderRadius: "1px",
-              backgroundColor: Created ? "#007bff" : "",
-              color: Created ? "white" : "",
-            }}
-          >
-            Created
-          </div>
+         
         </div>
       </div>
 
-      <table className="table table-hover table-striped" style={{marginBottom:'5rem'}}>
+      <table className="table table-hover table-striped" >
         <thead>
           <tr>
             <th
@@ -406,7 +453,7 @@ function CrmDashBoardTable() {
                 console.log("ID");
               }}
             >
-              ID &nbsp; &nbsp; <FaArrowDownShortWide />
+              Task ID &nbsp; &nbsp; <FaArrowDownShortWide />
             </th>
             <th
               scope="col"
@@ -451,17 +498,9 @@ function CrmDashBoardTable() {
                 console.log("Assigned");
               }}
             >
-              Assigned &nbsp; &nbsp; <HiMiniArrowsUpDown />
+              Owner &nbsp; &nbsp; <HiMiniArrowsUpDown />
             </th>
-            <th
-              scope="col"
-              style={{ display: Created ? "" : "none" }}
-              onClick={() => {
-                console.log("Created");
-              }}
-            >
-              Created &nbsp; &nbsp; <HiMiniArrowsUpDown />
-            </th>
+            
           </tr>
         </thead>
         <tbody>
@@ -514,4 +553,4 @@ function CrmDashBoardTable() {
   );
 }
 
-export default CrmDashBoardTable;
+export default Task;
