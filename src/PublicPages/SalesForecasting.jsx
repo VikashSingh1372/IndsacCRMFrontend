@@ -14,16 +14,16 @@ export default function SalesForecasting() {
     <meta name="description" content="Sales forecasting predicts what your sales pipeline may look like in the future. By using an INDSAC-CRM with sales forecast services, sales teams can fine-tune their selling strategy"/>
     <meta property="og:title" content="Sales Forecasting"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:url" content="https://indsaccrm.com/navigate/salesforcasting.jsp"/>
-    <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/sfgif.gif"/>
-    <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/sfgif.gif"/>
+    <meta property="og:url" content="https://indsaccrm.com/salesforecasting"/>
+    <meta property="og:image" content="https://www.indsaccrm.com/static/media/sfgif.gif"/>
+    <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/sfgif.gif"/>
     <meta property="og:site_name" content="indsaccrm.com"/>
     <meta property="og:description" content="Sales forecasting predicts what your sales pipeline may look like in the future. By using an INDSAC-CRM with sales forecast services, sales teams can fine-tune their selling strategy"/>
     <meta property="og:locale" content="en_US" />
 
-        {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Sales Forecasting",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/salesforcasting.jsp"}
-        </script> */}
+        <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Sales Forecasting",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/salesforecasting"`}`
+        </script>
 
     <title>Sales Forecasting | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
     <Navbar/>

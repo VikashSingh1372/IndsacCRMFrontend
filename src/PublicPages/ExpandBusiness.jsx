@@ -13,16 +13,17 @@ export default function ExpandBusiness() {
             <meta name="description" content="This software can generate exceptional revenue and empower employees to work even when they are away from their desks" />
             <meta property="og:title" content="Expand Business" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/ExpandBusi.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/exp1.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/exp1.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/expandbusiness" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/exp1.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/exp1.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="This software can generate exceptional revenue and empower employees to work even when they are away from their desks" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Expand Business",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/ExpandBusi.jsp"}
-        </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Expand Business",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/expandbusiness"`}`
+            </script>
 
             <title>Expand Business |  Expand Business :: indsaccrm.com</title>
 

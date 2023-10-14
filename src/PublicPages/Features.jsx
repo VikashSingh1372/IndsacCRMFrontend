@@ -8,19 +8,31 @@ import { Link } from 'react-router-dom';
 export default function Features() {
   return (
     <>
-      <meta charset="utf-8" />
+       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="CRM software can also help you boost sales by keeping an eye on customers, from nurturing leads to closing the sale and maintaining customer loyalty" />
       <meta property="og:title" content="CRM Features" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://www.indsaccrm.com/navigate/feature.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/analytics.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/analytics.gif" />
+      <meta property="og:url" content="https://www.indsaccrm.com/features" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/analytics.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/analytics.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="CRM software can also help you boost sales by keeping an eye on customers, from nurturing leads to closing the sale and maintaining customer loyalty" />
       <meta property="og:locale" content="en_US" />
       <title> CRM Features | Features :: indsaccrm.com</title>
 
+      <script type="application/ld+json">
+        `{`
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Features",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.indsaccrm.com/static/media/u.png"
+        },
+        "url": "https://indsaccrm.com/features"
+      `}`
+      </script>
 
       <Navbar />
        {/* breadcrumbs  */}

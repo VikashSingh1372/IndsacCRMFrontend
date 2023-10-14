@@ -14,16 +14,16 @@ export default function ImprovedCommunication() {
             <meta name="description" content="Good communication delivers consistent brand messaging and support across all channels by understanding customer pain points" />
             <meta property="og:title" content="Communication" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/impcomm.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/impcomm.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/impcomm.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/improvedcommunication" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/impcomm.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/impcomm.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Good communication delivers consistent brand messaging and support across all channels by understanding customer pain points" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Communication",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/impcomm.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Communication",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/improvedcommunication"`}`
+        </script>
 
             <title>Communication |Computer Industry :: indsaccrm.com</title>
 

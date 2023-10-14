@@ -16,16 +16,16 @@ export default function CampaignManagement() {
             <meta name="description" content="Our campaign management tool gives you the power to run marketing campaigns directly from your CRM and track your success" />
             <meta property="og:title" content="Campaign Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/CampManagement.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/cm1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/cm1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/campaignmanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/cm1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/cm1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Our campaign management tool gives you the power to run marketing campaigns directly from your CRM and track your success" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Campaign Management",
-                "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/CampManagement.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Campaign Management",
+                "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/campaignmanagement"`}`
+            </script>
 
             <title>Campaign Management | Pharmaceutical Industry :: indsaccrm.com</title>
             <Navbar />

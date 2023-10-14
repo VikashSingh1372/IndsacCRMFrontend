@@ -13,16 +13,16 @@ export default function SalesGoal() {
             <meta name="description" content="With Sales Goals, you can define your sales objectives as measurable goals in your CRM, track progress, and reach your targets" />
             <meta property="og:title" content="Sales CRM Goals" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/salesgoals.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/salesgoals.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/salesgoals.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/salesgoals" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/salesgoals.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/salesgoals.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="With Sales Goals, you can define your sales objectives as measurable goals in your CRM, track progress, and reach your targets" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Sales CRM Goals",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/salesgoals.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Sales CRM Goals",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/salesgoals"`}`
+            </script>
 
             <title>Sales CRM Goals | Sales Goals :: indsaccrm.com</title>
 

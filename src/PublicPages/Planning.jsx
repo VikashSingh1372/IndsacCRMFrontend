@@ -14,17 +14,17 @@ export default function Planning() {
             <meta name="description" content="CRM Planning is a term used to describe all activities, strategies, and tools used by a company to manage the way it interacts with its customer base" />
             <meta property="og:title" content="CRM Planning" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Planning.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/planning.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/planning.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/planning" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/planning.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/planning.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM Planning is a term used to describe all activities, strategies, and tools used by a company to manage the way it interacts with its customer base" />
             <meta property="og:locale" content="en_US" />
             <title>CRM Planning | Planning :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Planning",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Planning.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Planning",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/planning"`}`
+            </script>
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}

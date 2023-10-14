@@ -12,16 +12,17 @@ export default function DashboardAndReporting() {
       <meta name="description" content="Dashboards typically focus on images, graphs, and figures instead of lengthy sections of text. A CRM report is a management tool that offers all the needed data to strengthen your customer relationships" />
       <meta property="og:title" content="Reporting & Dashboards" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/dashboard.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/dash1.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/dash1.jpg" />
+      <meta property="og:url" content="https://indsaccrm.com/dashboardandreporting" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/dash1.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/dash1.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Dashboards typically focus on images, graphs, and figures instead of lengthy sections of text. A CRM report is a management tool that offers all the needed data to strengthen your customer relationships" />
       <meta property="og:locale" content="en_US" />
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Reporting & Dashboards ",
-"logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/dashboard.jsp"}
-</script> */}
+      <script type="application/ld+json">
+        `{`"@context":"https://schema.org","@type":"WebPage","name":"Reporting & Dashboards ",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/dashboardandreporting`}`
+      </script>
 
       <title>Reporting & Dashboards | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
       <Navbar />

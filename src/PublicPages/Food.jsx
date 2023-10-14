@@ -13,17 +13,17 @@ export default function Food() {
       <meta name="description" content="INDSAC-CRM solutions help to create standardized and clearly defined processes" />
       <meta property="og:title" content="Food Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Food.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/food1.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/food1.jpg" />
+      <meta property="og:url" content="https://indsaccrm.com/food" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/food1.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/food1.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="INDSAC-CRM solutions help to create standardized and clearly defined processes" />
       <meta property="og:locale" content="en_US" />
       <title>Food Industry | Food Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Food Industry",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Food.jsp"}
-    </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Food Industry",
+    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/food.jsp"`}`
+    </script>
 
       <Navbar />
       {/* !-- breadcrumbs --> */}

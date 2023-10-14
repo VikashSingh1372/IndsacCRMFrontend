@@ -16,16 +16,16 @@ export default function OptionalCRMFeatures() {
             <meta name="description" content="INDSAC-CRM provide a best Optional CRM Features" />
             <meta property="og:title" content="Optional CRM Features" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/optional feature.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-call-center-automation.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-call-center-automation.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/optionalcrmfeatures" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-call-center-automation.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-call-center-automation.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="INDSAC-CRM provide a best Optional CRM Features" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Optional CRM Features",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/optional feature.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Optional CRM Features",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/optionalcrmfeatures"`}`
+            </script>
 
             <title>Optional CRM Features | Features :: indsaccrm.com</title>
 

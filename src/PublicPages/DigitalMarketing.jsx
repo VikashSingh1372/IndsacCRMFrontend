@@ -15,18 +15,18 @@ export default function DigitalMarketing() {
             <meta name="description" content="Digital marketing is every marketing activity, a strategy that is used on digital platforms such as social media, websites to attract prospective customers" />
             <meta property="og:title" content="Best CRM Digital Marketing" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/digitalmarketing.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/digitalmarketing.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/digitalmarketing.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/digitalmarketing" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/digitalmarketing.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/digitalmarketing.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Digital marketing is every marketing activity, a strategy that is used on digital platforms such as social media, websites to attract prospective customers" />
             <meta property="og:locale" content="en_US" />
             <title>Best CRM Digital Marketing | Digital Marketing :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Digital Marketing",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/digitalmarketing.jsp"}
-            </script> */}
-
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Digital Marketing",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/digitalmarketing"`}`
+            </script>
             <Navbar />
             {/* <!-- breadcrumbs --> */}
             <section className="w3l-inner-banner-main">

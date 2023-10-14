@@ -20,16 +20,16 @@ export default function Lead() {
             <meta name="description" content="Lead management is a systematic process in which incoming leads are qualified, analyzed, and nurtured so that they can be converted into new business opportunities" />
             <meta property="og:title" content="Lead Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/lead.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/lead4.png" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/lead4.png" />
+            <meta property="og:url" content="https://indsaccrm.com/lead" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/lead4.png" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/lead4.png" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Lead management is a systematic process in which incoming leads are qualified, analyzed, and nurtured so that they can be converted into new business opportunities" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Lead Management",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/lead.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Lead Management",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/lead"`}`
+        </script>
 
             <title>Lead Management | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
 

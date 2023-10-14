@@ -14,17 +14,26 @@ export default function DegreeView() {
       <meta name="description" content="A 360-degree view enables companies to provide the best customer experience, increase customer loyalty and satisfaction" />
       <meta property="og:title" content="360 Degree" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/360view.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/360.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/360.jpg" />
+      <meta property="og:url" content="https://indsaccrm.com/360degreeview" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/360.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/360.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="A 360-degree view enables companies to provide the best customer experience, increase customer loyalty and satisfaction" />
       <meta property="og:locale" content="en_US" />
       <title>360 Degree | 360 Degree view :: indsaccrm.com</title>
-
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"360 view",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/360view.jsp"}
-    </script> */}
+     
+      <script type="application/ld+json">
+        `{`
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "360 view",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.indsaccrm.com/static/media/u.png"
+        },
+        "url": "https://indsaccrm.com/360degreeview"
+      `}`
+      </script>
 
       <Navbar />
       {/* <!-- breadcrumbs --> */}

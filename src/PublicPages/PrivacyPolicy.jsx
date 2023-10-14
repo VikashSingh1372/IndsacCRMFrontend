@@ -12,14 +12,14 @@ export default function PrivacyPolicy() {
             <meta name="description" content="This Policy details our commitment to protecting the privacy " />
             <meta property="og:title" content="Privacy Policy" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/privacypolicy.jsp" />
+            <meta property="og:url" content="https://indsaccrm.com/privacypolicy" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="This Policy details our commitment to protecting the privacy" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/privacypolicy.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/privacypolicy"`}`
+        </script>
 
             <title>Privacy Policy | Resources :: indsaccrm.com</title>
 

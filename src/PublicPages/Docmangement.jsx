@@ -15,16 +15,16 @@ export default function Docmangement() {
             <meta name="description" content="Ensure the right people have access to the right documents and associate these documents with their respective deals with a centralized repository for all your sales collaterals" />
             <meta property="og:title" content="Document Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Docmangement.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-managing-documents.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-managing-documents.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/docmangement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-managing-documents.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-managing-documents.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Ensure the right people have access to the right documents and associate these documents with their respective deals with a centralized repository for all your sales collaterals" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Document Management",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Docmangement.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Document Management",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/docmangement"`}`
+            </script>
 
             <title>Document Management | Document Management :: indsaccrm.com</title>
 

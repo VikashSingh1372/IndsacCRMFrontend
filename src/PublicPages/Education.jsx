@@ -15,16 +15,17 @@ export default function Education() {
       <meta name="description" content="Education CRM systems are software applications means to automate and manage communications with current students, employees, alumni, etc" />
       <meta property="og:title" content="Education CRM " />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Education.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-education.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-education.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/education" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-education.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-education.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Education CRM systems are software applications means to automate and manage communications with current students, employees, alumni, etc" />
       <meta property="og:locale" content="en_US" />
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Education CRM ",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Education.jsp"}
-    </script> */}
+      <script type="application/ld+json">
+        `{`"@context":"https://schema.org","@type":"WebPage","name":"Education CRM ",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/education"`}`
+      </script>
 
       <title>Education CRM | Education Industry :: indsaccrm.com</title>
       <Navbar/>
