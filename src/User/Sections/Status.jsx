@@ -589,7 +589,8 @@ function Status() {
                   data-dt-idx="0"
                   tabindex="0"
                   class="page-link"
-                  style={{"border-radius":"unset"}}
+                  style={{"border-radius":"unset",
+                "zIndex":"0"}}
                 >
                   1
                 </a>

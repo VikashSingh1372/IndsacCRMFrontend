@@ -13,6 +13,7 @@ import Invoice from "./Invoice";
 import Status from "./Status";
 
 import Proforma from "./Proforma";
+import { useNavigate } from "react-router-dom";
 
 const customerSchema = Yup.object().shape({
   product: Yup.string().required("Required"),
@@ -39,7 +40,7 @@ function CustomerDetails() {
   //         ele.subject.includes(value)
   //       );
   //     });
-
+const navigate = useNavigate();
   const options = [
     { value: "option1", label: "Option 1" },
     { value: "option2", label: "Option 2" },
@@ -323,7 +324,7 @@ function CustomerDetails() {
                          <label className="ml-6   m-0"style={{"font-weight": "700"}}>
                     Task
                   </label>
-                        <button
+                        <button onClick={()=>{navigate("/create-task")}}
                           className="btn btn-sm border btn-info "
                           style={{ backgroundColor: "", }}
                         >Create Task</button>
