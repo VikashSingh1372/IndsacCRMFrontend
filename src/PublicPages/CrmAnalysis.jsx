@@ -13,17 +13,19 @@ export default function CrmAnalysis() {
       <meta name="description" content="Data analysis is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making" />
       <meta property="og:title" content="CRM Analysis" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/crmanalysis.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/Analysis.png" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/Analysis.png" />
+      <meta property="og:url" content="https://indsaccrm.com/crm_analysis" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/Analysis.png" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/Analysis.png" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Data analysis is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making" />
       <meta property="og:locale" content="en_US" />
       <title>CRM Analysis | CRM Analysis :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Analysis",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/crmanalysis.jsp"}
-    </script> */}
+      <script type="application/ld+json">
+        `{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Analysis",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/crm_analysis"`}`
+        </script>
+
 
 
       <Navbar />

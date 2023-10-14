@@ -16,16 +16,16 @@ export default function TaskManagement() {
             <meta name="description" content="It helps in scheduling various tasks that come across service, sales, contact center, and other marketing functions" />
             <meta property="og:title" content="Task Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/task.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-task.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-task.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/taskmanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-task.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-task.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="It helps in scheduling various tasks that come across service, sales, contact center, and other marketing functions" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Task Management",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/task.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Task Management",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/taskmanagement"`}`
+        </script>
 
             <title>Task Management | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
             <Navbar />

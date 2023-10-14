@@ -20,17 +20,18 @@ export default function EmailIntegration() {
             <meta name="description" content="Email integration in your CRM lets you automatically capture your messages to and from your contacts to your account. INDSAC-CRM automatically associates all e-mails with their respective customer records" />
             <meta property="og:title" content="E-Mail Integration" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/email.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/email1.png" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/email1.png" />
+            <meta property="og:url" content="https://indsaccrm.com/emailintegration" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/email1.png" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/email1.png" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Email integration in your CRM lets you automatically capture your messages to and from your contacts to your account. INDSAC-CRM automatically associates all e-mails with their respective customer records" />
             <meta property="og:locale" content="en_US" />
             <title>E-Mail Integration | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"E-Mail Integration ",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/email.jsp"}
-            </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"E-Mail Integration ",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/emailintegration"`}`
+            </script>
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}

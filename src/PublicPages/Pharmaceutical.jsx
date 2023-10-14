@@ -20,17 +20,17 @@ export default function Pharmaceutical() {
       <meta name="description" content="INDSAC-CRM provides solutions to this industry with the ability to automate processes, pinpoint marketing efforts" />
       <meta property="og:title" content="Pharmaceutical Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Pharmaceutical.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/pharma.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/pharma.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/pharmaceutical" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/pharma.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/pharma.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="INDSAC-CRM provides solutions to this industry with the ability to automate processes, pinpoint marketing efforts" />
       <meta property="og:locale" content="en_US" />
       <title>Pharmaceutical Industry | Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Pharmaceutical Industry",
-          "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Pharmaceutical.jsp"}
-          </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Pharmaceutical Industry",
+          "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/pharmaceutical"`}`
+          </script>
 
 
 

@@ -13,17 +13,18 @@ export default function Analytics() {
             <meta name="description" content="CRM analytics, also known as customer analytics, refers to the process of interpreting the data within your CRM software to uncover valuable insights that will impact business decisions" />
             <meta property="og:title" content="INDSAC-CRM Analytics" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/Analytics.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/anaylitics.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/anaylitics.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/analytics.jsp" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/anaylitics.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/anaylitics.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM analytics, also known as customer analytics, refers to the process of interpreting the data within your CRM software to uncover valuable insights that will impact business decisions" />
             <meta property="og:locale" content="en_US" />
             <title>INDSAC-CRM Analytics | CRM Analytics :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Analytics",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/Analytics.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Analytics",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/analytics"`}`
+            </script>
+
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}

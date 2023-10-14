@@ -13,16 +13,16 @@ export default function StableGrowth() {
             <meta name="description" content="CRM is key to your organization's growth, so you need to manage them as efficiently and effectively as possible" />
             <meta property="og:title" content="Business Stable Growth" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/StableGrowth.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/sg.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/sg.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/stablegrowth" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/sg.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/sg.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM is key to your organization's growth, so you need to manage them as efficiently and effectively as possible" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Business Stable Growth",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/StableGrowth.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Business Stable Growth",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/stablegrowth"`}`
+            </script>
 
             <title>Business Stable Growth |Computer Industry :: indsaccrm.com</title>
             <Navbar />

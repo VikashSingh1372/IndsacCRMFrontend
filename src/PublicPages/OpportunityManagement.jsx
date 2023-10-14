@@ -22,16 +22,16 @@ export default function OpportunityManagement() {
             <meta name="description" content="Our opportunity management functionality allows you to implement sales methodologies that help guide your sales reps through predefined steps to the final sale" />
             <meta property="og:title" content="Opportunity Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/opp.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/opp1.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/opp1.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/opportunitymanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/opp1.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/opp1.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Our opportunity management functionality allows you to implement sales methodologies that help guide your sales reps through predefined steps to the final sale" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Opportunity Management",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/opp.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Opportunity Management",
+        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/opportunitymanagement"`}`
+        </script>
 
             <title> Opportunity Management | Best CRM Software | Indsac Crm :: indsaccrm.com</title>
             <Navbar />

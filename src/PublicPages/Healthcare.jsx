@@ -16,17 +16,17 @@ export default function Healthcare() {
       <meta name="description" content="The goal of all healthcare providers is to deliver care of the highest quality to patients and consumers" />
       <meta property="og:title" content="Health Care Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Health Care.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/h1.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/h1.jpg" />
+      <meta property="og:url" content="https://indsaccrm.com/healthcare" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/h1.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/h1.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="The goal of all healthcare providers is to deliver care of the highest quality to patients and consumers" />
       <meta property="og:locale" content="en_US" />
       <title>Health Care Industry | Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Health Care Industry",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Health Care.jsp"}
-    </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Health Care Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/healthcare "`}`
+      </script>
 
 
 

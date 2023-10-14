@@ -12,15 +12,16 @@ export default function Contact_Us() {
       <meta name="description" content="Drop Us Message For Any Query" />
       <meta property="og:title" content="Contact Us" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/contact.jsp" />
+      <meta property="og:url" content="https://indsaccrm.com/contact_us" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Drop Us Message For Any Query" />
       <meta property="og:locale" content="en_US" />
       <title>Contact Us | Contact Us :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":" Contact Us",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/contact.jsp"}
-    </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":" Contact Us",
+    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/contact_us"`}`
+    </script>
+
     <link rel="stylesheet" href="assets/css/style-starter.css"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700&display=swap" rel="stylesheet"/>

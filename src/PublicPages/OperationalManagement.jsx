@@ -19,16 +19,16 @@ export default function OperationalManagement() {
       <meta name="description" content="An operational CRM is designed to improve routine business operations and securely store data on all your business activities with customers and prospects" />
       <meta property="og:title" content="Operational Management" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/OPManagement.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/email1.png" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/email1.png" />
+      <meta property="og:url" content="https://indsaccrm.com/operationalmanagement" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/email1.png" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/email1.png" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="An operational CRM is designed to improve routine business operations and securely store data on all your business activities with customers and prospects" />
       <meta property="og:locale" content="en_US" />
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Operational Management",
-      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/OPManagement.jsp"}
-      </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Operational Management",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/operationalmanagement"`}`
+      </script>
 
       <title>Operational Management | Best CRM Software |Pharmaceutical Industry :: indsaccrm.com</title>
 

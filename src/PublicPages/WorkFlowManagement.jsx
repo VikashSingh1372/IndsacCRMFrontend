@@ -19,16 +19,16 @@ export default function WorkFlowManagement() {
             <meta name="description" content="CRM workflows can also alert your team to major lead and prospect updates that could help you for your next customer or client. Best of all, CRM workflows are easy to set up" />
             <meta property="og:title" content="Workflow Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/workflowmanagement.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/wm2.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/wm2.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/workflowmanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/wm2.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/wm2.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM workflows can also alert your team to major lead and prospect updates that could help you for your next customer or client. Best of all, CRM workflows are easy to set up" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Workflow Management",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/workflowmanagement.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Workflow Management",
+    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/workflowmanagement"`}`
+    </script>
 
             <title>Workflow Management | Best CRM Software |Telecommunication Industry :: indsaccrm.com</title>
 

@@ -11,17 +11,17 @@ export default function Aerospace() {
       <meta name="description" content="Aerospace organizations research, design, manufacture, operate or maintain aircraft or spacecraft. Aerospace activity is very diverse, with a multitude of commercial, industrial, and military applications" />
       <meta property="og:title" content="Aerospace Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Aerospace.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/airline.gif" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/airline.gif" />
+      <meta property="og:url" content="https://indsaccrm.com/aerospace.jsp" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/airline.gif" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/airline.gif" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="Aerospace organizations research, design, manufacture, operate or maintain aircraft or spacecraft. Aerospace activity is very diverse, with a multitude of commercial, industrial, and military applications" />
       <meta property="og:locale" content="en_US" />
 
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Aerospace Industry",
-      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/Aerospace.jsp"}
-      </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Aerospace Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/aerospace"`}`
+      </script>
 
       <title>Aerospace Industry | Industry :: indsaccrm.com</title>
 
