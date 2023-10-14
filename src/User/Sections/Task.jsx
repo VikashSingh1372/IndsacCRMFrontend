@@ -549,6 +549,76 @@ function Task() {
           })}
         </tbody>
       </table>
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+          <div
+            class="dataTables_info"
+            id="example3_info"
+            role="status"
+            aria-live="polite"
+            style={{"font-weight": "700"}}
+          >
+            Showing 1 to 3 of 3 entries
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-7">
+          <div
+            class="dataTables_paginate paging_simple_numbers"
+            id="example3_paginate"
+          >
+            <ul class="pagination" style={{"justifyContent":"flex-end",
+          "paddingBottom":"1rem"}}>
+              <li
+                class="paginate_button page-item previous disabled"
+                id="example3_previous"
+              >
+                <a
+                  aria-controls="example3"
+                  aria-disabled="true"
+                  role="link"
+                  data-dt-idx="previous"
+                  tabindex="0"
+                  class="page-link"
+                  style={{"border-radius":"unset"}}
+                >
+                  Previous
+                </a>
+              </li>
+              <li class="paginate_button page-item active">
+                <a
+                  href="#"
+                  aria-controls="example3"
+                  role="link"
+                  aria-current="page"
+                  data-dt-idx="0"
+                  tabindex="0"
+                  class="page-link"
+                  style={{"border-radius":"unset",
+                "zIndex":"0"}}
+                >
+                  1
+                </a>
+              </li>
+              <li
+                class="paginate_button page-item next disabled"
+                id="example3_next"
+              >
+                <a
+                  aria-controls="example3"
+                  aria-disabled="true"
+                  role="link"
+                  data-dt-idx="next"
+                  tabindex="0"
+                  class="page-link"
+                  style={{"border-radius":"unset"}}
+                >
+                  Next
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
