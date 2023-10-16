@@ -13,7 +13,7 @@ import { FiSettings } from "react-icons/fi";
 import { RiCloseCircleLine } from "react-icons/ri";
 import "../Style/MainSideBar.css";
 
-export default function MainSidebar({ hamburger, sethamburger }) {z
+export default function MainSidebar({ hamburger, sethamburger }) {
   const [isComShow, setIsComShow] = useState(false);
   const handelComShow = () => {
     setIsComShow(!isComShow);
