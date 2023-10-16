@@ -117,20 +117,19 @@ export default function CreateTask() {
                   <div className="col-12 d-flex justify-content-center">
                     <div className="bg-white col-11">
                       <div className="d-flex justify-content-center">
-                        <div className="bg-warning col-11 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                        <div className="bg-warning col-11 m-1 mt-3 rounded shadow-sm elevation-2 pt-1">
+                          <p className="text-white p-1 m-0">Create Task</p>
+                        </div>
                       </div>
+                      {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
-                      <label className="ml-5 p-0 m-0">Create Task</label>
-
-                      <div className="border col-11 mt-1 ml-5 "></div>
-
-                      <div className="d-flex">
-                        <div className="col-6 ">
-                          <div className="col-12 d-flex m-2 mb-3">
-                            <div className="col-4 d-flex justify-content-end">
+                      <div className="d-flex flex-wrap">
+                        <div className="col-12 col-md-6 pl-0 pr-0">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Subject</strong>
@@ -148,7 +147,7 @@ export default function CreateTask() {
                                 </sup>
                               </label>
                             </div>
-                            <div className="col-8">
+                            <div className="col-12 col-sm-8">
                               <input
                                 type="text"
                                 className="w-100 border rounded border-gray pl-2"
@@ -167,11 +166,11 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 d-flex m-2  mb-3">
-                            <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Due Date:</strong>
@@ -189,7 +188,7 @@ export default function CreateTask() {
                                 </sup>
                               </label>
                             </div>
-                            <div className="col-8 d-flex px-2 m-0">
+                            <div className="col-12 col-sm-8 d-flex px-2 m-0">
                               <div
                                 className="col-12 m-0"
                                 style={{
@@ -219,17 +218,17 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 d-flex m-2  mb-3">
-                            <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Priority</strong>
                               </label>
                             </div>
-                            <div className="col-8">
+                            <div className="col-12 col-sm-8">
                               <Field
                                 as="select"
                                 name="status"
@@ -248,17 +247,17 @@ export default function CreateTask() {
                               </Field>
                             </div>
                           </div>
-                          <div className="col-12 d-flex m-2  mb-3">
-                            <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Status</strong>
                               </label>
                             </div>
-                            <div className="col-8">
+                            <div className="col-12 col-sm-8">
                               <Field
                                 as="select"
                                 name="leadsource"
@@ -277,21 +276,21 @@ export default function CreateTask() {
                               </Field>
                             </div>
                           </div>
-                          <div className="border col-12 ml-1 mb-3"></div>
+                          {/* <div className="border col-12 ml-1 mb-3"></div> */}
                         </div>
 
-                        <div className="col-6 pl-1">
-                          <div className="col-12 d-flex m-2  mb-3">
-                            <div className="col-4 p-0 ">
+                        <div className="col-12 col-md-6 pl-0 pr-0">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg ">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0 text-left"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Assigned To </strong>
                               </label>
                             </div>
-                            <div className="col-8">
+                            <div className="col-12 col-sm-8">
                               <Field
                                 as="select"
                                 name="bestwaycontact"
@@ -310,23 +309,23 @@ export default function CreateTask() {
                               </Field>
                             </div>
                           </div>
-                          <div className=" col-12 ml-1 mb-3 d-flex">
-                            <div className="col-4  ">
+                          <div className=" col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
-                                className="m-0 p-0"
+                                className="m-0 p-0 text-right"
                                 style={{ fontSize: 15 }}
                               >
                                 <strong>Notes</strong>
                               </label>
                             </div>
 
-                            <div className="col-8">
+                            <div className="col-12 col-sm-8">
                               <textarea
                                 className="border rounded border-gray w-100 pl-2"
                                 id="notes"
                                 name="notes"
-                                rows={3}
+                                rows={5}
                                 placeholder="Notes"
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
@@ -335,13 +334,13 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 d-flex m-2 mb-3">
-                            <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                               <button className="btn btn-sm btn-light border rounded border-gray">
                                 Cancel
                               </button>
                             </div>
-                            <div className="col-8 d-flex justify-content-end">
+                            <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                               <button
                                 className="btn btn-sm border rounded border-gray btn-info "
                                 style={{ backgroundColor: "" }}
@@ -351,7 +350,7 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="border col-12 ml-1 mb-3"></div>
+                          {/* <div className="border col-12 ml-1 mb-3"></div> */}
                         </div>
                       </div>
                     </div>

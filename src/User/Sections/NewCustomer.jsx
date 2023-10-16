@@ -6,6 +6,7 @@ import MainSidebar from "../Mainsidebar";
 import * as Yup from "yup";
 import { Formik, Field } from "formik";
 import axios from "axios";
+import "../../Style/NewCustomer.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -151,7 +152,7 @@ export default function NewCustomer() {
             >
               {(formik) => (
                 <form action="" onSubmit={formik.handleSubmit}>
-                  <fieldset style={{marginBottom:'5rem'}}>
+                  <fieldset style={{ marginBottom: "5rem" }}>
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11">
                         <div className="d-flex justify-content-center">
@@ -159,21 +160,20 @@ export default function NewCustomer() {
                             <p className="text-white p-1 m-0">New Customer</p>
                           </div>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
 
-                        <div className="d-flex">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap">
+                          <div className="col-12 col-md-6 pl-0 pr-0">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right "
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Company Name</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -192,11 +192,11 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Contact</strong>
@@ -214,8 +214,8 @@ export default function NewCustomer() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-8 d-flex p-0">
-                                <div className="col-5 m-0">
+                              <div className="col-12 col-sm-8 d-flex p-0">
+                                <div className="col-6 m-0">
                                   <input
                                     type="text"
                                     className="w-100 border rounded border-gray pl-2"
@@ -232,8 +232,7 @@ export default function NewCustomer() {
                                       </span>
                                     )}
                                 </div>
-
-                                <div className="col-7">
+                                <div className="col-6">
                                   <div className="p-0 m-0  d-flex justify-content-end">
                                     <input
                                       type="text"
@@ -257,17 +256,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Status</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="status"
@@ -286,17 +285,18 @@ export default function NewCustomer() {
                                 </Field>
                               </div>
                             </div>
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+
+                            <div className="col-12 col-sm-12 d-flex m-2  mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Source</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="leadsource"
@@ -315,21 +315,20 @@ export default function NewCustomer() {
                                 </Field>
                               </div>
                             </div>
-                            <div className="border col-12 ml-1 mb-3"></div>
                           </div>
 
-                          <div className="col-6 pl-1">
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-right "
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Best Way to Contact</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="bestwaycontact"
@@ -349,11 +348,11 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Mobile</strong>
@@ -371,7 +370,7 @@ export default function NewCustomer() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="number"
                                   className="w-100 border rounded border-gray pl-2"
@@ -390,17 +389,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Phone</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="number"
                                   className="w-100 border rounded border-gray pl-2"
@@ -419,17 +418,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Email</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="email"
                                   className="w-100 border rounded border-gray pl-2"
@@ -447,8 +446,6 @@ export default function NewCustomer() {
                                   )}
                               </div>
                             </div>
-
-                            <div className="border col-12 ml-1 mb-3"></div>
                           </div>
                         </div>
                       </div>
@@ -461,21 +458,21 @@ export default function NewCustomer() {
                             Other Informations
                           </label>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
-                        <div className="d-flex ">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Department</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -494,17 +491,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Designation</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -523,17 +520,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Category</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -552,21 +549,21 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>ReportTo</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -585,17 +582,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>GSTIN</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -614,17 +611,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Website</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -643,7 +640,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
                         </div>
                       </div>
@@ -654,25 +651,25 @@ export default function NewCustomer() {
                         <div>
                           <label className="ml-5 pt-3 p-0 m-0">Address</label>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
-                        <div className="d-flex ">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap ">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address1</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
-                                  placeholder="add1"
+                                  placeholder="Address1"
                                   name="Address1"
                                   onChange={formik.handleChange}
                                   onBlur={formik.handleBlur}
@@ -681,17 +678,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address2</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -704,17 +701,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address3</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -727,76 +724,74 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-6 d-flex">
-                                <div className="col-8 d-flex justify-content-end">
-                                  <label
-                                    htmlFor=""
-                                    className="m-0 p-0"
-                                    style={{ fontSize: 15 }}
-                                  >
-                                    <strong>City</strong>
-                                  </label>
-                                </div>
-                                <div className="col-4">
-                                  <input
-                                    type="text"
-                                    className="w-100 border rounded border-gray ml-1 px-2"
-                                    placeholder="City"
-                                    name="city"
-                                    onChange={formik.handleChange}
-                                    onBlur={formik.handleBlur}
-                                    value={formik.values.city}
-                                  />
-                                  {formik.touched.city &&
-                                    formik.errors.city && (
-                                      <span style={{ color: "red" }}>
-                                        {formik.errors.city}
-                                      </span>
-                                    )}
-                                </div>
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
+                                <label
+                                  htmlFor=""
+                                  className="m-0 p-0 text-right"
+                                  style={{ fontSize: 15 }}
+                                >
+                                  <strong>City</strong>
+                                </label>
                               </div>
-                              <div className="col-6 d-flex">
-                                <div className="col-6 d-flex justify-content-end">
-                                  <label
-                                    htmlFor=""
-                                    className="m-0 p-0"
-                                    style={{ fontSize: 15 }}
-                                  >
-                                    <strong>Pincode</strong>
-                                  </label>
-                                </div>
-                                <div className="col-6">
-                                  <input
-                                    type="number"
-                                    className="w-100 border rounded border-gray pl-2"
-                                    placeholder="Pincode"
-                                    name="pincode"
-                                    onChange={formik.handleChange}
-                                    onBlur={formik.handleBlur}
-                                    value={formik.values.pincode}
-                                  />
-                                  {formik.touched.pincode &&
-                                    formik.errors.pincode && (
-                                      <span style={{ color: "red" }}>
-                                        {formik.errors.pincode}
-                                      </span>
-                                    )}
-                                </div>
+                              <div className="col-12 col-sm-8">
+                                <input
+                                  type="text"
+                                  className="w-100 border rounded border-gray pl-2"
+                                  placeholder="City"
+                                  name="city"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.city}
+                                />
+                                {formik.touched.city && formik.errors.city && (
+                                  <span style={{ color: "red" }}>
+                                    {formik.errors.city}
+                                  </span>
+                                )}
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
+                                  style={{ fontSize: 15 }}
+                                >
+                                  <strong>Pincode</strong>
+                                </label>
+                              </div>
+                              <div className="col-12 col-sm-8">
+                                <input
+                                  type="number"
+                                  className="w-100 border rounded border-gray pl-2"
+                                  placeholder="Pincode"
+                                  name="pincode"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.pincode}
+                                />
+                                {formik.touched.pincode &&
+                                  formik.errors.pincode && (
+                                    <span style={{ color: "red" }}>
+                                      {formik.errors.pincode}
+                                    </span>
+                                  )}
+                              </div>
+                            </div>
+
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
+                                <label
+                                  htmlFor=""
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>State</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -815,17 +810,17 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Country</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
                                   className="w-100 border rounded border-gray pl-2"
@@ -844,22 +839,22 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-right"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Notes</strong>
                                 </label>
                               </div>
 
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <textarea
                                   className="border rounded border-gray w-100 pl-2"
                                   id="notes"
@@ -873,13 +868,13 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                                 <button className="btn btn-sm btn-light border rounded border-gray">
                                   Cancel
                                 </button>
                               </div>
-                              <div className="col-8 d-flex justify-content-end">
+                              <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                                 <button
                                   className="btn btn-sm border rounded border-gray btn-info "
                                   style={{ backgroundColor: "" }}
@@ -889,7 +884,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
                         </div>
                       </div>

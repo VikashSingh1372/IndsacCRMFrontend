@@ -6,6 +6,7 @@
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
     transition: all 500ms ease-in-out;
+    margin-top: 3.5rem;
 }
 .sidebar{
     overflow-y: scroll;
@@ -100,3 +101,19 @@ p{
     scrollbar-width: none;
     scrollbar-width: thin;
 }
+/* Custom tooltip styles */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+    z-index: 1;
+  }
+  
+  .tooltip.show {
+    display: block;
+  }
+  
