@@ -157,8 +157,8 @@ function NewVendor() {
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11">
                         <div className="d-flex justify-content-center">
-                          <div className="bg-warning col-11 m-1 mt-3 rounded shadow-sm elevation-2">
-                            <p className="text-white p-1 m-0">New Vendor</p>
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">New Vendor</p>
                           </div>
                         </div>
                         {/* <div className="border col-11 mt-1 ml-5 "></div> */}
@@ -169,7 +169,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Company Name</strong>
@@ -198,10 +198,10 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
-                                  <strong>Contact</strong>
+                                  <strong>Name</strong>
                                   <sup
                                     style={{
                                       color: "red",
@@ -216,8 +216,8 @@ function NewVendor() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8 d-flex p-0">
-                                <div className="col-6 m-0">
+                              <div className="col-12 col-sm-8 d-flex p-0 justify-content-end">
+                                <div className="col-sm-6 pb-1">
                                   <input
                                     type="text"
                                     className="w-100 border rounded border-gray pl-2"
@@ -235,26 +235,24 @@ function NewVendor() {
                                     )}
                                 </div>
 
-                                <div className="col-6">
-                                  <div className="p-0 m-0  d-flex justify-content-end">
-                                    <input
-                                      type="text"
-                                      className="w-75 border rounded border-gray pl-2"
-                                      placeholder="Last Name"
-                                      name="lastname"
-                                      onChange={formik.handleChange}
-                                      onBlur={formik.handleBlur}
-                                      value={formik.values.lastname}
-                                    />
-                                  </div>
-                                  <div className="p-0 m-0 d-flex justify-content-center">
-                                    {formik.touched.lastname &&
-                                      formik.errors.lastname && (
-                                        <span style={{ color: "red" }}>
-                                          {formik.errors.lastname}
-                                        </span>
-                                      )}
-                                  </div>
+                                <div className="col-sm-6 justify-content-end">
+                                  <input
+                                    type="text"
+                                    className="w-100 border rounded border-gray pl-2"
+                                    placeholder="Last Name"
+                                    name="lastname"
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    value={formik.values.lastname}
+                                  />
+                                </div>
+                                <div className="p-0 m-0 d-flex justify-content-center">
+                                  {formik.touched.lastname &&
+                                    formik.errors.lastname && (
+                                      <span style={{ color: "red" }}>
+                                        {formik.errors.lastname}
+                                      </span>
+                                    )}
                                 </div>
                               </div>
                             </div>
@@ -263,7 +261,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Status</strong>
@@ -292,7 +290,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Source</strong>
@@ -320,12 +318,12 @@ function NewVendor() {
                             {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1">
+                          <div className="col-12 col-md-6 pl-0 pr-0">
                             <div className="col-12 col-sm-12 d-flex m-2 mb-3">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Best Way to Contact</strong>
@@ -355,7 +353,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Mobile</strong>
@@ -396,7 +394,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Phone</strong>
@@ -425,7 +423,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Email</strong>
@@ -458,12 +456,14 @@ function NewVendor() {
 
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11 mt-3">
-                        <div>
-                          <label className="ml-5 pt-3 p-0 m-0">
-                            Other Informations
-                          </label>
+                        <div className="d-flex justify-content-center">
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">
+                              Other Informations
+                            </p>
+                          </div>
                         </div>
-                        <div className="border rounded border-gray col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border rounded border-gray col-11 mt-1 ml-5 "></div> */}
 
                         <div className="d-flex flex-wrap ">
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
@@ -471,7 +471,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Department</strong>
@@ -500,7 +500,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Designation</strong>
@@ -529,7 +529,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Category</strong>
@@ -557,12 +557,12 @@ function NewVendor() {
                             {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1 ">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
                             <div className="col-12 col-sm-12 d-flex m-2 mb-3">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>ReportTo</strong>
@@ -591,7 +591,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>GSTIN</strong>
@@ -620,7 +620,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Website</strong>
@@ -653,10 +653,12 @@ function NewVendor() {
 
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11 mt-3">
-                        <div>
-                          <label className="ml-5 pt-3 p-0 m-0">Address</label>
+                        <div className="d-flex justify-content-center">
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">Address</p>
+                          </div>
                         </div>
-                        <div className="border rounded border-gray col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border rounded border-gray col-11 mt-1 ml-5 "></div> */}
 
                         <div className="d-flex flex-wrap ">
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
@@ -664,7 +666,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address1</strong>
@@ -687,7 +689,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address2</strong>
@@ -710,7 +712,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address3</strong>
@@ -733,7 +735,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>City</strong>
@@ -761,7 +763,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Pincode</strong>
@@ -790,7 +792,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>State</strong>
@@ -819,7 +821,7 @@ function NewVendor() {
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Country</strong>
@@ -847,12 +849,12 @@ function NewVendor() {
                             {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-12 col-md-6 pl-0 pr-0 pl-1 ">
+                          <div className="col-12 col-md-6 pl-0 pr-0">
                             <div className="col-12 col-sm-12 d-flex m-2 mb-3">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Notes</strong>

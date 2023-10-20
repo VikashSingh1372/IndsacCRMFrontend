@@ -117,7 +117,7 @@ export default function CreateTask() {
                   <div className="col-12 d-flex justify-content-center">
                     <div className="bg-white col-11">
                       <div className="d-flex justify-content-center">
-                        <div className="bg-warning col-11 m-1 mt-3 rounded shadow-sm elevation-2 pt-1">
+                        <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1">
                           <p className="text-white p-1 m-0">Create Task</p>
                         </div>
                       </div>

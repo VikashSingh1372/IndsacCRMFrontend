@@ -1,7 +1,7 @@
 /* For screens larger than 600px */
 @media (min-width: 601px) {
     .text-right-lg {
-      text-align: right;
+      text-align: left;
     }
   }
   
@@ -10,6 +10,7 @@
     .col-12.col-sm-12 {
       flex-direction: column;
       width: 100%;
+      padding-left: 0rem;
     }
   
     .text-right-lg {
@@ -20,4 +21,14 @@
     .flex-wrap {
       flex-direction: column; /* Stack columns on top of each other */
     }
+
+    .col-12.col-sm-8.d-flex.p-0 {
+      flex-direction: column;
+      width: 100%;
+    }
   }
+
+  .custom-font-size {
+    font-size: 1.15rem;
+  }
+  

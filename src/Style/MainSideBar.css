@@ -6,7 +6,6 @@
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
     transition: all 500ms ease-in-out;
-    margin-top: 3.5rem;
 }
 .sidebar{
     overflow-y: scroll;
@@ -116,4 +115,3 @@ p{
   .tooltip.show {
     display: block;
   }
-  
