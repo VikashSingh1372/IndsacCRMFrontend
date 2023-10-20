@@ -3,7 +3,8 @@ import ss4 from "../Images/ss4.PNG";
 import { Bar, Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js/auto";
 import CrmDashboardsub from "./CrmDashboardsub";
-import CrmDashBoardTable from "./CrmDashBoardTable";
+import "../Style/CrmDashboard.css"
+import CrmDashBoardTable from './CrmDashBoardTable';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function CrmDashboard() {
@@ -175,7 +176,7 @@ function CrmDashboard() {
           />
         </div>
       </div>
-      <CrmDashBoardTable />
+      <CrmDashBoardTable/>
     </>
   );
 }
