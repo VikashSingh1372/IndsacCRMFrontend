@@ -13,16 +13,16 @@ export default function Inventory() {
             <meta name="description" content="Inventory management system controls and tracks a company's inventory levels, orders, sales, and deliveries. It helps in identifying the right amount of stock to order" />
             <meta property="og:title" content="Inventory Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/inventory.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/inventory1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/inventory1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/inventorymanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/inventory1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/inventory1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Inventory management system controls and tracks a company's inventory levels, orders, sales, and deliveries. It helps in identifying the right amount of stock to order" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Inventory Management",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/inventory.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Inventory Management",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/inventorymanagement"`}`
+            </script>
 
             <title>Inventory Management | Inventory Management :: indsaccrm.com</title>
 

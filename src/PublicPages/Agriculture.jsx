@@ -13,17 +13,17 @@ export default function Agriculture() {
       <meta name="description" content="CRM software for the agriculture industry allows farmers to store and follow up on customer leads to help find new customers, track customer behavior, interactions, and purchases of products and services" />
       <meta property="og:title" content="Agriculture Industry" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Agriculture.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/a1.png" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/a1.png" />
+      <meta property="og:url" content="https://indsaccrm.com/agriculture.jsp" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/a1.png" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/a1.png" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="CRM software for the agriculture industry allows farmers to store and follow up on customer leads to help find new customers, track customer behavior, interactions, and purchases of products and services" />
       <meta property="og:locale" content="en_US" />
       <title>Agriculture Industry | Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Agriculture Industry",
-      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/Agriculture.jsp"}
-      </script> */}
+      <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Agriculture Industry",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/agriculture"`}`
+      </script>
 
       <Navbar />
 

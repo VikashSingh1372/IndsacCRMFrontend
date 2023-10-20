@@ -13,17 +13,17 @@ export default function CompetitorAnalysis() {
             <meta name="description" content="A good competitor analysis will help you see your business and competitors through your customer's eyes to pinpoint where you can improve" />
             <meta property="og:title" content="Competitor Analysis" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/CompAnalysis.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/cm1.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/cm1.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/competitoranalysis" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/cm1.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/cm1.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="A good competitor analysis will help you see your business and competitors through your customer's eyes to pinpoint where you can improve" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Competitor Analysis",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/CompAnalysis.jsp"}
-    </script> */}
-
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Competitor Analysis",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/competitoranalysis`}`
+            </script>
             <title>Competitor Analysis |  Analyze Your Competitors :: indsaccrm.com</title>
             <Navbar />
 

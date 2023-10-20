@@ -13,14 +13,14 @@ export default function StrongConnection() {
             <meta name="description" content="Establish A Strong Connection With Customers" />
             <meta property="og:title" content="Strong Connection" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/strongconnection.jsp" />
+            <meta property="og:url" content="https://indsaccrm.com/strongconnection" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Establish A Strong Connection With Customers" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Strong Connection",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/navigate/strongconnection.jsp"}
-    </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"Strong Connection",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://indsaccrm.com/strongconnection"`}`
+            </script>
 
             <title>Strong Connection | Pharmaceutical Industry:: indsaccrm.com</title>
             <Navbar />

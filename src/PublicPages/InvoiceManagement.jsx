@@ -13,16 +13,16 @@ export default function InvoiceManagement() {
             <meta name="description" content="Your CRM lets you grow your relationship with your customers, and quotes and invoices are just one part of that" />
             <meta property="og:title" content="CRM Invoice" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://www.indsaccrm.com/navigate/invoicemanagement.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/invoice.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/invoice.gif" />
+            <meta property="og:url" content="https://www.indsaccrm.com/invoicemanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/invoice.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/invoice.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Your CRM lets you grow your relationship with your customers, and quotes and invoices are just one part of that" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Invoice",
-        "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/invoicemanagement.jsp"}
-        </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Invoice",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/invoicemanagement"`}`
+            </script>
 
             <title> CRM Invoice | Invoice Management System :: indsaccrm.com</title>
 

@@ -12,17 +12,18 @@ export default function Electronics() {
       <meta name="description" content="E-CRM, or Electronic Customer Relationship Management, is an integrated online sales, marketing, and service strategy that is used to identify, attract and retain an organization's customers" />
       <meta property="og:title" content="E-CRM? " />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://indsaccrm.com/navigate/Electronics.jsp" />
-      <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/erm.jpg" />
-      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/erm.jpg" />
+      <meta property="og:url" content="https://indsaccrm.com/electronics" />
+      <meta property="og:image" content="https://www.indsaccrm.com/static/media/erm.jpg" />
+      <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/erm.jpg" />
       <meta property="og:site_name" content="indsaccrm.com" />
       <meta property="og:description" content="E-CRM, or Electronic Customer Relationship Management, is an integrated online sales, marketing, and service strategy that is used to identify, attract and retain an organization's customers" />
       <meta property="og:locale" content="en_US" />
       <title>E-CRM? | Industry :: indsaccrm.com</title>
 
-      {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"E-CRM?  ",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/Electronics.jsp"}
-    </script> */}
+      <script type="application/ld+json">
+        `{`"@context":"https://schema.org","@type":"WebPage","name":"E-CRM?  ",
+      "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/electronics"`}`
+      </script>
 
       <Navbar/>
       {/* <!-- breadcrumbs --> */}

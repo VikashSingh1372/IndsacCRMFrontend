@@ -13,17 +13,17 @@ export default function CrmMarketing() {
             <meta name="description" content="CRM Marketing is a term referring to the strategies and tactics, as well as to the technologies supporting the execution of said strategies and tactics " />
             <meta property="og:title" content="CRM Marketing" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/crmmarketing.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/crmmarketing.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/crmmarketing.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/crmmarketing" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/crmmarketing.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/crmmarketing.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM Marketing is a term referring to the strategies and tactics, as well as to the technologies supporting the execution of said strategies and tactics" />
             <meta property="og:locale" content="en_US" />
             <title>CRM Marketing  | Marketing :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Marketing",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/crmmarketing.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Marketing",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/crmmarketing"`}`
+            </script>
 
 
             <Navbar />

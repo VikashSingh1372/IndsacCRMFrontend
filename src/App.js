@@ -101,7 +101,7 @@ function App() {
           <Route path="education" element={<Education/>} />
           <Route path="electronics" element={<Electronics/>} />
           <Route path="communication" element={<Communication/>} />
-          <Route path="customer-services" element={<CustomerServices/>} />
+          <Route path="customer_services" element={<CustomerServices/>} />
           <Route path="promotions" element={<Promotions/>} />
           <Route path="crmmarketing" element={<CrmMarketing/>} />
           <Route path="360degreeview" element={<DegreeView/>} />

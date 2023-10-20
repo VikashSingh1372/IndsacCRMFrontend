@@ -14,17 +14,18 @@ export default function CustomerServices() {
             <meta name="description" content="CRM is the one that handles your work to ease your high efforts. Customer Relationship Management (CRM) can plan and control your crucial projects" />
             <meta property="og:title" content="Computer Services" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/comservice.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/itp.png" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/itp.png" />
+            <meta property="og:url" content="https://indsaccrm.com/customer_services" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/itp.png" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/itp.png" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="CRM is the one that handles your work to ease your high efforts. Customer Relationship Management (CRM) can plan and control your crucial projects" />
             <meta property="og:locale" content="en_US" />
             <title>Computer Services | Features :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":" Computer Services ",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/comservice.jsp"}
-            </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":" Computer Services ",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/customer_services"`}`
+            </script>
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}

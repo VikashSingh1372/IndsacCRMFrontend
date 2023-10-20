@@ -12,16 +12,16 @@ export default function Process() {
             <meta name="description" content="The CRM process is a strategy for keeping every customer interaction personalized and meaningful that consists of five main steps" />
             <meta property="og:title" content="CRM Process Management" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/process.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/planning.jpg" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/planning.jpg" />
+            <meta property="og:url" content="https://indsaccrm.com/processmanagement" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/planning.jpg" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/planning.jpg" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="The CRM process is a strategy for keeping every customer interaction personalized and meaningful that consists of five main steps" />
             <meta property="og:locale" content="en_US" />
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CRM Process Management",
-            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/process.jsp"}
-            </script> */}
+            <script type="application/ld+json">`{`"@context":"https://schema.org","@type":"WebPage","name":"CRM Process Management",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/processmanagement"`}`
+            </script>
 
             <title>CRM Process Management | Process Management :: indsaccrm.com</title>
 

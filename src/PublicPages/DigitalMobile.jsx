@@ -13,17 +13,19 @@ export default function DigitalMobile() {
             <meta name="description" content="Mobile CRM can be defined as a CRM platform that has been specifically designed for mobile devices and tablets" />
             <meta property="og:title" content="Mobile CRM" />
             <meta property="og:type" content="article" />
-            <meta property="og:url" content="https://indsaccrm.com/navigate/digitalmobile.jsp" />
-            <meta property="og:image" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-mobile-crm.gif" />
-            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/web/navigate/assets/images/indsac-mobile-crm.gif" />
+            <meta property="og:url" content="https://indsaccrm.com/digitalmobile.jsp" />
+            <meta property="og:image" content="https://www.indsaccrm.com/static/media/indsac-mobile-crm.gif" />
+            <meta property="og:image:secure_url" content="https://www.indsaccrm.com/static/media/indsac-mobile-crm.gif" />
             <meta property="og:site_name" content="indsaccrm.com" />
             <meta property="og:description" content="Mobile CRM can be defined as a CRM platform that has been specifically designed for mobile devices and tablets" />
             <meta property="og:locale" content="en_US" />
             <title>Mobile CRM | Digital & Mobile :: indsaccrm.com</title>
 
-            {/* <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Mobile CRM",
-    "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/navigate/digitalmobile.jsp"}
-    </script> */}
+            <script type="application/ld+json">
+                `{`"@context":"https://schema.org","@type":"WebPage","name":"Mobile CRM",
+            "logo":{"@type":"ImageObject","url":"https://www.indsaccrm.com/web/dist/img/u.png"},"url":"https://www.indsaccrm.com/digitalmobile"`}`
+            </script>
+
 
             <Navbar />
             {/* <!-- breadcrumbs --> */}
