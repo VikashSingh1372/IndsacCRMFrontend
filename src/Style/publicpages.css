@@ -4594,7 +4594,7 @@ th {
   text-align: inherit; }
 
 label {
-  display: inline-block;
+  display: flex;
   margin-bottom: 0.5rem; }
 
 button {
@@ -7763,7 +7763,10 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem; 
+  margin-bottom: 60px;
+}
+
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -7777,10 +7780,11 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem; }
+  padding: 0.25rem; 
+}
 
 .card-title {
-  margin-bottom: 0.75rem; }
+  margin-bottom:-0.25rem; }
 
 .card-subtitle {
   margin-top: -0.375rem;
@@ -7985,7 +7989,7 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0.25rem; }
 
 .page-item.active .page-link {
-  z-index: 3;
+  z-index: 0;
   color: #fff;
   background-color: #7B55FF;
   border-color: #7B55FF; }
