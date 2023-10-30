@@ -26,4 +26,8 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .col-11.mt-2.d-flex{
+      flex-direction: column;
+    }
 }

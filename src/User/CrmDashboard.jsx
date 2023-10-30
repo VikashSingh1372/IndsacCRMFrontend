@@ -79,6 +79,12 @@ function CrmDashboard() {
       },
     ],
   });
+
+  const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+  };
+
   const greetings = ["Good Morning 🌄", "Good Afternoon 🌇", "Good Evening 🌃"];
   const currentHour = new Date().getHours();
   let index =
@@ -122,7 +128,7 @@ function CrmDashboard() {
               className="col-12 w-100  d-flex justify-content-center pt-5"
               style={{ paddingLeft: 10, paddingBottom: 10 }}
             >
-              <Bar data={UserData} />
+              <Bar data={UserData} options={chartOptions} />
             </div>
           </div>
 
@@ -139,7 +145,7 @@ function CrmDashboard() {
               className="col-12 w-100  d-flex justify-content-center align-items-center"
               style={{ paddingLeft: 10, paddingBottom: 10 }}
             >
-              <Doughnut data={UserData} />
+              <Doughnut data={UserData} options={chartOptions} />
             </div>
           </div>
         </div>

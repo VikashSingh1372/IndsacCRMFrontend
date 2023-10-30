@@ -64,6 +64,23 @@ export default function MainSidebar({ hamburger, sethamburger }) {
     return { fontSize: !hamburger && "1.2rem" };
   };
 
+  const handleDropdown = (dropdownState, setDropdownState) => {
+    return () => {
+      // Close all dropdowns
+      setIsComShow(false);
+      setIsShow(false);
+      setIsShowVen(false);
+      setIsShowEmail(false);
+      setIsShowInt(false);
+      setIsShowStock(false);
+      setIsShowSale(false);
+      setIsShowPur(false);
+      setIsShowSet(false);
+
+      // Open the clicked dropdown
+      setDropdownState(!dropdownState);
+    };
+  };
   // const [menuopened,setmenuopened]=useState(false);
 
   return (
@@ -110,7 +127,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               data-accordion="false"
             >
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelComShow}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isComShow, handelComShow)}
+                >
                   <FaUserAlt
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -130,21 +151,32 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              </li>
-              <li className={`nav-item ${isComShow ? "menu-open" : "d-none"}`}>
-                <Link to="/customer-dashboard" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Customer Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isComShow ? "menu-open" : "d-none"}`}>
-                <Link to="/new-customer" className="nav-link-sub">
-                  <FaUserPlus className="nav-icon" />
-                  <p>New Customer</p>
-                </Link>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${isComShow ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="/customer-dashboard" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Customer Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isComShow ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="/new-customer" className="nav-link-sub">
+                      <FaUserPlus className="nav-icon" />
+                      <p>New Customer</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShow}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShow, handelShow)}
+                >
                   <FaUserAlt
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -164,22 +196,28 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              </li>
-              <li className={`nav-item ${isShow ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Lead Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShow ? "menu-open" : "d-none"}`}>
-                <Link to="/new-lead" className="nav-link-sub">
-                  <FaUserPlus className="nav-icon" />
-                  <p>New Lead</p>
-                </Link>
-              </li>
 
+                <ul className="sub-menu">
+                  <li className={`nav-item ${isShow ? "menu-open" : "d-none"}`}>
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Lead Dashboard</p>
+                    </Link>
+                  </li>
+                  <li className={`nav-item ${isShow ? "menu-open" : "d-none"}`}>
+                    <Link to="/new-lead" className="nav-link-sub">
+                      <FaUserPlus className="nav-icon" />
+                      <p>New Lead</p>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowVen}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowVen, handelShowVen)}
+                >
                   <FaUserAlt
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -199,22 +237,33 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              </li>
-              <li className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Vendor Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}>
-                <Link to="/new-vendor" className="nav-link-sub">
-                  <FaUserPlus className="nav-icon" />
-                  <p>New Vendor</p>
-                </Link>
+              
+              <ul className="sub-menu">
+                <li
+                  className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
+                >
+                  <Link to="" className="nav-link-sub">
+                    <FaTachometerAlt className="nav-icon" />
+                    <p>Vendor Dashboard</p>
+                  </Link>
+                </li>
+                <li
+                  className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
+                >
+                  <Link to="/new-vendor" className="nav-link-sub">
+                    <FaUserPlus className="nav-icon" />
+                    <p>New Vendor</p>
+                  </Link>
+                </li>
+              </ul>
               </li>
 
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowEmail}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowEmail, handelShowEmail)}
+                >
                   <FaUserAlt
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -237,7 +286,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li
                 className={`nav-item ${isShowEmail ? "menu-open" : "d-none"}`}
               >
@@ -253,6 +303,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <HiOutlineMail className="nav-icon" />
                   <p>Send Email</p>
                 </Link>
+              </li>
+              </ul>
               </li>
 
               <li className="nav-item">
@@ -279,7 +331,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowInt}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowInt, handelShowInt)}
+                >
                   <FaRegStickyNote
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -302,7 +358,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li className={`nav-item ${isShowInt ? "menu-open" : "d-none"}`}>
                 <Link to="" className="nav-link-sub">
                   <FaRegStickyNote className="nav-icon" />
@@ -314,6 +371,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <FaRegStickyNote className="nav-icon" />
                   <p>Search Interaction</p>
                 </Link>
+              </li>
+              </ul>
               </li>
 
               <li className="nav-item">
@@ -341,7 +400,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               </li>
 
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowStock}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowStock, handelShowStock)}
+                >
                   <FaBars
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -364,7 +427,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li
                 className={`nav-item ${isShowStock ? "menu-open" : "d-none"}`}
               >
@@ -373,9 +437,15 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <p>View Stock</p>
                 </Link>
               </li>
+              </ul>
+              </li>
 
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowSale}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowSale, handelShowSale)}
+                >
                   <FaIndent
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -398,7 +468,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
                 <Link to="" className="nav-link-sub">
                   <PiGridNineFill className="nav-icon" />
@@ -447,9 +518,15 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <p>Create New Quotation</p>
                 </Link>
               </li>
+              </ul>
+              </li>
 
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowPur}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowPur, handelShowPur)}
+                >
                   <FaIndent
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -472,7 +549,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li className={`nav-item ${isShowPur ? "menu-open" : "d-none"}`}>
                 <Link to="" className="nav-link-sub">
                   <PiGridNineFill className="nav-icon" />
@@ -485,9 +563,15 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <p>New Expence</p>
                 </Link>
               </li>
+              </ul>
+              </li>
 
               <li className="nav-item">
-                <Link to="" className="nav-link" onClick={handelShowSet}>
+                <Link
+                  to=""
+                  className="nav-link"
+                  onClick={handleDropdown(isShowSet, handelShowSet)}
+                >
                   <FiSettings
                     className="nav-icon"
                     style={handleclickonbutton2(hamburger)}
@@ -507,7 +591,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              </li>
+              
+              <ul className="sub-menu">
               <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
                 <Link to="" className="nav-link-sub">
                   <FaTachometerAlt className="nav-icon" />
@@ -537,6 +622,8 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                   <FaTachometerAlt className="nav-icon" />
                   <p>Add Employee</p>
                 </Link>
+              </li>
+              </ul>
               </li>
 
               <li className="nav-item">
