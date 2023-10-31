@@ -37,7 +37,7 @@ export default function CrmDashboardsub(props) {
   };
 
   return (
-    <div className={props.class + " col-3 rounded  p-0 me-1 mb-4"}>
+    <div className={props.class + " col-12 rounded  p-0 me-1 mb-4"}>
       <div className="d-flex" onMouseEnter={mouseover} onMouseLeave={mouseout}>
         <div className="col-8 pt-3 pl-2 pb-4">
           <h3 className="mb-2">

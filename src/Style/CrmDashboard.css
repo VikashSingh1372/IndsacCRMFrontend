@@ -1,33 +1,12 @@
-@media (max-width: 600) {
-    .greet .col-4 {
-      max-width: 100%;
-    }
-  
-    .greet .col-8 {
-      max-width: 100%;
-      text-align: center;
-      padding: 0 1rem;
-    }
-  
-    .col-11 {
-      max-width: 100%;
-    }
-  
-    .col-7 {
-      width: 100%;
-    }
-  
-    .col-5 {
-      width: 100%;
-      margin-top: 1rem;
-    }
-
-    .bg-white.rounded.mt-2.d-flex.align-items-center {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .col-11.mt-2.d-flex{
-      flex-direction: column;
-    }
+@media (max-width: 426px) {
+  .subcon3{
+    flex-direction: column-reverse;
+  }
+  .subcon4{
+    align-items: center;
+  }
+  .subcon6{
+    justify-content: center;
+    width: 75%;
+  }
 }

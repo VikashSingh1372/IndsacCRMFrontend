@@ -55,7 +55,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
     setIsShowSet(!isShowSet);
   };
   const handleclickonbutton = (hamburger) => {
-    return { display: !hamburger && "none" };
+    return { display: !hamburger && "15.5rem" };
   };
   const handleclickonbutton1 = (hamburger) => {
     return { width: !hamburger && "3.7rem" };
@@ -87,9 +87,11 @@ export default function MainSidebar({ hamburger, sethamburger }) {
     <>
       <div className="main-sidebar" style={handleclickonbutton1(hamburger)}>
         <div className="sidebar-container">
-          <div className=" py-2" style={{ borderBottom: "1px solid #4b545c" }}>
+          <div className=" py-2 sidebar" style={{ borderBottom: "1px solid #4b545c" }}>
             <Link to="" className="d-flex brand-link">
-              <PiGridNineFill className="nav-icon fs-3" />
+              <div className="nav-icon fs-3">
+                <PiGridNineFill />
+              </div>
               <div
                 className="navhead font-weight-light fs-5 ff"
                 style={handleclickonbutton(hamburger)}
@@ -101,7 +103,7 @@ export default function MainSidebar({ hamburger, sethamburger }) {
           {/* <div style={{ border: "1px solid gray" }}></div> */}
 
           <div
-            className="mt-3 mb-2 d-flex pb-2"
+            className="mt-3 mb-2 d-flex pb-2 sidebar"
             style={{ borderBottom: "1px solid #4b545c" }}
           >
             <div className="nav-icon">
@@ -237,25 +239,25 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-                <li
-                  className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
-                >
-                  <Link to="" className="nav-link-sub">
-                    <FaTachometerAlt className="nav-icon" />
-                    <p>Vendor Dashboard</p>
-                  </Link>
-                </li>
-                <li
-                  className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
-                >
-                  <Link to="/new-vendor" className="nav-link-sub">
-                    <FaUserPlus className="nav-icon" />
-                    <p>New Vendor</p>
-                  </Link>
-                </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Vendor Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowVen ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="/new-vendor" className="nav-link-sub">
+                      <FaUserPlus className="nav-icon" />
+                      <p>New Vendor</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -286,25 +288,29 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li
-                className={`nav-item ${isShowEmail ? "menu-open" : "d-none"}`}
-              >
-                <Link to="" className="nav-link-sub">
-                  <HiOutlineMail className="nav-icon" />
-                  <p>Send Bulk Email</p>
-                </Link>
-              </li>
-              <li
-                className={`nav-item ${isShowEmail ? "menu-open" : "d-none"}`}
-              >
-                <Link to="" className="nav-link-sub">
-                  <HiOutlineMail className="nav-icon" />
-                  <p>Send Email</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${
+                      isShowEmail ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <HiOutlineMail className="nav-icon" />
+                      <p>Send Bulk Email</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowEmail ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <HiOutlineMail className="nav-icon" />
+                      <p>Send Email</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -358,21 +364,25 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li className={`nav-item ${isShowInt ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaRegStickyNote className="nav-icon" />
-                  <p>Interaction Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowInt ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaRegStickyNote className="nav-icon" />
-                  <p>Search Interaction</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${isShowInt ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaRegStickyNote className="nav-icon" />
+                      <p>Interaction Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowInt ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaRegStickyNote className="nav-icon" />
+                      <p>Search Interaction</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -427,17 +437,19 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li
-                className={`nav-item ${isShowStock ? "menu-open" : "d-none"}`}
-              >
-                <Link to="" className="nav-link-sub">
-                  <FaBars className="nav-icon" />
-                  <p>View Stock</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${
+                      isShowStock ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaBars className="nav-icon" />
+                      <p>View Stock</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -468,57 +480,89 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>Invoice Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <RiFile3Fill className="nav-icon" />
-                  <p>Create New Invoice</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>Purchase Order Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <RiFile3Fill className="nav-icon" />
-                  <p>Create New Purchase Order</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>Proforma Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <RiFile3Fill className="nav-icon" />
-                  <p>Create New Proforma Invoice</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>Quotation Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSale ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <RiFile3Fill className="nav-icon" />
-                  <p>Create New Quotation</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>Invoice Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <RiFile3Fill className="nav-icon" />
+                      <p>Create New Invoice</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>Purchase Order Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <RiFile3Fill className="nav-icon" />
+                      <p>Create New Purchase Order</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>Proforma Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <RiFile3Fill className="nav-icon" />
+                      <p>Create New Proforma Invoice</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>Quotation Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${
+                      isShowSale ? "menu-open" : "d-none"
+                    }`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <RiFile3Fill className="nav-icon" />
+                      <p>Create New Quotation</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -549,21 +593,25 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     </div>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li className={`nav-item ${isShowPur ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>Expence Dashboard</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowPur ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <PiGridNineFill className="nav-icon" />
-                  <p>New Expence</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${isShowPur ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>Expence Dashboard</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowPur ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <PiGridNineFill className="nav-icon" />
+                      <p>New Expence</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
@@ -591,39 +639,49 @@ export default function MainSidebar({ hamburger, sethamburger }) {
                     ></i>
                   </div>
                 </Link>
-              
-              <ul className="sub-menu">
-              <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>User Profile</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Manage User</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Invoice Setting</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>HRM</p>
-                </Link>
-              </li>
-              <li className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}>
-                <Link to="" className="nav-link-sub">
-                  <FaTachometerAlt className="nav-icon" />
-                  <p>Add Employee</p>
-                </Link>
-              </li>
-              </ul>
+
+                <ul className="sub-menu">
+                  <li
+                    className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>User Profile</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Manage User</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Invoice Setting</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>HRM</p>
+                    </Link>
+                  </li>
+                  <li
+                    className={`nav-item ${isShowSet ? "menu-open" : "d-none"}`}
+                  >
+                    <Link to="" className="nav-link-sub">
+                      <FaTachometerAlt className="nav-icon" />
+                      <p>Add Employee</p>
+                    </Link>
+                  </li>
+                </ul>
               </li>
 
               <li className="nav-item">
