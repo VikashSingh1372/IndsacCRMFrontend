@@ -134,9 +134,9 @@ export default function MainSidebar({ hamburger, sethamburger }) {
               }`}
               style={handleclickonbutton(hamburger)}
             >
-              <Link to="/customer-dashboard" className="nav-link-sub">
+              <Link to="/customer-details" className="nav-link-sub">
                 <FaTachometerAlt className="nav-icon" />
-                <p>Customer Dashboard</p>
+                <p>Customer Details</p>
               </Link>
             </li>
 

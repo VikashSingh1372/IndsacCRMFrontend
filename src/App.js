@@ -71,7 +71,7 @@ import CreateTask from "./User/Sections/CreateTask";
 import NewCustomer from "./User/Sections/NewCustomer";
 import NewVendor from "./User/Sections/NewVendor";
 import NewLead from "./User/Sections/NewLead";
-import CustomerDashboard from "./User/Sections/CustomerDashboard";
+import CustomerDetails from "./User/Sections/CustomerDashboard";
 
 
 function App() {
@@ -148,7 +148,7 @@ function App() {
 
 
           <Route path="landingpage" element={<LandingPage/>} />
-          <Route path="customer-dashboard" element={<CustomerDashboard/>}/>
+          <Route path="customer-details" element={<CustomerDetails/>}/>
           <Route path="create-task" element={<CreateTask/>}/>
           <Route path="new-customer" element={<NewCustomer/>}/>
           <Route path="new-vendor" element={<NewVendor/>}/>

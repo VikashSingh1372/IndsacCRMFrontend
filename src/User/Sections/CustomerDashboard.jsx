@@ -6,12 +6,11 @@ import MainSidebar from "../Mainsidebar";
 import "../../Style/LandingPage.css";
 import { Avatar } from "@mui/material";
 import DataTable from "./DataTable";
-import CustomerDetails from "./CustomerDetails";
 import c2 from '../../Images/c2.jpg'
 import bb3 from '../../Images/bb3.jpg'
 
 
-export default function CustomerDashboard() {
+export default function CustomerDetails() {
   const [showComponent, setShowComponent] = useState(false);
   const [hamburger, sethamburger] = useState(true);
   const [isRightMenu, setisRightMenu] = useState(false);
@@ -206,7 +205,6 @@ export default function CustomerDashboard() {
               </div>
             </div>
           </div>
-           <CustomerDetails /> 
           <UserFooter />
         </div>
       </div>
