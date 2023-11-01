@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import MainSidebar from "../Mainsidebar";
 import UserNavbar from "../UserNavbar";
 import UserFooter from "../UserFooter";
+import "../../Style/NewVendor.css";
 
 const customerSchema = Yup.object().shape({
   firstname: Yup.string().required("Required"),
@@ -152,32 +153,32 @@ function NewVendor() {
             >
               {(formik) => (
                 <form action="" onSubmit={formik.handleSubmit}>
-                  <fieldset style={{marginBottom:'5rem'}}>
+                  <fieldset style={{ marginBottom: "5rem" }}>
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11">
                         <div className="d-flex justify-content-center">
-                          <div className="bg-warning col-11 m-1 mt-3 rounded shadow-sm elevation-2">
-                            <p className="text-white p-1 m-0">New Vendor</p>
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">New Vendor</p>
                           </div>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
-                        <div className="d-flex">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Company Name</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Company Name"
                                   name="companyname"
                                   onChange={formik.handleChange}
@@ -193,14 +194,14 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
-                                  <strong>Contact</strong>
+                                  <strong>Name</strong>
                                   <sup
                                     style={{
                                       color: "red",
@@ -215,11 +216,11 @@ function NewVendor() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-8 d-flex p-0">
-                                <div className="col-5 m-0">
+                              <div className="col-12 col-sm-8 d-flex p-0 justify-content-end">
+                                <div className="col-sm-6 pb-1">
                                   <input
                                     type="text"
-                                    className="w-100 border pl-2"
+                                    className="w-100 border rounded border-gray pl-2"
                                     placeholder="First Name"
                                     name="firstname"
                                     onChange={formik.handleChange}
@@ -234,46 +235,44 @@ function NewVendor() {
                                     )}
                                 </div>
 
-                                <div className="col-7">
-                                  <div className="p-0 m-0  d-flex justify-content-end">
-                                    <input
-                                      type="text"
-                                      className="w-75 border pl-2"
-                                      placeholder="Last Name"
-                                      name="lastname"
-                                      onChange={formik.handleChange}
-                                      onBlur={formik.handleBlur}
-                                      value={formik.values.lastname}
-                                    />
-                                  </div>
-                                  <div className="p-0 m-0 d-flex justify-content-center">
-                                    {formik.touched.lastname &&
-                                      formik.errors.lastname && (
-                                        <span style={{ color: "red" }}>
-                                          {formik.errors.lastname}
-                                        </span>
-                                      )}
-                                  </div>
+                                <div className="col-sm-6 justify-content-end">
+                                  <input
+                                    type="text"
+                                    className="w-100 border rounded border-gray pl-2"
+                                    placeholder="Last Name"
+                                    name="lastname"
+                                    onChange={formik.handleChange}
+                                    onBlur={formik.handleBlur}
+                                    value={formik.values.lastname}
+                                  />
+                                </div>
+                                <div className="p-0 m-0 d-flex justify-content-center">
+                                  {formik.touched.lastname &&
+                                    formik.errors.lastname && (
+                                      <span style={{ color: "red" }}>
+                                        {formik.errors.lastname}
+                                      </span>
+                                    )}
                                 </div>
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Status</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="status"
                                   id="status"
-                                  className="border w-100 pl-2"
+                                  className="border rounded border-gray w-100 pl-2"
                                 >
                                   <option value="Active">Active</option>
                                   {options2.map((option) => (
@@ -287,22 +286,22 @@ function NewVendor() {
                                 </Field>
                               </div>
                             </div>
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Source</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="leadsource"
                                   id="leadsource"
-                                  className="border w-100 pl-2"
+                                  className="border rounded border-gray w-100 pl-2"
                                 >
                                   <option value="Indiamart">Indiamart</option>
                                   {options1.map((option) => (
@@ -316,26 +315,26 @@ function NewVendor() {
                                 </Field>
                               </div>
                             </div>
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-6 pl-1">
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-right"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Best Way to Contact</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <Field
                                   as="select"
                                   name="bestwaycontact"
                                   id="bestwaycontact"
-                                  className="border w-100 pl-2"
+                                  className="border rounded border-gray w-100 pl-2"
                                 >
                                   <option value="Mobile">Mobile</option>
                                   {options.map((option) => (
@@ -350,11 +349,11 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Mobile</strong>
@@ -372,10 +371,10 @@ function NewVendor() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="number"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Mobile"
                                   name="mobile"
                                   onChange={formik.handleChange}
@@ -391,20 +390,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Phone</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="number"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Phone"
                                   name="altphone"
                                   onChange={formik.handleChange}
@@ -420,20 +419,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2  mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Email</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="email"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Email"
                                   name="email"
                                   onChange={formik.handleChange}
@@ -449,7 +448,7 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
                         </div>
                       </div>
@@ -457,29 +456,31 @@ function NewVendor() {
 
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11 mt-3">
-                        <div>
-                          <label className="ml-5 pt-3 p-0 m-0">
-                            Other Informations
-                          </label>
+                        <div className="d-flex justify-content-center">
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">
+                              Other Informations
+                            </p>
+                          </div>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border rounded border-gray col-11 mt-1 ml-5 "></div> */}
 
-                        <div className="d-flex ">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap ">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Department</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Department"
                                   name="department"
                                   onChange={formik.handleChange}
@@ -495,20 +496,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Designation</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Designation"
                                   name="designation"
                                   onChange={formik.handleChange}
@@ -524,20 +525,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Category</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Category"
                                   name="category"
                                   onChange={formik.handleChange}
@@ -553,24 +554,24 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>ReportTo</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="ReportTo"
                                   name="reportTo"
                                   onChange={formik.handleChange}
@@ -586,20 +587,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>GSTIN</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="GST Number"
                                   name="gstnumber"
                                   onChange={formik.handleChange}
@@ -615,20 +616,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Website</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="https://abc.com/"
                                   name="website"
                                   onChange={formik.handleChange}
@@ -644,7 +645,7 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
                         </div>
                       </div>
@@ -652,27 +653,29 @@ function NewVendor() {
 
                     <div className="col-12 d-flex justify-content-center">
                       <div className="bg-white col-11 mt-3">
-                        <div>
-                          <label className="ml-5 pt-3 p-0 m-0">Address</label>
+                        <div className="d-flex justify-content-center">
+                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
+                            <p className="text-white p-1 m-0 custom-font-size">Address</p>
+                          </div>
                         </div>
-                        <div className="border col-11 mt-1 ml-5 "></div>
+                        {/* <div className="border rounded border-gray col-11 mt-1 ml-5 "></div> */}
 
-                        <div className="d-flex ">
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                        <div className="d-flex flex-wrap ">
+                          <div className="col-12 col-md-6 pl-0 pr-0 ">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address1</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="add1"
                                   name="Address1"
                                   onChange={formik.handleChange}
@@ -682,20 +685,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address2</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Address2"
                                   name="add2"
                                   onChange={formik.handleChange}
@@ -705,20 +708,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Address3</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Address3"
                                   name="add3"
                                   onChange={formik.handleChange}
@@ -728,79 +731,77 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-6 d-flex">
-                                <div className="col-8 d-flex justify-content-end">
-                                  <label
-                                    htmlFor=""
-                                    className="m-0 p-0"
-                                    style={{ fontSize: 15 }}
-                                  >
-                                    <strong>City</strong>
-                                  </label>
-                                </div>
-                                <div className="col-4">
-                                  <input
-                                    type="text"
-                                    className="w-100 border ml-1 px-2"
-                                    placeholder="City"
-                                    name="city"
-                                    onChange={formik.handleChange}
-                                    onBlur={formik.handleBlur}
-                                    value={formik.values.city}
-                                  />
-                                  {formik.touched.city &&
-                                    formik.errors.city && (
-                                      <span style={{ color: "red" }}>
-                                        {formik.errors.city}
-                                      </span>
-                                    )}
-                                </div>
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
+                                <label
+                                  htmlFor=""
+                                  className="m-0 p-0 text-left"
+                                  style={{ fontSize: 15 }}
+                                >
+                                  <strong>City</strong>
+                                </label>
                               </div>
-                              <div className="col-6 d-flex">
-                                <div className="col-6 d-flex justify-content-end">
-                                  <label
-                                    htmlFor=""
-                                    className="m-0 p-0"
-                                    style={{ fontSize: 15 }}
-                                  >
-                                    <strong>Pincode</strong>
-                                  </label>
-                                </div>
-                                <div className="col-6">
-                                  <input
-                                    type="number"
-                                    className="w-100 border pl-2"
-                                    placeholder="Pincode"
-                                    name="pincode"
-                                    onChange={formik.handleChange}
-                                    onBlur={formik.handleBlur}
-                                    value={formik.values.pincode}
-                                  />
-                                  {formik.touched.pincode &&
-                                    formik.errors.pincode && (
-                                      <span style={{ color: "red" }}>
-                                        {formik.errors.pincode}
-                                      </span>
-                                    )}
-                                </div>
+                              <div className="col-12 col-sm-8">
+                                <input
+                                  type="text"
+                                  className="w-100 border rounded border-gray pl-2"
+                                  placeholder="City"
+                                  name="city"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.city}
+                                />
+                                {formik.touched.city && formik.errors.city && (
+                                  <span style={{ color: "red" }}>
+                                    {formik.errors.city}
+                                  </span>
+                                )}
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
+                                  style={{ fontSize: 15 }}
+                                >
+                                  <strong>Pincode</strong>
+                                </label>
+                              </div>
+                              <div className="col-12 col-sm-8">
+                                <input
+                                  type="number"
+                                  className="w-100 border rounded border-gray pl-2"
+                                  placeholder="Pincode"
+                                  name="pincode"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.pincode}
+                                />
+                                {formik.touched.pincode &&
+                                  formik.errors.pincode && (
+                                    <span style={{ color: "red" }}>
+                                      {formik.errors.pincode}
+                                    </span>
+                                  )}
+                              </div>
+                            </div>
+
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
+                                <label
+                                  htmlFor=""
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>State</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="State"
                                   name="state"
                                   onChange={formik.handleChange}
@@ -816,20 +817,20 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Country</strong>
                                 </label>
                               </div>
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <input
                                   type="text"
-                                  className="w-100 border pl-2"
+                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Country"
                                   name="country"
                                   onChange={formik.handleChange}
@@ -845,24 +846,24 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
 
-                          <div className="col-6 ">
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
+                          <div className="col-12 col-md-6 pl-0 pr-0">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0"
+                                  className="m-0 p-0 text-left"
                                   style={{ fontSize: 15 }}
                                 >
                                   <strong>Notes</strong>
                                 </label>
                               </div>
 
-                              <div className="col-8">
+                              <div className="col-12 col-sm-8">
                                 <textarea
-                                  className="border w-100 pl-2"
+                                  className="border rounded border-gray w-100 pl-2"
                                   id="notes"
                                   name="notes"
                                   rows={5}
@@ -874,15 +875,15 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="col-12 d-flex m-2 mb-3">
-                              <div className="col-4 d-flex justify-content-end">
-                                <button className="btn btn-sm btn-light border">
+                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                              <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
+                                <button className="btn btn-sm btn-light border rounded border-gray">
                                   Cancel
                                 </button>
                               </div>
-                              <div className="col-8 d-flex justify-content-end">
+                              <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                                 <button
-                                  className="btn btn-sm border btn-info "
+                                  className="btn btn-sm border rounded border-gray btn-info "
                                   style={{ backgroundColor: "" }}
                                 >
                                   Save
@@ -890,7 +891,7 @@ function NewVendor() {
                               </div>
                             </div>
 
-                            <div className="border col-12 ml-1 mb-3"></div>
+                            {/* <div className="border col-12 ml-1 mb-3"></div> */}
                           </div>
                         </div>
                       </div>

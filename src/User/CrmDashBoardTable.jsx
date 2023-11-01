@@ -7,6 +7,7 @@ import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
 import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
+import "../Style/CrmDashBoardTable.css"
 
 import OutsideClickHandler from "react-outside-click-handler";
 
@@ -254,12 +255,14 @@ function CrmDashBoardTable() {
             </label>
           </OutsideClickHandler>
         </div>
-        <div>
+        <div className="Next2">
           <label htmlFor="" className="p-0 mx-1 my-0">
             Search :
           </label>
           <input
             type="text"
+            className="Next3"
+            style={{ borderRadius: '0' }}
             onChange={(e) => {
               setValue(e.currentTarget.value);
             }}
@@ -396,6 +399,7 @@ function CrmDashBoardTable() {
         </div>
       </div>
 
+      <div className="table-container">
       <table className="table table-hover table-striped" style={{marginBottom:'5rem'}}>
         <thead>
           <tr>
@@ -510,6 +514,7 @@ function CrmDashBoardTable() {
           })}
         </tbody>
       </table>
+      </div>
     </>
   );
 }

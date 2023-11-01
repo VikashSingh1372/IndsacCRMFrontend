@@ -53,7 +53,7 @@ export default function Landingpage() {
             fullScreen={fullScreen}
           />
           <CrmDashboard />
-          <UserFooter />
+          {/* <UserFooter /> */}
         </div>
       </div>
     </>
