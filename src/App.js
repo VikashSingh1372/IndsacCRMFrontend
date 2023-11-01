@@ -148,7 +148,7 @@ function App() {
 
 
           <Route path="landingpage" element={<LandingPage/>} />
-          <Route path="customer-dashboard" element={<CustomerDashboard/>}/>
+          <Route path="customer-details" element={<CustomerDashboard/>}/>
           <Route path="create-task" element={<CreateTask/>}/>
           <Route path="new-customer" element={<NewCustomer/>}/>
           <Route path="new-vendor" element={<NewVendor/>}/>

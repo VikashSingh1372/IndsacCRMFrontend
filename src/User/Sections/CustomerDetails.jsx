@@ -1,9 +1,19 @@
 import * as Yup from "yup";
-import { Formik } from "formik";
+import { Formik ,Field} from "formik";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaTextWidth } from "react-icons/fa";
+import Task from "./Task";
+import InteractionRecord from "./InteractionRecord";
+import Service from "./Service";
+import Purchase from "./Purchase";
+import Quotation from "./Quotation";
+import Invoice from "./Invoice";
+import Status from "./Status";
+
+import Proforma from "./Proforma";
+import { useNavigate } from "react-router-dom";
 
 const customerSchema = Yup.object().shape({
   product: Yup.string().required("Required"),
@@ -30,7 +40,7 @@ function CustomerDetails() {
   //         ele.subject.includes(value)
   //       );
   //     });
-
+const navigate = useNavigate();
   const options = [
     { value: "option1", label: "Option 1" },
     { value: "option2", label: "Option 2" },
@@ -293,6 +303,534 @@ function CustomerDetails() {
                           </button>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               {/* task component */}
+               <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex ">
+                    <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+                 
+                  <div style={{
+                        paddingBottom:2,
+                        paddingTop: 10,
+                        display: "flex",
+                        justifyContent: "space-between",
+                        
+                      }}>
+                         <label className="ml-6   m-0"style={{"font-weight": "700"}}>
+                    Task
+                  </label>
+                        <button onClick={()=>{navigate("/create-task")}}
+                          className="btn btn-sm border btn-info "
+                          style={{ backgroundColor: "", }}
+                        >Create Task</button>
+                      </div>
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+<Task/>
+
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+               {/* interaction record */}
+               <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex justify-content-right">
+                    <div className="bg-info col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+                  <label className="ml-6 pt-2  m-0" style={{"font-weight": "700"}}>
+                    Interaction Record
+                  </label>
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <InteractionRecord />
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* service request */}
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex justify-content-right">
+                    <div className="bg-info col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Service Request
+                  </label>
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <Service />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* invoice */}
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex justify-content-end"> {/* 'justify-content-right' corrected to 'justify-content-end' */}
+                    <div className="bg-danger col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div> {/* 'bg-info' changed to 'bg-danger' for red color */}
+                  </div>
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Inovice
+                  </label>
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <Invoice />
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* PURCHASE ORDER */}
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex justify-content-right">
+                    <div className="bg-info col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Purchase Order
+                  </label>
+
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+                      < Purchase />
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* Performa Invoice */}
+
+
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex ">
+                    <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Proforma Invoice
+                  </label>
+
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+                      <Proforma />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              {/* quatation  */}
+
+
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex justify-content-right">
+                    <div className="bg-info col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Quotation
+                  </label>
+
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+                      <Quotation />
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              {/* Status History */}
+
+
+
+
+              <div className="col-12 d-flex justify-content-center">
+                <div className="bg-white col-12 mt-3">
+                  <div className="d-flex ">
+                    <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+                  </div>
+
+                  <label className="ml-6 pt-2  m-0"style={{"font-weight": "700"}}>
+                    Status History
+                  </label>
+
+
+                  <div className="d-flex ">
+                    <div className="col-12 ">
+                      <div className="col-12 d-flex m-2 mb-3">
+                        <div className="col-4 d-flex justify-content-start">
+                          <label
+                            htmlFor=""
+                            className="m-0 p-0"
+                            style={{ fontSize: 15 }}
+                          >
+                            <strong>Show</strong>
+                          </label>
+
+                          <div className="col-5">
+                            <Field
+                              as="select"
+                              name="status"
+                              id="status"
+                              className="border w-100 pl-2"
+                            >
+                              <option value="number">10</option>
+                              {options2.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </Field>
+                            {formik.touched.status &&
+                              formik.errors.status && (
+                                <span style={{ color: "red" }}>
+                                  {formik.errors.status}
+                                </span>
+                              )}
+                          </div>
+
+                          <div className="col-4 d-flex justify-content-start">
+                            <label
+                              htmlFor=""
+                              className="m-0 p-0"
+                              style={{ fontSize: 15 }}
+                            >
+                              <strong>entries</strong>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+                      <Status />
+
+
                     </div>
                   </div>
                 </div>
