@@ -79,6 +79,12 @@ function CrmDashboard() {
       },
     ],
   });
+
+  const chartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+  };
+
   const greetings = ["Good Morning 🌄", "Good Afternoon 🌇", "Good Evening 🌃"];
   const currentHour = new Date().getHours();
   let index =
@@ -91,12 +97,12 @@ function CrmDashboard() {
         <strong>DashBoard</strong> */}
       </div>
       <div className="greet">
-        <div className=" bg-white rounded mt-2 d-flex align-items-center">
-          <div className="col-4 mt-2 ml-2 mb-2">
+        <div className=" bg-white rounded mt-2 d-flex align-items-center subcon3">
+          <div className="col-sm-4 mt-2 ml-2 mb-2 subcon6">
             <strong>{greetings[index]} User Name !</strong>
             <div className=" mt-2">Welcome to the CRM Dashboard.</div>
           </div>
-          <div className="col-8 d-flex justify-content-end pr-4">
+          <div className=" col-8 d-flex justify-content-end pr-4 subcon4">
             <img
               loading="lazy"
               src={ss4}
@@ -107,8 +113,8 @@ function CrmDashboard() {
         </div>
       </div>
       <div className="col-12 d-flex justify-content-center">
-        <div className="col-11 mt-2 d-flex ">
-          <div className="w-100 col-7 mt-1 mb-1 elevation-2 rounded p-0">
+        <div className="col-11 mt-2 d-flex row justify-content-center">
+          <div className="w-100 col-sm-6 col-md-6 col-lg-6 mt-1 mb-1 elevation-2 rounded p-0">
             {/* <div className=" bg-success rounded d-flex justify-content-end">
               <button className="btn btn-sm btn-success">
                 <i className="fa fa-minus" aria-hidden="true"></i>
@@ -120,13 +126,13 @@ function CrmDashboard() {
 
             <div
               className="col-12 w-100  d-flex justify-content-center pt-5"
-              style={{ paddingLeft: 10, paddingBottom: 10 }}
+              style={{ width: '100%', height: '350px', paddingLeft: 10, paddingBottom: 10 }}
             >
-              <Bar data={UserData} />
+              <Bar data={UserData} options={chartOptions} />
             </div>
           </div>
 
-          <div className="m-1 p-0 col-5 elevation-2 w-100 rounded">
+          <div className="m-1 p-0 col-sm-5 col-md-5 col-lg-5 elevation-2 w-100 rounded">
             {/* <div className=" bg-success rounded d-flex justify-content-end">
               <button className="btn btn-sm btn-success">
                 <i className="fa fa-minus" aria-hidden="true"></i>
@@ -137,15 +143,16 @@ function CrmDashboard() {
             </div> */}
             <div
               className="col-12 w-100  d-flex justify-content-center align-items-center"
-              style={{ paddingLeft: 10, paddingBottom: 10 }}
+              style={{ width: '100%', height: '350px', paddingLeft: 10, paddingBottom: 10 }}
             >
-              <Doughnut data={UserData} />
+              <Doughnut data={UserData} options={chartOptions} />
             </div>
           </div>
         </div>
       </div>
       <div className="col-12 d-flex justify-content-center">
-        <div className="col-11 mt-2 d-flex">
+        <div className="col-11 mt-2 d-flex row">
+          <div className="col-sm-6 col-lg-3">
           <CrmDashboardsub
             index={0}
             name="New Order"
@@ -153,6 +160,8 @@ function CrmDashboard() {
             icon="HiOutlineShoppingBag"
             class="bg-info"
           />
+          </div>
+          <div className="col-sm-6 col-lg-3">
           <CrmDashboardsub
             index={1}
             name="Bounce rate"
@@ -160,6 +169,8 @@ function CrmDashboard() {
             icon="BiBarChart"
             class="bg-success"
           />
+          </div>
+          <div className="col-sm-6 col-lg-3">
           <CrmDashboardsub
             index={2}
             name="User Registrations"
@@ -167,6 +178,8 @@ function CrmDashboard() {
             icon="BiSolidUserPlus"
             class="bg-warning"
           />
+          </div>
+          <div className="col-sm-6 col-lg-3">
           <CrmDashboardsub
             index={3}
             name="Unique Visitors"
@@ -174,6 +187,7 @@ function CrmDashboard() {
             icon="IoMdPie"
             class="bg-danger"
           />
+          </div>
         </div>
       </div>
       <CrmDashBoardTable/>
