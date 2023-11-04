@@ -3,8 +3,8 @@ import ss4 from "../Images/ss4.PNG";
 import { Bar, Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js/auto";
 import CrmDashboardsub from "./CrmDashboardsub";
-import "../Style/CrmDashboard.css"
-import CrmDashBoardTable from './CrmDashBoardTable';
+import "../Style/CrmDashboard.css";
+import CrmDashBoardTable from "./CrmDashBoardTable";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function CrmDashboard() {
@@ -126,7 +126,12 @@ function CrmDashboard() {
 
             <div
               className="col-12 w-100  d-flex justify-content-center pt-5"
-              style={{ width: '100%', height: '350px', paddingLeft: 10, paddingBottom: 10 }}
+              style={{
+                width: "100%",
+                height: "350px",
+                paddingLeft: 10,
+                paddingBottom: 10,
+              }}
             >
               <Bar data={UserData} options={chartOptions} />
             </div>
@@ -143,7 +148,12 @@ function CrmDashboard() {
             </div> */}
             <div
               className="col-12 w-100  d-flex justify-content-center align-items-center"
-              style={{ width: '100%', height: '350px', paddingLeft: 10, paddingBottom: 10 }}
+              style={{
+                width: "100%",
+                height: "350px",
+                paddingLeft: 10,
+                paddingBottom: 10,
+              }}
             >
               <Doughnut data={UserData} options={chartOptions} />
             </div>
@@ -153,44 +163,44 @@ function CrmDashboard() {
       <div className="col-12 d-flex justify-content-center">
         <div className="col-11 mt-2 d-flex row">
           <div className="col-sm-6 col-lg-3">
-          <CrmDashboardsub
-            index={0}
-            name="New Order"
-            value="150"
-            icon="HiOutlineShoppingBag"
-            class="bg-info"
-          />
+            <CrmDashboardsub
+              index={0}
+              name="New Order"
+              value="150"
+              icon="HiOutlineShoppingBag"
+              class="bg-info"
+            />
           </div>
           <div className="col-sm-6 col-lg-3">
-          <CrmDashboardsub
-            index={1}
-            name="Bounce rate"
-            value="53%"
-            icon="BiBarChart"
-            class="bg-success"
-          />
+            <CrmDashboardsub
+              index={1}
+              name="Bounce rate"
+              value="53%"
+              icon="BiBarChart"
+              class="bg-success"
+            />
           </div>
           <div className="col-sm-6 col-lg-3">
-          <CrmDashboardsub
-            index={2}
-            name="User Registrations"
-            value="44"
-            icon="BiSolidUserPlus"
-            class="bg-warning"
-          />
+            <CrmDashboardsub
+              index={2}
+              name="User Registrations"
+              value="44"
+              icon="BiSolidUserPlus"
+              class="bg-warning"
+            />
           </div>
           <div className="col-sm-6 col-lg-3">
-          <CrmDashboardsub
-            index={3}
-            name="Unique Visitors"
-            value="65"
-            icon="IoMdPie"
-            class="bg-danger"
-          />
+            <CrmDashboardsub
+              index={3}
+              name="Unique Visitors"
+              value="65"
+              icon="IoMdPie"
+              class="bg-danger"
+            />
           </div>
         </div>
       </div>
-      <CrmDashBoardTable/>
+      <CrmDashBoardTable />
     </>
   );
 }

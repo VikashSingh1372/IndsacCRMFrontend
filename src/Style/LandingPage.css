@@ -192,4 +192,24 @@ footer strong>a{
     width: 100%;
     left: 0;
   }
+  .customer-detail{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 769px) {
+  .subcon1 {
+    padding-top: 3rem;
+    width: 100%;
+  }
+  .subcon2 {
+    width: 100%;
+    left: 0;
+  }
+  .customer-detail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
 }

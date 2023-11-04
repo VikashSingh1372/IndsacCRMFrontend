@@ -7,9 +7,13 @@ import "../../Style/LandingPage.css";
 import { Avatar } from "@mui/material";
 import DataTable from "./DataTable";
 import CustomerDetails from "./CustomerDetails";
-import c2 from '../../Images/c2.jpg'
-import bb3 from '../../Images/bb3.jpg'
-
+import c2 from "../../Images/c2.jpg";
+import bb3 from "../../Images/bb3.jpg";
+import { FaPaintBrush } from "react-icons/fa";
+import { AiOutlineFileWord } from "react-icons/ai";
+import { AiOutlineFilePdf } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { BiImage } from "react-icons/bi";
 
 export default function CustomerDashboard() {
   const [showComponent, setShowComponent] = useState(false);
@@ -73,7 +77,7 @@ export default function CustomerDashboard() {
                   width: "100%",
                   height: "5rem",
                   objectFit: "cover",
-                  backgroundPosition:'center'
+                  backgroundPosition: "center",
                 }}
               />
               <Avatar
@@ -95,10 +99,13 @@ export default function CustomerDashboard() {
                 style={{ marginTop: "3.3rem" }}
               >
                 <div className="col-12 bg-white mt-3">
-                  <div className="row">
-                    <div className="col-md-4">
+                  <div className="row customer-detail">
+                    <div className="col-md-4 mt-2">
                       <div>
-                        <h3 className="text-primary">AdminLTE v3</h3>
+                        <h3 className="text-primary">
+                          <FaPaintBrush className="pb-1" />
+                          AdminLTE v3
+                        </h3>
                         <p className="text-muted">
                           Raw denim you probably haven't heard of them jean
                           shorts Austin. Nesciunt tofu stumptown aliqua butcher
@@ -123,44 +130,48 @@ export default function CustomerDashboard() {
                         </h5>
                         <ul className="list-unstyled">
                           <li>
+                            <AiOutlineFileWord className="mr-2" />
                             <a href="/" className="btn-link text-secondary">
                               Functional-requirements.docx
                             </a>
                           </li>
                           <li>
+                            <AiOutlineFilePdf className="mr-2" />
                             <a href="/" className="btn-link text-secondary">
                               UAT.pdf
                             </a>
                           </li>
                           <li>
+                            <AiOutlineMail className="mr-2" />
                             <a href="/" className="btn-link text-secondary">
                               Email-from-flatbal.mln
                             </a>
                           </li>
                           <li>
+                            <BiImage className="mr-2" />
                             <a href="/" className="btn-link text-secondary">
                               Logo.png
                             </a>
                           </li>
                           <li>
+                            <AiOutlineFileWord className="mr-2" />
                             <a href="/" className="btn-link text-secondary">
                               Contract-10_12_2014.docx
                             </a>
                           </li>
                         </ul>
                       </div>
-                      <div>
+                      <div className="mt-4">
                         <button className="btn btn-md btn-primary m-2">
                           Add Files
                         </button>
                         <button className="btn btn-md btn-warning">
                           Report Contact
                         </button>
-                        
                       </div>
                     </div>
 
-                    <div className="col-md-8">
+                    <div className="col-md-8 mt-2">
                       <div className="row">
                         <div className="col-md-4">
                           <div className="info-box bg-light">
@@ -169,7 +180,7 @@ export default function CustomerDashboard() {
                                 Estimated Budget
                               </span>
                               <span className="info-box-text text-center text-muted mb-0">
-                                <b style={{color:'black'}}>2300</b>
+                                <b style={{ color: "black" }}>2300</b>
                               </span>
                             </div>
                           </div>
@@ -181,7 +192,7 @@ export default function CustomerDashboard() {
                                 Total Amount Spent
                               </span>
                               <span className="info-box-text text-center text-muted mb-0">
-                                <b style={{color:'black'}}>2000</b>
+                                <b style={{ color: "black" }}>2000</b>
                               </span>
                             </div>
                           </div>
@@ -193,7 +204,7 @@ export default function CustomerDashboard() {
                                 Estimated Project Duration
                               </span>
                               <span className="info-box-text text-center text-muted mb-0 ">
-                                <b style={{color:'black'}}>20</b>
+                                <b style={{ color: "black" }}>20</b>
                               </span>
                             </div>
                           </div>
@@ -206,7 +217,7 @@ export default function CustomerDashboard() {
               </div>
             </div>
           </div>
-           <CustomerDetails /> 
+          <CustomerDetails />
           <UserFooter />
         </div>
       </div>
