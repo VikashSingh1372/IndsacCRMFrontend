@@ -833,13 +833,14 @@ const DataTable = () => {
                 <button
                   key={i + 1}
                   onClick={() => handlePageChange(i + 1)}
-                  className={i + 1 === currentPage ? "active" : "inactive"}
+                  className={`page-link ${
+                    i + 1 === currentPage ? "active" : "inactive"
+                  }`}
                   style={{
-                    paddingRight: 20,
-                    paddingLeft: 20,
+                    paddingRight: 15,
+                    paddingLeft: 15,
                     paddingTop: 5,
                     paddingBottom: 5,
-                    marginRight: 2,
                     borderRadius: "unset",
                     borderColor: "#D3D3D3",
                   }}
@@ -848,7 +849,6 @@ const DataTable = () => {
                   role="link"
                   data-dt-idx="next"
                   tabindex="0"
-                  class="page-link"
                 >
                   {i + 1}
                 </button>

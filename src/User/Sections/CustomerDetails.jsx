@@ -347,7 +347,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
                           <div className="col-5">
                             <Field
@@ -375,7 +375,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -408,7 +408,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
                           <div className="col-5">
                             <Field
@@ -436,7 +436,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -469,7 +469,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
                           <div className="col-5">
                             <Field
@@ -497,7 +497,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -532,7 +532,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
                           <div className="col-5">
                             <Field
@@ -560,7 +560,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -594,7 +594,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
 
                           <div className="col-5">
@@ -624,7 +624,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -659,7 +659,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
 
                           <div className="col-5">
@@ -689,7 +689,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -724,7 +724,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
 
                           <div className="col-5">
@@ -754,7 +754,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>
@@ -789,7 +789,7 @@ function CustomerDetails() {
                             className="m-0 p-0"
                             style={{ fontSize: 15 }}
                           >
-                            <strong>Show</strong>
+                            <simple>Show</simple>
                           </label>
 
                           <div className="col-5">
@@ -819,7 +819,7 @@ function CustomerDetails() {
                               className="m-0 p-0"
                               style={{ fontSize: 15 }}
                             >
-                              <strong>entries</strong>
+                              <simple>entries</simple>
                             </label>
                           </div>
                         </div>

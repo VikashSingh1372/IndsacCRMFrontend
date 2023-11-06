@@ -13,6 +13,10 @@
   color: white; /* Set the text color */
 }
 
+.inactive {
+  background-color: white;
+}
+
 @media (max-width: 769px) {
   .pagination {
     display: flex;

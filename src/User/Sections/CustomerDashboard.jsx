@@ -98,7 +98,24 @@ export default function CustomerDashboard() {
                 className="row justify-content-center"
                 style={{ marginTop: "3.3rem" }}
               >
-                <div className="col-12 bg-white mt-3">
+                <div className="content-header">
+                  <div className="content-fluid">
+                    <div className="row mt-3">
+                      <div className="col-sm-6">
+                        <h4>General Form</h4>
+                      </div>
+                      <div className="col-sm-6">
+                        <ul className="breadcrumb float-sm-right mb-4">
+                          <li className="breadcrumb-item">
+                            <a href="#">Home</a>
+                          </li>
+                          <li className="breadcrumb-item">General Form</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 bg-white">
                   <div className="row customer-detail">
                     <div className="col-md-4 mt-2">
                       <div>
@@ -173,8 +190,8 @@ export default function CustomerDashboard() {
 
                     <div className="col-md-8 mt-2">
                       <div className="row">
-                        <div className="col-md-4">
-                          <div className="info-box bg-light">
+                        <div className="col-md-4 mb-3">
+                          <div className="info-box bg-light" style={{ height: "100%" }}>
                             <div className="info-box-content">
                               <span className="info-box-text text-center text-muted">
                                 Estimated Budget
@@ -185,8 +202,8 @@ export default function CustomerDashboard() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-4">
-                          <div className="info-box bg-light">
+                        <div className="col-md-4 mb-3">
+                          <div className="info-box bg-light" style={{ height: "100%" }}>
                             <div className="info-box-content">
                               <span className="info-box-text text-center text-muted">
                                 Total Amount Spent
@@ -197,8 +214,8 @@ export default function CustomerDashboard() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-md-4">
-                          <div className="info-box bg-light">
+                        <div className="col-md-4 mb-3">
+                          <div className="info-box bg-light" style={{ height: "100%" }}>
                             <div className="info-box-content">
                               <span className="info-box-text text-center text-muted">
                                 Estimated Project Duration
