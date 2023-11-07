@@ -85,6 +85,12 @@ function CrmDashboard() {
     maintainAspectRatio: false,
   };
 
+  const [entriesPerPage, setEntriesPerPage] = useState(10); // Initial value of entries per page
+
+  const handleEntriesPerPageChange = (e) => {
+    setEntriesPerPage(parseInt(e.target.value, 10));
+  };
+
   const greetings = ["Good Morning 🌄", "Good Afternoon 🌇", "Good Evening 🌃"];
   const currentHour = new Date().getHours();
   let index =
@@ -200,7 +206,48 @@ function CrmDashboard() {
           </div>
         </div>
       </div>
-      <CrmDashBoardTable />
+      <div className="col-12 d-flex justify-content-center">
+        <div className="bg-white col-12 mt-3">
+          <div className="d-flex justify-content-right">
+            <div className="bg-info col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1"></div>
+          </div>
+          <label className="ml-6 pt-2  m-0" style={{ "font-weight": "700" }}>
+            Service Request
+          </label>
+
+          <div className="d-flex ">
+            <div className="col-12 ">
+              <div className="col-12 d-flex m-2 mb-3">
+              <div className="col-4 d-flex justify-content-start">
+                <label htmlFor="" className="m-0 p-0" style={{ fontSize: 15 }}>
+                  <span>Show</span>
+                </label>
+                <div className="col-5">
+                  <select
+                    name="entriesPerPage"
+                    id="entriesPerPage"
+                    className="border w-100 pl-2"
+                    value={entriesPerPage}
+                    onChange={handleEntriesPerPageChange}
+                  >
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    {/* Add more options as needed */}
+                  </select>
+                </div>
+                <div className="col-4 d-flex justify-content-start">
+                  <label htmlFor="" className="m-0 p-0" style={{ fontSize: 15 }}>
+                    <span>entries</span>
+                  </label>
+                </div>
+              </div>
+              </div>
+              <CrmDashBoardTable entriesPerPage={entriesPerPage} />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

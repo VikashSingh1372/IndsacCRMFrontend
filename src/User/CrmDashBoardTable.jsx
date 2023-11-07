@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowDownShortWide } from "react-icons/fa6";
 import { HiMiniArrowsUpDown } from "react-icons/hi2";
-import data from "../Utils/table1.json";
+import data from "../Utils/table2.json";
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
@@ -10,9 +10,9 @@ import jsPDF from "jspdf";
 import "../Style/CrmDashBoardTable.css";
 import OutsideClickHandler from "react-outside-click-handler";
 
-function CrmDashBoardTable() {
+function CrmDashBoardTable({ entriesPerPage }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(4);
+  const itemsPerPage = entriesPerPage;
   const [value, setValue] = useState("");
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, data.length);
@@ -36,13 +36,11 @@ function CrmDashBoardTable() {
       .filter((ele) =>
         value === ""
           ? true
-          : ele.id.toString().includes(value) ||
-            ele.assigned.includes(value) ||
-            ele.created.includes(value) ||
-            ele.duedate.includes(value) ||
-            ele.priority.includes(value) ||
-            ele.status.includes(value) ||
-            ele.subject.includes(value)
+          : ele.renderingengine.toString().includes(value) ||
+            ele.browser.includes(value) ||
+            ele.platform.includes(value) ||
+            ele.engineversion.includes(value) ||
+            ele.cssgrade.includes(value)
       )
       .sort((a, b) => {
         if (sortDirection === "asc") {
@@ -63,13 +61,11 @@ function CrmDashBoardTable() {
   //     ? data.slice(startIndex, endIndex)
   //     : data.filter((ele) => {
   //         return (
-  //           ele.id.toString().includes(value) ||
-  //           ele.assigned.includes(value) ||
-  //           ele.created.includes(value) ||
-  //           ele.duedate.includes(value) ||
-  //           ele.priority.includes(value) ||
-  //           ele.status.includes(value) ||
-  //           ele.subject.includes(value)
+  //           ele.renderingengine.toString().includes(value) ||
+  //           ele.engineversion.includes(value) ||
+  //           ele.cssgrade.includes(value) ||
+  //           ele.platform.includes(value) ||
+  //           ele.browser.includes(value)
   //         );
   //       });
 
@@ -156,16 +152,12 @@ function CrmDashBoardTable() {
     const cell4 = headerRow.insertCell(3);
     const cell5 = headerRow.insertCell(4);
     const cell6 = headerRow.insertCell(5);
-    const cell7 = headerRow.insertCell(6);
-    const cell8 = headerRow.insertCell(7);
 
-    cell1.innerHTML = "Id";
-    cell2.innerHTML = "Subject";
-    cell3.innerHTML = "Status";
-    cell4.innerHTML = "DueDate";
-    cell5.innerHTML = "Priority";
-    cell6.innerHTML = "Assigned";
-    cell7.innerHTML = "Created";
+    cell1.innerHTML = "RenderingEngine";
+    cell2.innerHTML = "Browser";
+    cell3.innerHTML = "Platform";
+    cell4.innerHTML = "EngineVersion";
+    cell5.innerHTML = "CssGrade";
 
     // Set styles for header cells
     const headerCells = [
@@ -175,8 +167,6 @@ function CrmDashBoardTable() {
       cell4,
       cell5,
       cell6,
-      cell7,
-      cell8,
     ];
     headerCells.forEach((cell) => {
       cell.style.width = "100px";
@@ -193,16 +183,12 @@ function CrmDashBoardTable() {
         const cell4 = row.insertCell(3);
         const cell5 = row.insertCell(4);
         const cell6 = row.insertCell(5);
-        const cell7 = row.insertCell(6);
-        const cell8 = row.insertCell(7);
 
-        cell1.innerHTML = data[key].id;
-        cell2.innerHTML = data[key].subject;
-        cell3.innerHTML = data[key].status;
-        cell4.innerHTML = data[key].duedate;
-        cell5.innerHTML = data[key].priority;
-        cell6.innerHTML = data[key].assigned;
-        cell7.innerHTML = data[key].created;
+        cell1.innerHTML = data[key].renderingengine;
+        cell2.innerHTML = data[key].browser;
+        cell3.innerHTML = data[key].platform;
+        cell4.innerHTML = data[key].engineversion;
+        cell5.innerHTML = data[key].cssgrade;
 
         // Set styles for data cells
         const dataCells = [
@@ -212,8 +198,6 @@ function CrmDashBoardTable() {
           cell4,
           cell5,
           cell6,
-          cell7,
-          cell8,
         ];
         dataCells.forEach((cell) => {
           cell.style.height = "30px";
@@ -243,40 +227,30 @@ function CrmDashBoardTable() {
   const handleDrop = () => {
     setVisible(!visibile);
   };
-  const [Id, setId] = useState(true);
-  const [Subject, setSubject] = useState(true);
-  const [Status, setStatus] = useState(true);
-  const [Duedate, setDuedate] = useState(true);
-  const [Assigned, setAssigned] = useState(true);
-  const [Priority, setPriority] = useState(true);
-  const [Created, setCreated] = useState(true);
+  const [Renderingengine, setRenderingengine] = useState(true);
+  const [Browser, setBrowser] = useState(true);
+  const [Platform, setPlatform] = useState(true);
+  const [Engineversion, setEngineversion] = useState(true);
+  const [Cssgrade, setCssgrade] = useState(true);
 
-  const handleID = () => {
-    setId(!Id);
+  const handleRenderingengine = () => {
+    setRenderingengine(!Renderingengine);
     setVisible(true);
   };
-  const handleSubject = () => {
-    setSubject(!Subject);
+  const handleBrowser = () => {
+    setBrowser(!Browser);
     setVisible(true);
   };
-  const handleStatus = () => {
-    setStatus(!Status);
+  const handlePlatform = () => {
+    setPlatform(!Platform);
     setVisible(true);
   };
-  const handlePriority = () => {
-    setPriority(!Priority);
+  const handleCssgrade = () => {
+    setCssgrade(!Cssgrade);
     setVisible(true);
   };
-  const handleAssigned = () => {
-    setAssigned(!Assigned);
-    setVisible(true);
-  };
-  const handleCreated = () => {
-    setCreated(!Created);
-    setVisible(true);
-  };
-  const handleDuedate = () => {
-    setDuedate(!Duedate);
+  const handleEngineversion = () => {
+    setEngineversion(!Engineversion);
     setVisible(true);
   };
 
@@ -351,7 +325,7 @@ function CrmDashBoardTable() {
                 {/* Add your dropdown content here */}
                 <div
                   className="menuItem"
-                  onClick={handleID}
+                  onClick={handleRenderingengine}
                   style={{
                     width: "200px",
                     paddingLeft: "10px",
@@ -359,15 +333,15 @@ function CrmDashBoardTable() {
                     marginLeft: "5px",
                     marginRight: "5px",
                     borderRadius: "1px",
-                    backgroundColor: Id ? "#007bff" : "",
-                    color: Id ? "white" : "",
+                    backgroundColor: Renderingengine ? "#007bff" : "",
+                    color: Renderingengine ? "white" : "",
                   }}
                 >
-                  ID
+                  Rendering engine
                 </div>
                 <div
                   className="menuItem"
-                  onClick={handleSubject}
+                  onClick={handleBrowser}
                   style={{
                     width: "200px",
                     paddingLeft: "10px",
@@ -375,15 +349,15 @@ function CrmDashBoardTable() {
                     marginLeft: "5px",
                     marginRight: "5px",
                     borderRadius: "1px",
-                    backgroundColor: Subject ? "#007bff" : "",
-                    color: Subject ? "white" : "",
+                    backgroundColor: Browser ? "#007bff" : "",
+                    color: Browser ? "white" : "",
                   }}
                 >
-                  Subject
+                  Browser
                 </div>
                 <div
                   className="menuItem"
-                  onClick={handleStatus}
+                  onClick={handlePlatform}
                   style={{
                     width: "200px",
                     paddingLeft: "10px",
@@ -391,15 +365,15 @@ function CrmDashBoardTable() {
                     marginLeft: "5px",
                     marginRight: "5px",
                     borderRadius: "1px",
-                    backgroundColor: Status ? "#007bff" : "",
-                    color: Status ? "white" : "",
+                    backgroundColor: Platform ? "#007bff" : "",
+                    color: Platform ? "white" : "",
                   }}
                 >
-                  Status
+                  Platform(s)
                 </div>
                 <div
                   className="menuItem"
-                  onClick={handleDuedate}
+                  onClick={handleEngineversion}
                   style={{
                     width: "200px",
                     paddingLeft: "10px",
@@ -407,15 +381,15 @@ function CrmDashBoardTable() {
                     marginLeft: "5px",
                     marginRight: "5px",
                     borderRadius: "1px",
-                    backgroundColor: Duedate ? "#007bff" : "",
-                    color: Duedate ? "white" : "",
+                    backgroundColor: Engineversion ? "#007bff" : "",
+                    color: Engineversion ? "white" : "",
                   }}
                 >
-                  Due Date
+                  Engine version
                 </div>
                 <div
                   className="menuItem"
-                  onClick={handlePriority}
+                  onClick={handleCssgrade}
                   style={{
                     width: "200px",
                     paddingLeft: "10px",
@@ -423,43 +397,11 @@ function CrmDashBoardTable() {
                     marginLeft: "5px",
                     marginRight: "5px",
                     borderRadius: "1px",
-                    backgroundColor: Priority ? "#007bff" : "",
-                    color: Priority ? "white" : "",
+                    backgroundColor: Cssgrade ? "#007bff" : "",
+                    color: Cssgrade ? "white" : "",
                   }}
                 >
-                  Priority
-                </div>
-                <div
-                  className="menuItem"
-                  onClick={handleAssigned}
-                  style={{
-                    width: "200px",
-                    paddingLeft: "10px",
-                    paddingRight: "10px",
-                    marginLeft: "5px",
-                    marginRight: "5px",
-                    borderRadius: "1px",
-                    backgroundColor: Assigned ? "#007bff" : "",
-                    color: Assigned ? "white" : "",
-                  }}
-                >
-                  Assigned
-                </div>
-                <div
-                  className="menuItem"
-                  onClick={handleCreated}
-                  style={{
-                    width: "200px",
-                    paddingLeft: "10px",
-                    paddingRight: "10px",
-                    marginLeft: "5px",
-                    marginRight: "5px",
-                    borderRadius: "1px",
-                    backgroundColor: Created ? "#007bff" : "",
-                    color: Created ? "white" : "",
-                  }}
-                >
-                  Created
+                  CSS grade
                 </div>
                 {/* Add more dropdown items as needed */}
               </div>
@@ -498,7 +440,7 @@ function CrmDashBoardTable() {
         >
           <div
             className="menuItem"
-            onClick={handleID}
+            onClick={handleRenderingengine}
             style={{
               width: "200px",
               paddingLeft: "10px",
@@ -506,15 +448,15 @@ function CrmDashBoardTable() {
               marginLeft: "5px",
               marginRight: "5px",
               borderRadius: "1px",
-              backgroundColor: Id ? "#007bff" : "",
-              color: Id ? "white" : "",
+              backgroundColor: Renderingengine ? "#007bff" : "",
+              color: Renderingengine ? "white" : "",
             }}
           >
-            ID
+            Rendering engine
           </div>
           <div
             className="menuItem"
-            onClick={handleSubject}
+            onClick={handleBrowser}
             style={{
               width: "200px",
               paddingLeft: "10px",
@@ -522,15 +464,15 @@ function CrmDashBoardTable() {
               marginLeft: "5px",
               marginRight: "5px",
               borderRadius: "1px",
-              backgroundColor: Subject ? "#007bff" : "",
-              color: Subject ? "white" : "",
+              backgroundColor: Browser ? "#007bff" : "",
+              color: Browser ? "white" : "",
             }}
           >
-            Subject
+            Browser
           </div>
           <div
             className="menuItem"
-            onClick={handleStatus}
+            onClick={handlePlatform}
             style={{
               width: "200px",
               paddingLeft: "10px",
@@ -538,15 +480,15 @@ function CrmDashBoardTable() {
               marginLeft: "5px",
               marginRight: "5px",
               borderRadius: "1px",
-              backgroundColor: Status ? "#007bff" : "",
-              color: Status ? "white" : "",
+              backgroundColor: Platform ? "#007bff" : "",
+              color: Platform ? "white" : "",
             }}
           >
-            Status
+            Platform(s)
           </div>
           <div
             className="menuItem"
-            onClick={handleDuedate}
+            onClick={handleEngineversion}
             style={{
               width: "200px",
               paddingLeft: "10px",
@@ -554,15 +496,15 @@ function CrmDashBoardTable() {
               marginLeft: "5px",
               marginRight: "5px",
               borderRadius: "1px",
-              backgroundColor: Duedate ? "#007bff" : "",
-              color: Duedate ? "white" : "",
+              backgroundColor: Engineversion ? "#007bff" : "",
+              color: Engineversion ? "white" : "",
             }}
           >
-            Due Date
+            Engine version
           </div>
           <div
             className="menuItem"
-            onClick={handlePriority}
+            onClick={handleCssgrade}
             style={{
               width: "200px",
               paddingLeft: "10px",
@@ -570,43 +512,11 @@ function CrmDashBoardTable() {
               marginLeft: "5px",
               marginRight: "5px",
               borderRadius: "1px",
-              backgroundColor: Priority ? "#007bff" : "",
-              color: Priority ? "white" : "",
+              backgroundColor: Cssgrade ? "#007bff" : "",
+              color: Cssgrade ? "white" : "",
             }}
           >
-            Priority
-          </div>
-          <div
-            className="menuItem"
-            onClick={handleAssigned}
-            style={{
-              width: "200px",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-              marginLeft: "5px",
-              marginRight: "5px",
-              borderRadius: "1px",
-              backgroundColor: Assigned ? "#007bff" : "",
-              color: Assigned ? "white" : "",
-            }}
-          >
-            Assigned
-          </div>
-          <div
-            className="menuItem"
-            onClick={handleCreated}
-            style={{
-              width: "200px",
-              paddingLeft: "10px",
-              paddingRight: "10px",
-              marginLeft: "5px",
-              marginRight: "5px",
-              borderRadius: "1px",
-              backgroundColor: Created ? "#007bff" : "",
-              color: Created ? "white" : "",
-            }}
-          >
-            Created
+            CSS grade
           </div>
         </div>
       </div>
@@ -620,11 +530,11 @@ function CrmDashBoardTable() {
             <tr>
               <th
                 scope="col"
-                style={{ display: Id ? "" : "none" }}
-                onClick={() => handleSort("id")}
+                style={{ display: Renderingengine ? "" : "none" }}
+                onClick={() => handleSort("renderingengine")}
               >
-                ID &nbsp; &nbsp;
-                {sortColumn === "id" && (
+                Rendering engine &nbsp; &nbsp;
+                {sortColumn === "renderingengine" && (
                   <span>
                     {sortDirection === "asc" ? (
                       <FaArrowDownShortWide />
@@ -636,11 +546,11 @@ function CrmDashBoardTable() {
               </th>
               <th
                 scope="col"
-                style={{ display: Subject ? "" : "none" }}
-                onClick={() => handleSort("subject")}
+                style={{ display: Browser ? "" : "none" }}
+                onClick={() => handleSort("browser")}
               >
-                Subject &nbsp; &nbsp;
-                {sortColumn === "subject" && (
+                Browser &nbsp; &nbsp;
+                {sortColumn === "browser" && (
                   <span>
                     {sortDirection === "asc" ? (
                       <FaArrowDownShortWide />
@@ -652,11 +562,11 @@ function CrmDashBoardTable() {
               </th>
               <th
                 scope="col"
-                style={{ display: Status ? "" : "none" }}
-                onClick={() => handleSort("status")}
+                style={{ display: Platform ? "" : "none" }}
+                onClick={() => handleSort("platform")}
               >
-                Status &nbsp; &nbsp;
-                {sortColumn === "status" && (
+                Platform(s) &nbsp; &nbsp;
+                {sortColumn === "platform" && (
                   <span>
                     {sortDirection === "asc" ? (
                       <FaArrowDownShortWide />
@@ -668,11 +578,11 @@ function CrmDashBoardTable() {
               </th>
               <th
                 scope="col"
-                style={{ display: Duedate ? "" : "none" }}
-                onClick={() => handleSort("duedate")}
+                style={{ display: Engineversion ? "" : "none" }}
+                onClick={() => handleSort("engineversion")}
               >
-                Due Date &nbsp; &nbsp;
-                {sortColumn === "duedate" && (
+                Engine version &nbsp; &nbsp;
+                {sortColumn === "engineversion" && (
                   <span>
                     {sortDirection === "asc" ? (
                       <FaArrowDownShortWide />
@@ -684,43 +594,11 @@ function CrmDashBoardTable() {
               </th>
               <th
                 scope="col"
-                style={{ display: Priority ? "" : "none" }}
-                onClick={() => handleSort("priority")}
+                style={{ display: Cssgrade ? "" : "none" }}
+                onClick={() => handleSort("cssgrade")}
               >
-                Priority &nbsp; &nbsp;
-                {sortColumn === "priority" && (
-                  <span>
-                    {sortDirection === "asc" ? (
-                      <FaArrowDownShortWide />
-                    ) : (
-                      <HiMiniArrowsUpDown />
-                    )}
-                  </span>
-                )}
-              </th>
-              <th
-                scope="col"
-                style={{ display: Assigned ? "" : "none" }}
-                onClick={() => handleSort("assigned")}
-              >
-                Assigned &nbsp; &nbsp;
-                {sortColumn === "assigned" && (
-                  <span>
-                    {sortDirection === "asc" ? (
-                      <FaArrowDownShortWide />
-                    ) : (
-                      <HiMiniArrowsUpDown />
-                    )}
-                  </span>
-                )}
-              </th>
-              <th
-                scope="col"
-                style={{ display: Created ? "" : "none" }}
-                onClick={() => handleSort("created")}
-              >
-                Created &nbsp; &nbsp;
-                {sortColumn === "created" && (
+                CSS grade &nbsp; &nbsp;
+                {sortColumn === "cssgrade" && (
                   <span>
                     {sortDirection === "asc" ? (
                       <FaArrowDownShortWide />
@@ -738,42 +616,30 @@ function CrmDashBoardTable() {
               .map((ele, i) => {
                 return (
                   <tr className="" key={i}>
-                    <td style={{ display: Id ? "" : "none" }}>{ele.id}</td>
+                    <td style={{ display: Renderingengine ? "" : "none" }}>{ele.renderingengine}</td>
                     <td
                       className="border"
-                      style={{ display: Subject ? "" : "none" }}
+                      style={{ display: Browser ? "" : "none" }}
                     >
-                      {ele.subject}
+                      {ele.browser}
                     </td>
                     <td
                       className="border"
-                      style={{ display: Status ? "" : "none" }}
+                      style={{ display: Platform ? "" : "none" }}
                     >
-                      {ele.status}
+                      {ele.platform}
                     </td>
                     <td
                       className="border"
-                      style={{ display: Duedate ? "" : "none" }}
+                      style={{ display: Engineversion ? "" : "none" }}
                     >
-                      {ele.duedate}
+                      {ele.engineversion}
                     </td>
                     <td
                       className="border"
-                      style={{ display: Priority ? "" : "none" }}
+                      style={{ display: Cssgrade ? "" : "none" }}
                     >
-                      {ele.priority}
-                    </td>
-                    <td
-                      className="border"
-                      style={{ display: Assigned ? "" : "none" }}
-                    >
-                      {ele.assigned}
-                    </td>
-                    <td
-                      className="border"
-                      style={{ display: Created ? "" : "none" }}
-                    >
-                      {ele.created}
+                      {ele.cssgrade}
                     </td>
                   </tr>
                 );
@@ -781,32 +647,26 @@ function CrmDashBoardTable() {
           </tbody>
           <tfoot>
             <tr>
-              <th scope="col" style={{ display: Id ? "" : "none" }}>
-                ID &nbsp; &nbsp;
+              <th scope="col" style={{ display: Renderingengine ? "" : "none" }}>
+              Rendering engine &nbsp; &nbsp;
               </th>
-              <th scope="col" style={{ display: Subject ? "" : "none" }}>
-                Subject &nbsp; &nbsp;
+              <th scope="col" style={{ display: Browser ? "" : "none" }}>
+              Browser &nbsp; &nbsp;
               </th>
-              <th scope="col" style={{ display: Status ? "" : "none" }}>
-                Status &nbsp; &nbsp;
+              <th scope="col" style={{ display: Platform ? "" : "none" }}>
+              Platform(s) &nbsp; &nbsp;
               </th>
-              <th scope="col" style={{ display: Duedate ? "" : "none" }}>
-                Due Date &nbsp; &nbsp;
+              <th scope="col" style={{ display: Engineversion ? "" : "none" }}>
+              Engine version &nbsp; &nbsp;
               </th>
-              <th scope="col" style={{ display: Priority ? "" : "none" }}>
-                Priority &nbsp; &nbsp;
-              </th>
-              <th scope="col" style={{ display: Assigned ? "" : "none" }}>
-                Assigned &nbsp; &nbsp;
-              </th>
-              <th scope="col" style={{ display: Created ? "" : "none" }}>
-                Created &nbsp; &nbsp;
+              <th scope="col" style={{ display: Cssgrade ? "" : "none" }}>
+              CSS grade &nbsp; &nbsp;
               </th>
             </tr>
           </tfoot>
         </table>
       </div>
-      <div className="pagination">
+      <div className="pagination mb-3">
         <div className="col-sm-12 col-md-5 pagi-1 pt-2">
           Showing {startIndex} to {endIndex} of {totalEntries} entries
         </div>
