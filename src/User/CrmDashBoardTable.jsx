@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowDownShortWide } from "react-icons/fa6";
 import { HiMiniArrowsUpDown } from "react-icons/hi2";
-import data from "../Utils/table1.json";
+import data from "../Utils/table2.json";
 import copy from "clipboard-copy";
 import Papa from "papaparse";
 import { AiFillCaretDown } from "react-icons/ai";
@@ -10,9 +10,9 @@ import jsPDF from "jspdf";
 import "../Style/CrmDashBoardTable.css";
 import OutsideClickHandler from "react-outside-click-handler";
 
-function CrmDashBoardTable() {
+function CrmDashBoardTable({ entriesPerPage }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(8);
+  const itemsPerPage = entriesPerPage;
   const [value, setValue] = useState("");
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, data.length);
@@ -666,7 +666,7 @@ function CrmDashBoardTable() {
           </tfoot>
         </table>
       </div>
-      <div className="pagination">
+      <div className="pagination mb-3">
         <div className="col-sm-12 col-md-5 pagi-1 pt-2">
           Showing {startIndex} to {endIndex} of {totalEntries} entries
         </div>
