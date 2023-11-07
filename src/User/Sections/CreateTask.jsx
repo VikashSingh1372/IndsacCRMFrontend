@@ -5,6 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../Style/CreateTask.css";
+import "../../Style/NewCustomer.css"
 import MainSidebar from "../Mainsidebar";
 import UserNavbar from "../UserNavbar";
 import UserFooter from "../UserFooter";
@@ -115,17 +116,17 @@ export default function CreateTask() {
               <form action="" onSubmit={formik.handleSubmit}>
                 <fieldset>
                   <div className="col-12 d-flex justify-content-center">
-                    <div className="bg-white col-11">
-                      <div className="d-flex justify-content-center">
-                        <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2 pt-1">
-                          <p className="text-white p-1 m-0">Create Task</p>
+                    <div className="bg-white col-11 cont">
+                      <div style={{boxShadow:"0 1px 1px lightgray"}} className="d-flex justify-content-center mb-4">
+                        <div style={{color:"gray"}}  className=" col-12 m-1 mt-2 rounded shadow-sm elevation-2 pt-1">
+                          <p className="text-white p-1 m-0"><strong>Create Task</strong></p>
                         </div>
                       </div>
                       {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
                       <div className="d-flex flex-wrap">
                         <div className="col-12 col-md-6 pl-0 pr-0">
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex  mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
@@ -147,10 +148,9 @@ export default function CreateTask() {
                                 </sup>
                               </label>
                             </div>
-                            <div className="col-12 col-sm-8">
+                            <div className="col-12 col-sm-8 forms">
                               <input
                                 type="text"
-                                className="w-100 border rounded border-gray pl-2"
                                 placeholder="Subject"
                                 name="subject"
                                 onChange={formik.handleChange}
@@ -166,7 +166,7 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex  mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
@@ -188,7 +188,7 @@ export default function CreateTask() {
                                 </sup>
                               </label>
                             </div>
-                            <div className="col-12 col-sm-8 d-flex px-2 m-0">
+                            <div className="col-12 col-sm-8 d-flex  ">
                               <div
                                 className="col-12 m-0"
                                 style={{
@@ -196,9 +196,9 @@ export default function CreateTask() {
                                   paddingRight: "0px",
                                 }}
                               >
-                                <div className="p-0 m-0 w-100 ">
+                                <div className="p-0 m-0 w-100  forms ">
                                   <input
-                                    className="input-field date w-100 border rounded border-gray"
+                                    className="input-field date "
                                     type="date"
                                     placeholder=""
                                     name="date"
@@ -218,7 +218,7 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
@@ -233,7 +233,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="status"
                                 id="status"
-                                className="border rounded border-gray w-100 pl-2"
+                                className="p-1 rounded"
+                                style={{color:"gray"}}
                               >
                                 <option value="Active">Normal</option>
                                 {options2.map((option) => (
@@ -247,7 +248,7 @@ export default function CreateTask() {
                               </Field>
                             </div>
                           </div>
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex  mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
@@ -262,7 +263,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="leadsource"
                                 id="leadsource"
-                                className="border rounded border-gray w-100 pl-2"
+                                className="p-1 rounded"
+                                style={{color:"gray"}}
                               >
                                 <option value="Indiamart">Open</option>
                                 {options1.map((option) => (
@@ -280,7 +282,7 @@ export default function CreateTask() {
                         </div>
 
                         <div className="col-12 col-md-6 pl-0 pr-0">
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg ">
                               <label
                                 htmlFor=""
@@ -295,7 +297,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="bestwaycontact"
                                 id="bestwaycontact"
-                                className="border rounded border-gray w-100 pl-2"
+                                className="p-1 rounded"
+                                style={{color:"gray"}}
                               >
                                 <option value="Mobile">Sachin Choudhary</option>
                                 {options.map((option) => (
@@ -309,7 +312,7 @@ export default function CreateTask() {
                               </Field>
                             </div>
                           </div>
-                          <div className=" col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className=" col-12 col-sm-12 d-flex mb-2">
                             <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                               <label
                                 htmlFor=""
@@ -320,9 +323,9 @@ export default function CreateTask() {
                               </label>
                             </div>
 
-                            <div className="col-12 col-sm-8">
+                            <div className="col-12 col-sm-8  forms">
                               <textarea
-                                className="border rounded border-gray w-100 pl-2"
+                              type="text"
                                 id="notes"
                                 name="notes"
                                 rows={5}
@@ -334,7 +337,7 @@ export default function CreateTask() {
                             </div>
                           </div>
 
-                          <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                          <div className="col-12 col-sm-12 d-flex mb-2">
                             <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                               <button className="btn btn-sm btn-light border rounded border-gray">
                                 Cancel
@@ -343,7 +346,7 @@ export default function CreateTask() {
                             <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                               <button
                                 className="btn btn-sm border rounded border-gray btn-info "
-                                style={{ backgroundColor: "" }}
+                                style={{ backgroundColor: "rgba(52, 58, 64, 255)" }}
                               >
                                 Save
                               </button>
