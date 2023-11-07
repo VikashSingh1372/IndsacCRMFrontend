@@ -1,0 +1,48 @@
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background-repeat:  no-repeat;
+    width: 20px;
+    height: 20px;
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 1%;
+}
+input::-webkit-datetime-edit-fields-wrapper {
+    position: relative;
+ 
+    padding-left: 10%;
+}
+input::-webkit-datetime-edit {
+    position: relative;
+    padding-left: 10%;
+}
+
+/* For screens larger than 600px */
+@media (min-width: 601px) {
+  .text-right-lg {
+    text-align: right;
+  }
+}
+
+/* CSS for screens less than 600px wide */
+@media (max-width: 600px) {
+  .col-12.col-sm-12.d-flex.m-2.mb-3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text-right-lg {
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+
+  .flex-wrap {
+    flex-direction: column; /* Stack columns on top of each other */
+  }
+}

@@ -1,0 +1,12 @@
+@media (max-width: 426px) {
+  .subcon3{
+    flex-direction: column-reverse;
+  }
+  .subcon4{
+    align-items: center;
+  }
+  .subcon6{
+    justify-content: center;
+    width: 75%;
+  }
+}
