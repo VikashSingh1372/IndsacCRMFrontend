@@ -72,6 +72,8 @@ import NewCustomer from "./User/Sections/NewCustomer";
 import NewVendor from "./User/Sections/NewVendor";
 import NewLead from "./User/Sections/NewLead";
 import CustomerDashboard from "./User/Sections/CustomerDashboard";
+import AddProduct from "./User/Sections/AddProduct.jsx";
+import AddProd from "./User/Sections/AddProd.jsx";
 
 
 function App() {
@@ -153,6 +155,8 @@ function App() {
           <Route path="new-customer" element={<NewCustomer/>}/>
           <Route path="new-vendor" element={<NewVendor/>}/>
           <Route path="new-lead" element={<NewLead/>}/>
+          <Route path="add-product" element={<AddProduct/>}/>
+          <Route path="add" element={<AddProd/>}/>
 
 
         </Routes>

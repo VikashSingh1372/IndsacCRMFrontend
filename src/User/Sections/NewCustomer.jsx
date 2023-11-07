@@ -153,17 +153,18 @@ export default function NewCustomer() {
               {(formik) => (
                 <form action="" onSubmit={formik.handleSubmit}>
                   <fieldset style={{ marginBottom: "5rem" }}>
+                  <br></br>
+
                     <div className="col-12 d-flex justify-content-center">
-                      <div className="bg-white col-11">
-                        <div className="d-flex justify-content-center">
-                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
-                            <p className="text-white p-1 m-0 custom-font-size">New Customer</p>
-                          </div>
+                      <div className="bg-white col-11 cont">
+                          <div style={{boxShadow:"0 1px 1px lightgray"}} className=" mt-2 col-12  elevation-2 mb-2">
+                            <p style={{color:"gray"}}  className=" p-1 m-0 custom-font-size"><strong>New Customer</strong></p>
                         </div>
+                        <br></br>
 
                         <div className="d-flex flex-wrap">
                           <div className="col-12 col-md-6 pl-0 pr-0">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -173,10 +174,9 @@ export default function NewCustomer() {
                                   <strong>Company Name</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Company Name"
                                   name="companyname"
                                   onChange={formik.handleChange}
@@ -192,7 +192,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -215,10 +215,9 @@ export default function NewCustomer() {
                                 </label>
                               </div>
                               <div className="col-12 col-sm-8 d-flex p-0 justify-content-end">
-                                <div className="col-sm-6 pb-1">
+                                <div className="col-sm-6 pb-1 forms">
                                   <input
                                     type="text"
-                                    className="w-100 border rounded border-gray pl-2"
                                     placeholder="First Name"
                                     name="firstname"
                                     onChange={formik.handleChange}
@@ -233,10 +232,9 @@ export default function NewCustomer() {
                                     )}
                                 </div>
 
-                                <div className="col-sm-6 justify-content-end">
+                                <div className="col-sm-6 justify-content-end forms">
                                   <input
                                     type="text"
-                                    className="w-100 border rounded border-gray pl-2"
                                     placeholder="Last Name"
                                     name="lastname"
                                     onChange={formik.handleChange}
@@ -255,7 +253,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -265,12 +263,13 @@ export default function NewCustomer() {
                                   <strong>Status</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 ">
                                 <Field
                                   as="select"
                                   name="status"
                                   id="status"
-                                  className="border rounded border-gray w-100 pl-2"
+                                  className="p-1 rounded"
+                                  style={{color:"gray"}}
                                 >
                                   <option value="Active">Active</option>
                                   {options2.map((option) => (
@@ -285,7 +284,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2  mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -300,7 +299,8 @@ export default function NewCustomer() {
                                   as="select"
                                   name="leadsource"
                                   id="leadsource"
-                                  className="border rounded border-gray w-100 pl-2"
+                                  className="p-1 rounded"
+                                  style={{color:"gray"}}
                                 >
                                   <option value="Indiamart">Indiamart</option>
                                   {options1.map((option) => (
@@ -317,7 +317,7 @@ export default function NewCustomer() {
                           </div>
 
                           <div className="col-12 col-md-6 pl-0 pr-0">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -332,7 +332,8 @@ export default function NewCustomer() {
                                   as="select"
                                   name="bestwaycontact"
                                   id="bestwaycontact"
-                                  className="border rounded border-gray w-100 pl-2"
+                                  className="p-1 rounded"
+                                  style={{color:"gray"}}
                                 >
                                   <option value="Mobile">Mobile</option>
                                   {options.map((option) => (
@@ -347,7 +348,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -369,10 +370,9 @@ export default function NewCustomer() {
                                   </sup>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="number"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Mobile"
                                   name="mobile"
                                   onChange={formik.handleChange}
@@ -388,7 +388,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -398,10 +398,9 @@ export default function NewCustomer() {
                                   <strong>Phone</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="number"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Phone"
                                   name="altphone"
                                   onChange={formik.handleChange}
@@ -417,7 +416,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -427,10 +426,9 @@ export default function NewCustomer() {
                                   <strong>Email</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="email"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Email"
                                   name="email"
                                   onChange={formik.handleChange}
@@ -451,11 +449,11 @@ export default function NewCustomer() {
                     </div>
 
                     <div className="col-12 d-flex justify-content-center">
-                      <div className="bg-white col-11 mt-3">
+                      <div className="bg-white col-11 mt-3 cont">
                         <div className="d-flex justify-content-center">
-                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
-                            <p className="text-white p-1 m-0 custom-font-size">
-                              Other Informations
+                          <div style={{boxShadow:"0 1px 1px lightgray"}} className=" col-12 m-1 mt-2  elevation-2 mb-3">
+                            <p style={{color:"gray"}} className=" p-1 m-0 custom-font-size">
+                           <strong>Other Informations</strong>   
                             </p>
                           </div>
                         </div>
@@ -463,7 +461,7 @@ export default function NewCustomer() {
 
                         <div className="d-flex flex-wrap">
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -473,10 +471,9 @@ export default function NewCustomer() {
                                   <strong>Department</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Department"
                                   name="department"
                                   onChange={formik.handleChange}
@@ -492,7 +489,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -502,10 +499,9 @@ export default function NewCustomer() {
                                   <strong>Designation</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Designation"
                                   name="designation"
                                   onChange={formik.handleChange}
@@ -521,7 +517,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -531,10 +527,9 @@ export default function NewCustomer() {
                                   <strong>Category</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Category"
                                   name="category"
                                   onChange={formik.handleChange}
@@ -554,7 +549,7 @@ export default function NewCustomer() {
                           </div>
 
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -564,10 +559,9 @@ export default function NewCustomer() {
                                   <strong>ReportTo</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="ReportTo"
                                   name="reportTo"
                                   onChange={formik.handleChange}
@@ -583,7 +577,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -593,10 +587,9 @@ export default function NewCustomer() {
                                   <strong>GSTIN</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="GST Number"
                                   name="gstnumber"
                                   onChange={formik.handleChange}
@@ -612,7 +605,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -622,10 +615,9 @@ export default function NewCustomer() {
                                   <strong>Website</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="https://abc.com/"
                                   name="website"
                                   onChange={formik.handleChange}
@@ -648,17 +640,19 @@ export default function NewCustomer() {
                     </div>
 
                     <div className="col-12 d-flex justify-content-center">
-                      <div className="bg-white col-11 mt-3">
+                      <div className="bg-white col-11 mt-3 cont">
                         <div className="d-flex justify-content-center">
-                          <div className="bg-warning col-12 m-1 mt-3 rounded shadow-sm elevation-2">
-                            <p className="text-white p-1 m-0 custom-font-size">Address</p>
+                          <div style={{boxShadow:"0 1px 1px lightgray"}} className="col-12 m-1 mt-2 mb-3  elevation-2">
+                            <p style={{color
+                            :"gray"}} className=" p-1 m-0 custom-font-size">
+                              <strong>Address</strong></p>
                           </div>
                         </div>
                         {/* <div className="border col-11 mt-1 ml-5 "></div> */}
 
                         <div className="d-flex flex-wrap ">
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -668,10 +662,9 @@ export default function NewCustomer() {
                                   <strong>Address1</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Address1"
                                   name="Address1"
                                   onChange={formik.handleChange}
@@ -681,7 +674,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -691,10 +684,9 @@ export default function NewCustomer() {
                                   <strong>Address2</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Address2"
                                   name="add2"
                                   onChange={formik.handleChange}
@@ -704,7 +696,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -714,10 +706,9 @@ export default function NewCustomer() {
                                   <strong>Address3</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Address3"
                                   name="add3"
                                   onChange={formik.handleChange}
@@ -727,7 +718,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -737,10 +728,9 @@ export default function NewCustomer() {
                                   <strong>City</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="City"
                                   name="city"
                                   onChange={formik.handleChange}
@@ -755,7 +745,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -765,10 +755,9 @@ export default function NewCustomer() {
                                   <strong>Pincode</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="number"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Pincode"
                                   name="pincode"
                                   onChange={formik.handleChange}
@@ -784,7 +773,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -794,10 +783,9 @@ export default function NewCustomer() {
                                   <strong>State</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="State"
                                   name="state"
                                   onChange={formik.handleChange}
@@ -813,7 +801,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -823,10 +811,9 @@ export default function NewCustomer() {
                                   <strong>Country</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <input
                                   type="text"
-                                  className="w-100 border rounded border-gray pl-2"
                                   placeholder="Country"
                                   name="country"
                                   onChange={formik.handleChange}
@@ -846,7 +833,7 @@ export default function NewCustomer() {
                           </div>
 
                           <div className="col-12 col-md-6 pl-0 pr-0 ">
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
@@ -857,9 +844,9 @@ export default function NewCustomer() {
                                 </label>
                               </div>
 
-                              <div className="col-12 col-sm-8">
+                              <div className="col-12 col-sm-8 forms">
                                 <textarea
-                                  className="border rounded border-gray w-100 pl-2"
+                                type="text"
                                   id="notes"
                                   name="notes"
                                   rows={5}
@@ -871,7 +858,7 @@ export default function NewCustomer() {
                               </div>
                             </div>
 
-                            <div className="col-12 col-sm-12 d-flex m-2 mb-3">
+                            <div className="col-12 col-sm-12 d-flex mb-2">
                               <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                                 <button className="btn btn-sm btn-light border rounded border-gray">
                                   Cancel
@@ -879,8 +866,8 @@ export default function NewCustomer() {
                               </div>
                               <div className="col-12 col-sm-6 d-flex justify-content-center p-2">
                                 <button
-                                  className="btn btn-sm border rounded border-gray btn-info "
-                                  style={{ backgroundColor: "" }}
+                                  className="btn  border rounded border-gray btn-info "
+                                  style={{ backgroundColor: "rgba(52, 58, 64, 255)" }}
                                 >
                                   Save
                                 </button>
