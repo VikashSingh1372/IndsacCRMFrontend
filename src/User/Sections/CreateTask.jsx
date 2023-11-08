@@ -233,8 +233,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="status"
                                 id="status"
-                                className="p-1 rounded"
-                                style={{color:"gray"}}
+                                className="selectBox custom-select "
+
                               >
                                 <option value="Active">Normal</option>
                                 {options2.map((option) => (
@@ -263,8 +263,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="leadsource"
                                 id="leadsource"
-                                className="p-1 rounded"
-                                style={{color:"gray"}}
+                                className="selectBox custom-select "
+
                               >
                                 <option value="Indiamart">Open</option>
                                 {options1.map((option) => (
@@ -297,8 +297,8 @@ export default function CreateTask() {
                                 as="select"
                                 name="bestwaycontact"
                                 id="bestwaycontact"
-                                className="p-1 rounded"
-                                style={{color:"gray"}}
+                                className="selectBox custom-select "
+
                               >
                                 <option value="Mobile">Sachin Choudhary</option>
                                 {options.map((option) => (

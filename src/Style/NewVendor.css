@@ -5,7 +5,21 @@
  ::-webkit-input-placeholder {
   color:  gray;
 }
+.selectBox{
+  width: 100;
+  border: none;
+  border-bottom: 2px solid #d4dbdd;
+  padding-left: 5px;
+  color: gray;
+  font-size: 15px;
+  border-radius: 2px;
 
+}
+.selectBox:focus{
+  border-bottom: 2px solid #3498db;
+  outline: none;
+
+}
 
 strong{
   color: rgb(107, 106, 106);
@@ -14,44 +28,46 @@ strong{
  .forms input[type ="text"]{
   width: 100%;
   padding: 0.3rem 0.5rem;
-  outline: none;
-  border: 2px solid #b2bec3;
-  border-radius: 5px;
+  border:none;
+  border-bottom: 2px solid #d4dbdd;
+
+  border-radius: 2px;
 }
 .forms input[type ="date"]{
   width: 100%;
   padding: 0.3rem 0.5rem;
-  outline: none;
-  border: 2px solid #b2bec3;
-  border-radius: 5px;
+  border:none;
+  border-bottom: 2px solid #d4dbdd;
+
+    border-radius: 2px;
 }
 .forms input[type ="number"]{
   width: 100%;
   padding: 0.3rem 0.5rem;
-  outline: none;
-  border: 2px solid #b2bec3;
-  border-radius: 5px;
-}
+  border:none;
+  border-bottom: 2px solid #d4dbdd;
+
+  border-radius: 2px;}
  .forms input[type ="email"]{
   width: 100%;
   padding: 0.5rem 0.7rem;
-  outline: none;
-  border: 1px solid #b2bec3;
-  margin-bottom: .2rem;
-  border-radius: 5px;
+  border:none;
+  border-bottom: 2px solid #d4dbdd;
+
+  border-radius: 2px;
 } .forms input[type ="password"]{
   width: 100%;
   padding: 0.5rem 0.7rem;
-  outline: none;
-  border: 1px solid #b2bec3;
-  border-radius: 5px;
+  border:none;
+  border-bottom: 2px solid #d4dbdd;
+
+    border-radius: 2px;
 }
 
 .forms textarea[type="text"]{
   width: 100%;
   padding: 0.5rem 0.7rem;
   outline: none;
-  border: 1px solid #b2bec3;
   border-radius: 5px;
 }
 
@@ -69,7 +85,8 @@ strong{
   border-radius: 8px;
 }
  .forms input:focus{
-  border: 2px solid #3498db;
+  
+  border-bottom: 2px solid #3498db;
 }
  .forms input {
   transition: 0.4s;

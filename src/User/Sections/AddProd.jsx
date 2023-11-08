@@ -188,7 +188,7 @@ const AddProd = () => {
                                 </label>
                               </div>
                               <div className="col-12 col-sm-8 product">
-                                <textarea style={{minWidth:"100%"}}
+                                <input style={{minWidth:"100%"}}
                                   type="text"
                                   placeholder="Enter Here"
                                   name="description"
@@ -371,7 +371,7 @@ const AddProd = () => {
                                 </label>
                               </div>
                               <div className="col-12 col-sm-8 product">
-                                <textarea style={{minWidth:"100%"}}
+                                <input style={{minWidth:"100%"}}
                                   type="text"
                                   placeholder="Enter Here"
                                   name="internalNotes"
