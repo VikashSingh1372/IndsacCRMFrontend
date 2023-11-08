@@ -270,8 +270,8 @@ function NewVendor() {
                                   as="select"
                                   name="status"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="Active">Active</option>
                                   {options2.map((option) => (
@@ -300,8 +300,8 @@ function NewVendor() {
                                   as="select"
                                   name="leadsource"
                                   id="leadsource"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="Indiamart">Indiamart</option>
                                   {options1.map((option) => (
@@ -334,8 +334,8 @@ function NewVendor() {
                                   as="select"
                                   name="bestwaycontact"
                                   id="bestwaycontact"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="Mobile">Mobile</option>
                                   {options.map((option) => (

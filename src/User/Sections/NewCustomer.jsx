@@ -265,11 +265,12 @@ export default function NewCustomer() {
                               </div>
                               <div className="col-12 col-sm-8 ">
                                 <Field
+                                 className="selectBox custom-select "
+
                                   as="select"
                                   name="status"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+
                                 >
                                   <option value="Active">Active</option>
                                   {options2.map((option) => (
@@ -299,8 +300,8 @@ export default function NewCustomer() {
                                   as="select"
                                   name="leadsource"
                                   id="leadsource"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="Indiamart">Indiamart</option>
                                   {options1.map((option) => (
@@ -332,8 +333,8 @@ export default function NewCustomer() {
                                   as="select"
                                   name="bestwaycontact"
                                   id="bestwaycontact"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="Mobile">Mobile</option>
                                   {options.map((option) => (

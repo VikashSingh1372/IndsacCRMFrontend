@@ -10,6 +10,8 @@ import "../../Style/NewCustomer.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Checkbox } from "@mui/material";
+import { FaAngleDown } from "react-icons/fa";
+
 const AddProduct = () => {
 
     const customerSchema = Yup.object().shape({
@@ -198,7 +200,7 @@ const AddProduct = () => {
                                 </label>
                               </div>
                               <div className="col-12 col-sm-8 forms">
-                                <textarea style={{minWidth:"100%"}}
+                                <input style={{minWidth:"100%"}}
                                   type="text"
                                   placeholder="Enter Here"
                                   name="description"
@@ -307,25 +309,24 @@ const AddProduct = () => {
         </div>
         <div className='d-flex flex-wrap'> 
          <div className='col-md-6'>
-         <div className="col-12 col-sm-12 d-flex mb-2">
-                              <div className="col-12 col-sm-4 justify-content-end text-right-lg">
+         <div className="col-12 col-sm-12 d-flex mb-2 ">
+         <div className="col-12 col-sm-4 justify-content-end text-right-lg">
                                 <label
                                   htmlFor=""
-                                  className="m-0 p-0 text-left"
+                                  className="m-0 p-0 text-left "
                                   style={{ fontSize: 15 }}
                                 >
-                                  <strong>Supplier</strong>
+                                  <strong >Supplier</strong>
                                 </label>
                               </div>
-                              <div className="col-12 col-sm-8 forms">
-                                <Field
+                              <div  className="col-12 col-sm-8  " >
+                                <Field 
+                                className="selectBox custom-select "
                                   as="select"
                                   name="supplier"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
                                 >
-                                  <option  value="supplier">Select Supplier</option>
+                                  <option  value="supplier" >Select Supplier</option>
                                   {options.map((option) => (
                                     <option 
                                     style={{color:"black"}}
@@ -446,8 +447,8 @@ const AddProduct = () => {
                                   as="select"
                                   name="brand"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+                                  className="selectBox custom-select "
+
                                 >
                                   <option value="brand">  Select Brand</option>
                                   {options1.map((option) => (
@@ -474,11 +475,12 @@ const AddProduct = () => {
                               </div>
                               <div className="col-12 col-sm-8">
                                 <Field
+                                 className="selectBox custom-select "
+
                                   as="select"
                                   name="category"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+
                                 >
                                   <option value="category">Select Category</option>
                                   {options2.map((option) => (
@@ -508,11 +510,12 @@ const AddProduct = () => {
                               </div>
                               <div className="col-12 col-sm-8">
                                 <Field
+                                  className="selectBox custom-select "
+
                                   as="select"
                                   name="tag"
                                   id="status"
-                                  className="p-1 rounded"
-                                  style={{color:"gray"}}
+
                                 >
                                   <option value="tag">Select Tag</option>
                                   {options3.map((option) => (
@@ -539,7 +542,7 @@ const AddProduct = () => {
                                 </label>
                               </div>
                               <div className="col-12 col-sm-8  forms">
-                                <textarea style={{minWidth:"100%"}}
+                                <input style={{minWidth:"100%"}}
                                   type="text"
                                   placeholder="Enter Here"
                                   name="internalNotes"
